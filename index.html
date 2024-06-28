@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.2.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-同态加密FHE" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/06/24/%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86FHE/" class="article-date">
+  <time class="dt-published" datetime="2024-06-24T08:36:10.000Z" itemprop="datePublished">2024-06-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/06/24/%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86FHE/">同态加密FHE</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="《An-Introduction-to-Fully-Homomorphic-Encryption》-by-Nigel-P-Smart"><a href="#《An-Introduction-to-Fully-Homomorphic-Encryption》-by-Nigel-P-Smart" class="headerlink" title="《An Introduction to Fully Homomorphic Encryption》 by Nigel P. Smart"></a>《An Introduction to Fully Homomorphic Encryption》 by Nigel P. Smart</h1><h2 id="1-Introduction"><a href="#1-Introduction" class="headerlink" title="1.Introduction"></a>1.Introduction</h2><h3 id="1-1-What-is-FHE"><a href="#1-1-What-is-FHE" class="headerlink" title="1.1 What is FHE?"></a>1.1 What is FHE?</h3><p>原则上，FHE允许对加密数据进行任意计算。对加密数据进行计算意味着，如果用户有一个函数f并想要得到 <img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240624170020423.png"
+                      alt="image-20240624170020423"
+                >的结果，可以通过对这些输入的加密形式 c1,c2,…,cn进行计算，得到一个解密后的结果就是<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240624170040058.png"
+                      alt="image-20240624170040058"
+                ></p>
+<p>在一些加密系统中，输入消息（明文）存在于某种代数结构中，通常是群或环。</p>
+<h5 id="群（Group）"><a href="#群（Group）" class="headerlink" title="群（Group）"></a>群（Group）</h5><p>群是一个基本的代数结构，由一组元素和一个二元运算（通常称为乘法或加法）构成，满足以下四个性质：</p>
+<ol>
+<li><strong>闭合性（Closure）</strong>：<ul>
+<li>对于群中的任意两个元素 a 和 b，它们的运算结果 a⋅b也在群中。</li>
+<li>例如，对于整数加法，两个整数的和仍然是整数。</li>
+</ul>
+</li>
+<li><strong>结合律（Associativity）</strong>：<ul>
+<li>对于群中的任意三个元素 a,b,c有 (a⋅b)⋅c&#x3D;a⋅(b⋅c)。</li>
+<li>例如，对于整数加法，有 (a+b)+c&#x3D;a+(b+c)。</li>
+</ul>
+</li>
+<li><strong>单位元（Identity Element）</strong>：<ul>
+<li>存在一个单位元 e，对于群中的任意元素 aaa，有 a⋅e&#x3D;e⋅a&#x3D;a</li>
+<li>例如，对于整数加法，单位元是 0，因为 a+0&#x3D;0+a&#x3D;a。</li>
+</ul>
+</li>
+<li><strong>逆元（Inverse Element）</strong>：<ul>
+<li>对于群中的每个元素 a，存在一个逆元 a^{-1}，使得 a⋅a^{-1} &#x3D;a^{-1}⋅a&#x3D;e。</li>
+<li>例如，对于整数加法，a的逆元是 −a,因为 a+(−a)&#x3D;a+(-a)&#x3D;0。</li>
+<li>在群论中，单位元 e 不是随机的，而是固定的，且对于群中的所有元素都是相同的。对于不同的群，单位元 e 的具体值可能不同，但在同一个群中，它是唯一且固定的。</li>
+</ul>
+</li>
+</ol>
+<h5 id="环（Ring）"><a href="#环（Ring）" class="headerlink" title="环（Ring）"></a>环（Ring）</h5><p>环是一个更复杂的代数结构，由一组元素和两个二元运算（通常称为加法和乘法）构成，满足以下性质：</p>
+<ol>
+<li><strong>加法构成一个交换群（Abelian Group）</strong>：<ul>
+<li>环中的加法运算满足交换律（commutative）、结合律（associative）、单位元（identity element）和逆元（inverse element）。</li>
+<li>例如，整数加法构成一个交换群。</li>
+</ul>
+</li>
+<li><strong>乘法的闭合性（Closure under Multiplication）</strong>：<ul>
+<li>对于环中的任意两个元素 a 和 b，它们的乘积 a⋅b也在环中。</li>
+<li>例如，两个整数的乘积仍然是整数。</li>
+</ul>
+</li>
+<li><strong>乘法的结合律（Associativity under Multiplication）</strong>：<ul>
+<li>对于环中的任意三个元素 a,b,cm有 (a⋅b)⋅c&#x3D;a⋅(b⋅c)。</li>
+<li>例如，整数乘法满足结合律。</li>
+</ul>
+</li>
+<li><strong>乘法对加法的分配律（Distributive Laws）</strong>：<ul>
+<li>环中的乘法对加法满足左分配律和右分配律，即 a⋅(b+c)&#x3D;a⋅b+a⋅c和 (a+b)⋅c&#x3D;a⋅c+b⋅c。</li>
+<li>例如，整数乘法对加法满足分配律。</li>
+</ul>
+</li>
+</ol>
+<p>在这种情况下，密文通常也存在于某个相关的结构中，这个结构可能与明文的结构相同。在较旧的同态加密方案中，函数 f 通常仅限于与明文结构相关的代数运算。例如，考虑ElGamal加密。如果明文空间是一个群 G，那么密文空间是群G×G的乘积，并且f仅限于群G上的运算。实际上，2009年之前的大多数方案都适合这种结构。我们可以将完全同态加密的目标表示为将函数f扩展为任何函数。如果方案相对于一个功能完备的操作集合是同态的，并且可以从该集合中迭代操作，那么该目标就可以实现。</p>
+<p>虽然从理论上讲，加密方案总是要求在安全参数的多项式时间内运行，但在获得第一个FHE方案时，实用效率并不是首要考虑的。导致这些方案缺乏效率的一个原因是它们使用一个由单个位组成的明文空间，并且相对于模2的加法和乘法是同态的。虽然可以从这些基本操作中构建任何复杂度的函数，但这可能需要大量的此类操作。</p>
+<p>为了朝着更好的效率迈进，一些最近的FHE方案变体以不同方式限制了函数f，我们将在后面探讨这些方案。</p>
+<p>虽然从理论上讲，FHE的观点只是最大化 f 的选择，但从实际角度来看，保持这种选择仅在必要的范围内也是很重要的，并且可能更喜欢一个比二进制案例更丰富的明文和密文空间结构。</p>
+<h3 id="1-2-Relations-of-FHE-Functional-Encryption-and-Program-Obfuscation"><a href="#1-2-Relations-of-FHE-Functional-Encryption-and-Program-Obfuscation" class="headerlink" title="1.2 Relations of FHE: Functional Encryption and Program Obfuscation"></a>1.2 <strong>Relations of FHE: Functional Encryption and Program Obfuscation</strong></h3><p>完全同态加密（FHE）的基本思想是能够对加密数据应用函数。还有其他两种与函数相关的密码学概念：功能加密和模糊化。令人感兴趣的是，模糊化、功能加密和完全同态加密似乎有某种联系，正如以前所认识到的那样。</p>
+<p>功能加密（FE）本质上与基于身份的加密和基于属性的加密类似。</p>
+<h5 id="1-功能加密（Functional-Encryption-FE）"><a href="#1-功能加密（Functional-Encryption-FE）" class="headerlink" title="1. 功能加密（Functional Encryption, FE）"></a>1. 功能加密（Functional Encryption, FE）</h5><p>功能加密是一种允许解密方在不知道明文的情况下，直接从密文中得到某个函数应用于明文的结果的加密方式。其本质是<strong>实现某种受控的计算</strong>，只有具有特定权限的用户才能计算出相应的结果。</p>
+<ul>
+<li><p><strong>工作原理</strong>：</p>
+<ul>
+<li>加密阶段：数据拥有者用公钥对数据进行加密，生成密文。</li>
+<li>密钥颁发：由一个中心实体（如密钥生成中心）使用主密钥生成与特定函数f相关的密钥。</li>
+<li>解密阶段：持有特定函数密钥的用户可以解密得到 f(明文)的结果，而无法知道明文的其他信息。</li>
+</ul>
+<p><strong>例子：隐私保护的医疗数据分析</strong></p>
+<ul>
+<li><strong>场景</strong>：一个医院希望将患者的医疗数据进行分析，以预测某种疾病的风险，但又不希望分析人员直接看到患者的具体数据。</li>
+<li>过程：<ul>
+<li>医院使用公钥 pk对患者的医疗数据进行加密，生成密文 c。</li>
+<li>分析机构需要进行疾病风险预测，医院使用主密钥生成与风险预测函数 f 相关的功能密钥 skf。</li>
+<li>分析人员使用功能密钥 skf对加密的医疗数据 cc进行计算，得到 f(医疗数据) 的结果，比如某个患者患某种疾病的概率。</li>
+<li>分析人员只能得到计算结果，而无法看到具体的患者数据，从而保护了患者的隐私。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="2-基于身份的加密（Identity-Based-Encryption-IBE）"><a href="#2-基于身份的加密（Identity-Based-Encryption-IBE）" class="headerlink" title="2. 基于身份的加密（Identity-Based Encryption, IBE）"></a>2. 基于身份的加密（Identity-Based Encryption, IBE）</h5><p>基于身份的加密是一种公钥加密方案，在该方案中，公钥是由用户的身份信息（如电子邮件地址）直接生成的。IBE旨在简化公钥管理，特别是在需要大规模分发公钥的系统中。</p>
+<ul>
+<li><strong>工作原理</strong>：<ul>
+<li>公钥生成：用户的公钥可以直接由其身份信息（如姓名、电子邮件地址等）生成。</li>
+<li>密钥生成：一个可信第三方（通常称为私钥生成中心，PKG）使用其主私钥生成用户的私钥，并将其分发给用户。</li>
+<li>加密阶段：发送者使用接收者的身份信息生成公钥，并对信息进行加密。</li>
+<li>解密阶段：接收者使用从PKG处获得的私钥解密信息。</li>
+</ul>
+</li>
+</ul>
+<h5 id="3-基于属性的加密（Attribute-Based-Encryption-ABE）"><a href="#3-基于属性的加密（Attribute-Based-Encryption-ABE）" class="headerlink" title="3. 基于属性的加密（Attribute-Based Encryption, ABE）"></a>3. 基于属性的加密（Attribute-Based Encryption, ABE）</h5><p>基于属性的加密是一种更灵活的加密方式，允许加密和解密操作<strong>基于用户的属性集合</strong>。ABE主要有两种变体：基于密文策略的ABE（CP-ABE）和基于密钥策略的ABE（KP-ABE）。</p>
+<ul>
+<li><p><strong>工作原理</strong>：</p>
+<ul>
+<li><p>CP-ABE</p>
+<p>（Ciphertext-Policy ABE）：数据加密时，密文中包含访问策略，只有符合策略的用户才能解密。</p>
+<ul>
+<li>加密阶段：数据拥有者定义访问策略，并用策略加密数据。</li>
+<li>密钥颁发：一个可信第三方根据用户的属性集合生成私钥。</li>
+<li>解密阶段：只有属性集合满足密文中策略的用户才能解密数据。</li>
+</ul>
+</li>
+<li><p>KP-ABE</p>
+<p>（Key-Policy ABE）：每个用户的私钥包含访问策略，密文中包含属性集合，只有符合策略的私钥才能解密。</p>
+<ul>
+<li>加密阶段：数据拥有者用属性集合加密数据。</li>
+<li>密钥颁发：一个可信第三方根据用户的访问策略生成私钥。</li>
+<li>解密阶段：只有策略匹配密文中属性集合的用户才能解密数据。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Boneh、Sahai和Waters简洁地解释了这三种概念之间的关系，并讨论了FHE。实际上，<strong>FHE和FE确实有一些重叠，研究表明，功能加密可以通过一些调整来实现FHE</strong>。</p>
+<p>功能加密允许使用主密钥颁发一个与函数f相关的密钥。给定一个密文，这个密钥允许用户了解f应用于明文的值，而不会泄露其他信息。对加密数据计算函数将这两种概念联系起来。一个显著的区别是函数的应用方式。FE通过主密钥持有者控制可以应用于数据的函数，而<strong>FHE允许任何拥有评估密钥的人运行函数</strong>，<strong>但只有秘密密钥的持有者可以解密结果</strong>。运行函数的用户只能得到密文。</p>
+<p>模糊化最初的设计理念类似于黑箱计算，其中一个人可以知道输入和输出，但不知道中间过程。通过模糊化（Program Obfuscation），可以将密钥放在程序中运行，而不会暴露密钥的知识。这样可以生成一个包含公钥和私钥的模糊化程序，通过先应用解密算法，再应用所需函数，最后加密结果。这可以作为FHE中同态操作的替代。</p>
+<p>尽管从模糊化方案和传统加密方案生成FHE方案的能力似乎很有前景，但实际上是否比直接FHE更有优势仍不明确。还需要考虑在发布程序中隐藏秘密密钥的安全约束和影响。</p>
+<h3 id="1-3-Need-for-Systematization"><a href="#1-3-Need-for-Systematization" class="headerlink" title="1.3 Need for Systematization"></a>1.3 <strong>Need for Systematization</strong></h3><p>完全同态加密（FHE）的处理可能显得非常混乱。有时，两个定义看起来好像在说同一件事——例如，能够<strong>评估一个</strong>任意电路和能够<strong>连续评估任意多个</strong>电路看起来似乎是一样的。然而，这实际上不是一回事，正如将在注释5中解释的那样。</p>
+<p>为了帮助理解这个区别，考虑云计算的例子：FHE通常被宣传为解决方案。然而，如果我们只能评估一个任意大小的电路，那么我们不能使用中间结果进行后续计算；所有的计算必须从原始密文开始重新计算。这满足了FHE的通常定义（定义9），但并不直观，也不是一个最佳解决方案。在这种情况下，我们需要能够连续评估任意多个电路。</p>
+<p>这突显了该领域的另一个问题：在某些情况下，定义并没有表达出人们直观上假设的内容。在其他情况下，某一概念在不同论文中的定义不同。例如，紧凑性这个属性，直观上说密文大小不应该通过同态操作而增长。Gentry在他最初的工作中通过一个特性来定义它，而在随后的工作中使用了另一个特性。看出这两个定义是等价的并不像想象的那么简单，实际上需要一个额外的假设。</p>
+<p>有时，属性没有得到适当的定义，有时则在同一篇论文中未提及就被使用了。图1展示了这些定义的复杂程度。从定义和属性（图中的白色矩形）开始，我们可以给出不同类型同态方案的分类（阴影的圆角矩形）。此外，这些分类可以与跳跃正确性结合，产生另一组同态方案（更深色的椭圆形）。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240624173840861.png"
+                      alt="image-20240624173840861"
+                ></p>
+<h5 id="注释5：关于连续电路评估的区别"><a href="#注释5：关于连续电路评估的区别" class="headerlink" title="注释5：关于连续电路评估的区别"></a>注释5：关于连续电路评估的区别</h5><p>在云计算的例子中，FHE通常被视为解决方案。然而，如果我们只能评估一个任意大小的电路，那么我们不能使用中间结果进行后续计算（中间结果的不可用性）；所有的计算必须从原始密文开始重新计算。这满足了通常对FHE的定义（定义9），但不符合直觉，也不是一个最佳解决方案。在这种情况下，我们需要能够连续评估任意多个电路。</p>
+<h3 id="1-4-Our-Contribution"><a href="#1-4-Our-Contribution" class="headerlink" title="1.4 Our Contribution"></a>1.4 <strong>Our Contribution</strong></h3><h2 id="2-Applications-of-FHE"><a href="#2-Applications-of-FHE" class="headerlink" title="2 Applications of FHE"></a><strong>2 Applications of FHE</strong></h2><h3 id="2-1-Practical-Applications-of-FHE"><a href="#2-1-Practical-Applications-of-FHE" class="headerlink" title="2.1 Practical Applications of FHE"></a><strong>2.1 Practical Applications of FHE</strong></h3><h4 id="2-1-1-Consumer-Privacy-in-Advertising"><a href="#2-1-1-Consumer-Privacy-in-Advertising" class="headerlink" title="2.1.1 Consumer Privacy in Advertising"></a><strong>2.1.1 Consumer Privacy in Advertising</strong></h4><h4 id="2-1-2-Medical-Applications"><a href="#2-1-2-Medical-Applications" class="headerlink" title="2.1.2 Medical Applications"></a><strong>2.1.2 Medical Applications</strong></h4><h4 id="2-1-3-Data-Mining"><a href="#2-1-3-Data-Mining" class="headerlink" title="2.1.3 Data Mining"></a><strong>2.1.3 Data Mining</strong></h4><h4 id="2-1-4-Financial-Privacy"><a href="#2-1-4-Financial-Privacy" class="headerlink" title="2.1.4 Financial Privacy"></a><strong>2.1.4 Financial Privacy</strong></h4><h4 id="2-1-5-Forensic-Image-Recognition"><a href="#2-1-5-Forensic-Image-Recognition" class="headerlink" title="2.1.5 Forensic Image Recognition"></a><strong>2.1.5 Forensic Image Recognition</strong></h4><h3 id="2-2-Homomorphic-Encryption-Schemes-as-Building-Blocks"><a href="#2-2-Homomorphic-Encryption-Schemes-as-Building-Blocks" class="headerlink" title="2.2 Homomorphic Encryption Schemes as Building Blocks"></a><strong>2.2 Homomorphic Encryption Schemes as Building Blocks</strong></h3><h4 id="2-2-1-Zero-Knowledge-Proofs"><a href="#2-2-1-Zero-Knowledge-Proofs" class="headerlink" title="2.2.1 Zero Knowledge Proofs"></a><strong>2.2.1 Zero Knowledge Proofs</strong></h4><p>Gentry 在他的论文 [28] 中展示了同态加密可以用于构建小尺寸的非交互式零知识（NIZK）证明。用户希望证明其掌握了一组满足布尔电路 C 的位分配 π1,…,πt。NIZK 证明包括生成一个公钥，加密这些 πi 并对这些加密后的值同态地评估电路 C。一个标准的 NIZK 证明附带了以下内容：证明每个密文加密的值要么是 0 要么是 1，并且评估的输出加密的值是 1。</p>
+<h5 id="非交互式零知识（NIZK）"><a href="#非交互式零知识（NIZK）" class="headerlink" title="非交互式零知识（NIZK）"></a>非交互式零知识（NIZK）</h5><p>非交互式零知识证明（Non-Interactive Zero-Knowledge Proof, NIZK）是一种密码学协议，允许证明者向验证者证明某个陈述是真实的，而无需进行多轮的交互过程。在NIZK中，证明者只需发送一个单一的证明，验证者通过该证明即可验证陈述的真实性。</p>
+<ol>
+<li><strong>零知识性</strong>：<ul>
+<li>零知识性意味着验证者除了知道陈述是真实的之外，无法从证明中获取任何其他信息。</li>
+</ul>
+</li>
+<li><strong>非交互性</strong>：<ul>
+<li>非交互性指的是证明过程不需要证明者和验证者之间的多轮交互。证明者可以一次性生成并发送证明，验证者在收到证明后即可完成验证。</li>
+</ul>
+</li>
+<li><strong>完备性</strong>：<ul>
+<li>如果陈述是真实的，诚实的证明者总是能够生成一个使验证者接受的证明。</li>
+</ul>
+</li>
+<li><strong>可靠性</strong>：<ul>
+<li>如果陈述是虚假的，即使是欺骗性的证明者也无法生成一个使诚实的验证者接受的证明，除非发生极小概率的错误。</li>
+</ul>
+</li>
+</ol>
+<h4 id="2-2-2-Delegation-of-Computation"><a href="#2-2-2-Delegation-of-Computation" class="headerlink" title="2.2.2 Delegation of Computation"></a><strong>2.2.2 Delegation of Computation</strong></h4><p>计算的委托是云计算的主要用例之一。云计算的基本概念是将计算和数据存储从本地计算机或服务器转移到由第三方管理的大型远程服务器上。这为企业和个人提供了显著的成本节约和可扩展性。</p>
+<p>同态加密允许在云环境中安全地委托计算。通过同态加密，用户可以将数据加密后发送到云服务器，云服务器在不解密数据的情况下执行计算，并返回加密的结果。用户接收加密的结果并使用私钥进行解密，从而得到最终的计算结果。</p>
+<p>这种方法的主要优点是，即使云服务器不可信，用户的数据仍然是安全的。云服务器在整个计算过程中都无法访问明文数据，从而确保数据隐私。</p>
+<p>以下是一个具体的例子：</p>
+<ul>
+<li><p><strong>场景</strong>：一个公司希望在云上进行大规模的数据分析，但不希望云提供商访问其敏感数据。</p>
+</li>
+<li><p>过程</p>
+<p>：</p>
+<ul>
+<li>公司使用公钥对数据进行加密，并将加密数据发送到云服务器。</li>
+<li>云服务器在加密数据上执行同态计算，例如运行统计分析、数据挖掘算法等。</li>
+<li>云服务器将计算结果加密后发送回公司。</li>
+<li>公司使用私钥解密结果，获取所需的分析结果。</li>
+</ul>
+</li>
+</ul>
+<p>通过这种方式，公司的数据在整个过程中始终保持加密状态，云服务器无法访问数据的实际内容，从而保护了数据隐私。</p>
+<h4 id="2-2-3-Signatures"><a href="#2-2-3-Signatures" class="headerlink" title="2.2.3 Signatures"></a><strong>2.2.3 Signatures</strong></h4><p>Craig Gentry和Shai Halevi在2011年的一篇论文中提出了基于同态加密的签名方案。该方案利用了同态加密的特性来构建数字签名。</p>
+<p>在传统的数字签名方案中，签名是通过私钥对消息进行加密，验证是通过公钥进行的。而在基于同态加密的签名方案中，签名者首先生成一个公私钥对，并使用私钥对消息进行加密，然后对加密后的消息进行同态运算，以生成签名。验证者使用公钥对签名进行验证。</p>
+<p>基于同态加密的签名方案有几个优点：</p>
+<ol>
+<li><strong>安全性</strong>：<ul>
+<li>由于同态加密的特性，签名过程和验证过程都可以在加密状态下进行，确保了数据的安全性。</li>
+</ul>
+</li>
+<li><strong>灵活性</strong>：<ul>
+<li>同态加密允许对加密数据进行计算，这意味着签名可以在不解密数据的情况下进行，从而提高了系统的灵活性。</li>
+</ul>
+</li>
+<li><strong>高效性</strong>：<ul>
+<li>这种方案可以减少签名和验证过程中的计算开销，从而提高系统的效率。</li>
+</ul>
+</li>
+</ol>
+<p>基于同态加密的签名方案在实际应用中有广泛的前景。例如，在云计算环境中，用户可以在不泄露私钥的情况下生成签名，并通过同态加密来验证签名，从而保护数据的隐私和安全。</p>
+<h4 id="2-2-4-Multiparty-Computation"><a href="#2-2-4-Multiparty-Computation" class="headerlink" title="2.2.4 Multiparty Computation"></a><strong>2.2.4 Multiparty Computation</strong></h4><p>多方计算（Multiparty Computation, MPC）是一种密码学技术，<strong>使得多个参与方能够在不泄露各自输入的情况下共同计算一个函数的结果。同态加密可以显著增强MPC的效率和安全性</strong>。</p>
+<p>在传统的MPC协议中，每个参与方都必须不断与其他参与方交换信息，直到计算完成。利用同态加密，参与方可以加密他们的输入并将加密数据发送到一个中央服务器。中央服务器在不解密数据的情况下执行计算，并将结果发送回各参与方。参与方使用他们的私钥解密结果，得到计算的最终输出。</p>
+<p>这种方法的主要优点包括：</p>
+<ol>
+<li><strong>隐私保护</strong>：<ul>
+<li>各参与方的输入数据在整个计算过程中始终保持加密状态，从而保护了数据的隐私。</li>
+</ul>
+</li>
+<li><strong>减少通信开销</strong>：<ul>
+<li>利用同态加密，参与方只需要将加密数据发送到中央服务器，而不需要进行多轮的交互，从而减少了通信开销。</li>
+</ul>
+</li>
+<li><strong>计算效率</strong>：<ul>
+<li>中央服务器可以在加密数据上直接进行计算，提高了计算效率。</li>
+</ul>
+</li>
+</ol>
+<p>例如，在一个医疗研究项目中，不同医院希望共同分析病人的数据以研究某种疾病的风险因素，但不希望共享各自的病人数据。通过同态加密，各医院可以加密病人数据并将加密数据发送到一个中央服务器。中央服务器在不解密数据的情况下进行分析，并将加密的分析结果发送回各医院。各医院解密结果，得到研究的结论，而无需暴露病人的隐私数据。</p>
+<p>总的来说，同态加密为多方计算提供了一种高效、安全的方法，使得多个参与方能够在不泄露各自输入的情况下共同计算一个函数的结果，从而在保护数据隐私的同时实现协同计算。</p>
+<h3 id="2-3-Limitations-of-FHE"><a href="#2-3-Limitations-of-FHE" class="headerlink" title="2.3 Limitations of FHE"></a><strong>2.3 Limitations of FHE</strong></h3><p>完全同态加密（FHE）虽然具有强大的功能，但在实际应用中仍然存在一些限制。</p>
+<p>首先，FHE的<strong>计算开销</strong>非常高。同态加密和解密操作，以及在加密数据上的同态计算，通常比传统的加密方法要慢得多。这种计算开销的增加使得FHE在处理大量数据或需要高性能计算的应用中难以使用。</p>
+<p>其次，<strong>密文扩展问题</strong>也是一个重要限制。在许多FHE方案中，密文的大小随着计算的进行而增加。这意味着在长时间的计算过程中，密文会变得非常大，从而增加存储和传输的负担。</p>
+<p>再者，FHE的实现复杂度较高。FHE算法的实现需要<strong>复杂的数学操作和优化技术</strong>，这使得其开发和维护成本较高。此外，<strong>现有的FHE库和工具尚未成熟</strong>，应用开发者需要具备较高的专业知识。</p>
+<p>最后，虽然FHE可以在理论上保证数据的完全隐私，但在实际应用中，系统的安全性仍然依赖于具体的实现细节和假设。例如，某些FHE方案可能依赖于特定的数学难题，<strong>其安全性尚未得到充分验证</strong>。</p>
+<p>综上所述，尽管FHE在隐私保护和数据安全方面具有巨大潜力，但其高计算开销、密文扩展问题、实现复杂度和安全性依赖性等限制，使得在实际应用中还需要进一步的研究和优化。</p>
+<h2 id="3-Definitions"><a href="#3-Definitions" class="headerlink" title="3 Definitions"></a><strong>3 Definitions</strong></h2><p>本节概述了在FHE文献中使用的术语。我们的一些定义直接来自现有论文，而其他定义则被重新表述，因为没有令人满意的正式定义或为了将定义适应我们的正式框架；在前一种情况下，我们会给出引用。</p>
+<p>我们从一个空间 P&#x3D;{0,1}开始，称之为明文空间，以及一个从明文元组到 P 的函数族 F。我们可以将这样的函数表示为其输入上的布尔电路。如果我们用 C 表示这个电路，我们用普通的函数表示法 C(m1,m2,…,mn) 来表示在元组 (m1,m2,…,mn)上评估电路。我们的第一个定义遵循 Brakerski 和 Vaikuntanathan 的工作 [16]。</p>
+<ul>
+<li><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240624180448856.png"
+                      alt="image-20240624180448856"
+                ></li>
+</ul>
+<p>这里，XXX 表示密文空间，它包含新生成的密文（见公式 (1)），YYY 表示评估输出空间，ZZZ 是 XXX 和 YYY 的并集。Z∗Z^*Z∗ 包含由 ZZZ 中元素组成的任意长度的元组。密钥空间分别由 Kp,KsKp, KsKp,Ks 和 KeKeKe 表示，对应于 pk,skpk, skpk,sk 和 evkevkevk。公钥包含明文空间和密文空间的描述。密钥生成算法 Gen 的输入以一元记号表示，即 1λ1^\lambda1λ。Gen 还可以从空间 auxsauxsauxs 中接受另一个可选输入 α\alphaα，这是辅助输入，将在备注 3 中阐明。最后，CCC 是允许的电路集，即方案可以评估的所有电路。</p>
+<p>定义这些空间后，算法的定义域和值域如下： Gen:N×A→Kp×Ks×Ke\text{Gen} : \mathbb{N} \times A \rightarrow Kp \times Ks \times KeGen:N×A→Kp×Ks×Ke Enc:Kp×P→X\text{Enc} : Kp \times P \rightarrow XEnc:Kp×P→X Dec:Ks×Z→P\text{Dec} : Ks \times Z \rightarrow PDec:Ks×Z→P Eval:Ke×C×Z∗→Y\text{Eval} : Ke \times C \times Z^* \rightarrow YEval:Ke×C×Z∗→Y</p>
+<p>其中 X∪Y&#x3D;ZX \cup Y &#x3D; ZX∪Y&#x3D;Z，AAA 是一个辅助空间。注意，一般来说，评估空间可以与密文空间不相交。</p>
+<p>在整篇论文中，我们将密文空间 XXX 视为加密的结果，而评估空间 YYY 视为评估的结果。因此 ZZZ 不能包含不是加密算法或评估算法可能输出的元素。形式上， X&#x3D;{c∣Pr⁡[Enc(pk,m)&#x3D;c]&gt;0,m∈P}X &#x3D; {c \mid \Pr[\text{Enc}(pk, m) &#x3D; c] &gt; 0, m \in P }X&#x3D;{c∣Pr[Enc(pk,m)&#x3D;c]&gt;0,m∈P} 和 Y&#x3D;{z∣Pr⁡[Eval(evk,C,c1,…,cn)&#x3D;z]&gt;0,ci∈Z,且C∈C}。Y &#x3D; {z \mid \Pr[\text{Eval}(evk, C, c_1, …, c_n) &#x3D; z] &gt; 0, c_i \in Z, 且 C \in C }。Y&#x3D;{z∣Pr[Eval(evk,C,c1,…,cn)&#x3D;z]&gt;0,ci∈Z,且C∈C}。</p>
+<p>特别是，评估密钥通常也是公钥的一部分。通过这种方式定义方案，具有单独的评估密钥，我们并没有禁止 pk&#x3D;evkpk &#x3D; evkpk&#x3D;evk，但断言这不是严格必要的。分开的 pkpkpk 和 evkevkevk 正在成为标准定义 [16, § 3.1]。</p>
+<p>备注 1（密文解密）：Brakerski 和 Vaikuntanathan [17] 提到，运行加密算法的输出上的解密算法并不是严格必要的：“… 我们不要求密文 cic_ici 本身是可解密的，只要求它们在同态评估后变得可解密。” 他们指出，可以在解密前用空电路（本质上是计算函数 f(x)&#x3D;xf(x) &#x3D; xf(x)&#x3D;x 的电路）评估加密的密文，从而简化解密算法的允许输入。从现在开始，我们允许新鲜密文的解密，因为这似乎是更自然的方法，并适用于大多数已知的 FHE 方案。解密算法可以在密文或评估输出上操作（从密文空间和评估空间中获取值）。这种选择消除了对空电路的需求。一般来说，这种区分不是必要的，尤其是…</p>
+<h3 id="3-1-Attributes"><a href="#3-1-Attributes" class="headerlink" title="3.1 Attributes"></a><strong>3.1 Attributes</strong></h3><h3 id="3-2-Classifications"><a href="#3-2-Classifications" class="headerlink" title="3.2 Classifications"></a><strong>3.2 Classifications</strong></h3><h3 id="3-3-Evaluating-in-Stages"><a href="#3-3-Evaluating-in-Stages" class="headerlink" title="3.3 Evaluating in Stages"></a><strong>3.3 Evaluating in Stages</strong></h3><h2 id="4-Implications"><a href="#4-Implications" class="headerlink" title="4 Implications"></a><strong>4 Implications</strong></h2><h3 id="4-1-Consolidating-compactness"><a href="#4-1-Consolidating-compactness" class="headerlink" title="4.1 Consolidating compactness"></a><strong>4.1 Consolidating compactness</strong></h3><h3 id="4-2-FHE-and-Hop-Results"><a href="#4-2-FHE-and-Hop-Results" class="headerlink" title="4.2 FHE and Hop Results"></a><strong>4.2 FHE and Hop Results</strong></h3><h2 id="5-Existing-schemes"><a href="#5-Existing-schemes" class="headerlink" title="5 Existing schemes"></a><strong>5 Existing schemes</strong></h2><h3 id="5-1-Bootstrapping-and-Alternatives"><a href="#5-1-Bootstrapping-and-Alternatives" class="headerlink" title="5.1 Bootstrapping and Alternatives"></a><strong>5.1 Bootstrapping and Alternatives</strong></h3><h3 id="5-2-Security-Assumptions"><a href="#5-2-Security-Assumptions" class="headerlink" title="5.2 Security Assumptions"></a><strong>5.2 Security Assumptions</strong></h3><h3 id="5-3-Implementations"><a href="#5-3-Implementations" class="headerlink" title="5.3 Implementations"></a><strong>5.3 Implementations</strong></h3><h2 id="6-Conclusion"><a href="#6-Conclusion" class="headerlink" title="6 Conclusion"></a><strong>6 Conclusion</strong></h2>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/06/24/%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86FHE/" data-id="clxygvmpl0005p4uah0vz072g" data-title="同态加密FHE" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CRYPTO/" rel="tag">CRYPTO</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-THE CHINESE BOOK FOR LARGE LANGUAGE" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/06/24/THE%20CHINESE%20BOOK%20FOR%20LARGE%20LANGUAGE/" class="article-date">
+  <time class="dt-published" datetime="2024-06-23T17:53:52.401Z" itemprop="datePublished">2024-06-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="第一部分-背景与基础知识"><a href="#第一部分-背景与基础知识" class="headerlink" title="第一部分 背景与基础知识"></a><strong>第一部分 背景与基础知识</strong></h1><h2 id="第一章-引言"><a href="#第一章-引言" class="headerlink" title="第一章 引言"></a><strong>第一章 引言</strong></h2><h3 id="1-1-语言模型的发展历程"><a href="#1-1-语言模型的发展历程" class="headerlink" title="1.1 语言模型的发展历程"></a>1.1 语言模型的发展历程</h3><p>统计语言模型：基于统计学习方法（马尔科夫假设）</p>
+<p>神经语言模型</p>
+<p>预训练语言模型（PLM）</p>
+<p>大语言模型（LLM）</p>
+<p>（语言建模到任务求解）</p>
+<h3 id="1-2-大语言模型的能力特点"><a href="#1-2-大语言模型的能力特点" class="headerlink" title="1.2 大语言模型的能力特点"></a>1.2 大语言模型的能力特点</h3><p>具有较为丰富的世界知识</p>
+<p>具有较强的通用任务解决能力：基于大规模无标注文本的下一个词元预测任务（多任务学习过程）</p>
+<p>具有较强的人类指令遵循能力（预训练和微调）</p>
+<p>具有较好的人类对齐能力：目前广泛采用的对齐方式是基于人类反馈的强化学习技术，通过强化学习使得模型进行正确行为的加强以及错误行为的规避，进而建立较好的人类对齐能力。</p>
+<p>具有可拓展的工具使用能力</p>
+<h3 id="1-3-大语言模型关键技术概览"><a href="#1-3-大语言模型关键技术概览" class="headerlink" title="1.3 大语言模型关键技术概览"></a>1.3 大语言模型关键技术概览</h3><h4 id="规模扩展"><a href="#规模扩展" class="headerlink" title="规模扩展"></a>规模扩展</h4><p>早期研究：参数、数据、算力力三个方面深入地研究了规模扩展对于模型性能所带来的影响，建立了定量的函数关系，称之为“扩展法则”。</p>
+<p>最近的工作：加大对于高质量数据的规模扩展。针对十亿级别（如 2B 或 7B）参数的模型使用超大规模的数据（如 2T 或 3T 词元）进行训练，仍然可能无法达到这些模型的最大数据容量。</p>
+<p>实现规模扩展的关键在于模型架构的可扩展性。</p>
+<h4 id="数据工程"><a href="#数据工程" class="headerlink" title="数据工程"></a>数据工程</h4><p>OpenAI 于 2019 年就在 GPT-2 的论文中 [17] 给出了当前大语言模型的技术路线图：通过在海量文本上进行下一个词预测的优化，使得模型能够学习到丰富的语义知识信息，进而通过文本补全的方式解决各种下游任务。</p>
+<p>首先，需要对于数据进行全面的采集，拓宽高质量的数据来源；</p>
+<p>其次，需要对于收集到的数据进行精细的清洗，尽量提升用于大模型训练的数据质量；</p>
+<p>第三，需要设计有效的数据配比与数据课程，加强模型对于数据语义信息的利用效率。</p>
+<h4 id="高效预训练"><a href="#高效预训练" class="headerlink" title="高效预训练"></a>高效预训练</h4><p>大规模分布训练算法：在训练过程中，需要联合使用各种并行策略以及效率优化方法，包括 3D 并行（数据并行、流水线并行、张量并行）、ZeRO（内存冗余消除技术）等。</p>
+<h4 id="能力激发"><a href="#能力激发" class="headerlink" title="能力激发"></a>能力激发</h4><p>能够编码大量的文本语义知识信息。然而，这个阶段的模型能力仍然是通过通用的下一个词预测任务建立的，主要目的是为了进行预训练文本数据的恢复。为了提升模型的任务求解能力，需要设计合适的指令微调以及提示策略进行激发或诱导。</p>
+<p>指令微调：通常来说，现有的研究认为指令微调无法向大模型注入新的知识，而是训练大模型学会利用自身所掌握的知识与信息进行任务的求解。</p>
+<p>提示学习：多种高级提示策略，包括上下文学习、思维链提示等，通过构建特殊的提示模板或者表述形式来提升大语言模型对于复杂任务的求解能力。</p>
+<h4 id="人类对齐"><a href="#人类对齐" class="headerlink" title="人类对齐"></a>人类对齐</h4><p>具有代表性的对齐标准是“3 H 对齐标准”，即 Helpfulness（有用性）、Honesty（诚实性）和Harmlessness（无害性）。</p>
+<p>基于人类反馈的强化学习算法（Reinforcement Learning from Human Feedback, RLHF）[28]，将人类偏好引入到大模型的对齐过程中：首先训练能够区分模型输出质量好坏的奖励模型，进而使用强化学习算法（例如使用监督微调的对齐方式，从而简化 RLHF 优化过程的算法，如 DPO 算法等 [29]）来指导语言模型输出行为的调整，让大语言模型能够生成符合人类预期的输出。</p>
+<h4 id="工具使用"><a href="#工具使用" class="headerlink" title="工具使用"></a>工具使用</h4><h3 id="1-4-大语言模型对科技发展的影响"><a href="#1-4-大语言模型对科技发展的影响" class="headerlink" title="1.4 大语言模型对科技发展的影响"></a>1.4 大语言模型对科技发展的影响</h3><p>（人工智能领域的技术变革）</p>
+<p>自然语言处理</p>
+<p>信息检索：信息检索领域主要关注两个新兴方向的研究，即检索增强的大语言模型以及大语言模型增强的搜索系统，全面围绕大语言模型技术展开。</p>
+<p>计算机视觉</p>
+<p>人工智能赋能的科学研究</p>
+<h3 id="1-5-本书的内容组织"><a href="#1-5-本书的内容组织" class="headerlink" title="1.5 本书的内容组织"></a>1.5 本书的内容组织</h3><h2 id="第二章-基础介绍"><a href="#第二章-基础介绍" class="headerlink" title="第二章 基础介绍"></a><strong>第二章 基础介绍</strong></h2><h3 id="2-1-大语言模型的构建过程"><a href="#2-1-大语言模型的构建过程" class="headerlink" title="2.1 大语言模型的构建过程"></a>2.1 大语言模型的构建过程</h3><p>大语言模型是指在海量无标注文本数据上进行预训练得到的大型预训练语言模型。大语言模型则是一种基于 Transformer 结构的神经网络模型。因此，可以将大语言模型看作一种拥有大规模参数的函数，它的构建过程就是使用训练数据对于模型参数的拟合过程。</p>
+<h4 id="2-1-1-大规模预训练"><a href="#2-1-1-大规模预训练" class="headerlink" title="2.1.1 大规模预训练"></a>2.1.1 大规模预训练</h4><p>预训练是指使用与下游任务无关的大规模数据进行模型参数的初始训练，可以认为是为模型参数找到一个较好的“初值点”。</p>
+<p>在 BERT 等传统预训练模型中，所采用的模型架构以及训练任务还比较多样。由于 GPT 系列模型的爆火，“<strong>解码器架构 + 预测下一个词</strong>”的有效性得到了充分验证，已经成为现有大语言模型主要采纳的技术路径。</p>
+<p>为了预训练大语言模型，需要准备大规模的文本数据，并且进行严格的清洗，去除掉可能包含有毒有害的内容，最后将清洗后的数据进行词元化（Tokenization）流，并且切分成批次（Batch），用于大语言模型的预训练。</p>
+<p>预训练技术框架在实施过程中涉及到大量需要深入探索的经验性技术，如数据如何进行配比、如何进行学习率的调整、如何早期发现模型的异常行为等。</p>
+<h4 id="2-1-2-指令微调（SFT）与人类对齐"><a href="#2-1-2-指令微调（SFT）与人类对齐" class="headerlink" title="2.1.2 指令微调（SFT）与人类对齐"></a>2.1.2 指令微调（SFT）与人类对齐</h4><p>监督微调&#x2F;指令微调：通过使用任务输入与输出的配对数据进行模型训练，可以使得语言模型较好地掌握通过问答形式进行任务求解的能力。</p>
+<p>要将大语言模型与人类的期望、需求以及价值观对齐（Alignment）：主要引入了基于人类反馈的强化学习对齐方法 RLHF（Reinforcement Learning from Human Feedback），在指令微调后使用强化学习加强模型的对齐能力。</p>
+<h3 id="2-2-扩展法则"><a href="#2-2-扩展法则" class="headerlink" title="2.2 扩展法则"></a>2.2 扩展法则</h3><p>在实现上，大语言模型采用了与小型预训练语言模型相似的神经网络结构（基于注意力机制的 Transformer 架构）和预训练方法（如语言建模）。</p>
+<p>但是通过扩展<strong>参数规模、数据规模和计算算力</strong>，大语言模型的能力显著超越了小型语言模型的能力。</p>
+<p>有趣的是，这种通过扩展所带来的性能提升通常显著高于通过改进架构、算法等方面所带来的改进。因此，建立定量的建模方法，即<strong>扩展法则（Scaling Law）</strong>，来研究<strong>规模扩展所带来的模型性能提升</strong>具有重要的实践指导意义。</p>
+<h4 id="2-2-1-KM-扩展法则"><a href="#2-2-1-KM-扩展法则" class="headerlink" title="2.2.1 KM 扩展法则"></a>2.2.1 KM 扩展法则</h4><p>2020 年，Kaplan 等人 [15]（OpenAI 团队）首次建立了神经语言模型性能与三个主要因素——模型规模（<em>𝑁</em>）、数据规模（<em>𝐷</em>）和计算算力（<em>𝐶</em>）之间的幂律关系（Power-Law Relationship）。</p>
+<p><strong>模型规模（𝑁）</strong>：Model Size (<em>N</em>)</p>
+<ul>
+<li>模型规模指的是<strong>机器学习模型的复杂度和参数数量。</strong>通常用参数的数量（如神经网络的<strong>权重数量</strong>）来衡量模型的规模。更大的模型通常有更多的参数，可以捕捉更复杂的模式，但也需要更多的计算资源和数据来训练。</li>
+</ul>
+<p><strong>数据规模（𝐷）</strong>：Data Size (<em>D</em>)</p>
+<ul>
+<li>数据规模指的是用于<strong>训练和测试模型的数据集的大小</strong>。数据规模可以用数据点的数量、样本的数量或特征的数量来表示。更大的数据集通常能够提供更多的信息，从而提高模型的性能和泛化能力。</li>
+</ul>
+<p><strong>计算算力（𝐶）</strong>：Computational Power (<em>C</em>)</p>
+<ul>
+<li>计算算力指的是可用于训练和运行模型的计算资源。计算算力可以用<strong>处理器（CPU、GPU、TPU）的数量、内存容量、计算速度（如FLOPS，浮点运算次数</strong>）等指标来衡量。更高的计算算力可以加快模型的训练速度和处理能力，支持更大规模和更复杂的模型。</li>
+</ul>
+<p>在给定算力预算 <em>𝑐</em> 的条件下，可以近似得到以下三个基本指数公式来描述扩展法则：</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623133834730.png"
+                      alt="image-20240623133834730"
+                ></p>
+<p>这里，<em>𝐿</em>(·) 表示用以 nat为单位的交叉熵损失。其中，<em>𝑁𝑐</em>、<em>𝐷𝑐</em> 和 <em>𝐶𝑐</em> 是实验性的常数数值，分别对应于非嵌入参数数量、训练数据数量和实际的算力开销。这三个公式是通过模型在不同数据规模（22M 到 23B 词元）、模型规模（768M到 1.5B 非嵌入参数）和算力规模下的性能表现拟合推导得到的。</p>
+<p>为了推导这些公式，需要约定一些基本假设：一个因素的分析不会受到其他两个因素的限制，如当变动模型参数规模的时候，需要保证数据资源是充足的。</p>
+<p>讲损失函数进一步分解为两部分 [21]，包括不可约损失（真实数据分布的熵）和可约损失（真实分布和模型分布之间 KL 散度的估计）</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623142750969.png"
+                      alt="image-20240623142750969"
+                ></p>
+<p>这里 <em>𝑥</em> 是一个占位符号，可以指代公式 2.1 中的<em>𝑁</em>、<em>𝐷</em> 和 <em>𝐶</em>。其中，不可约损失由数据自身特征确定，无法通过扩展法则或者优化算法进行约减；模型性能的优化只能减小可约损失部分。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623143311167.png"
+                      alt="image-20240623143311167"
+                ></p>
+<h4 id="2-2-2-Chinchilla-扩展法则"><a href="#2-2-2-Chinchilla-扩展法则" class="headerlink" title="2.2.2 Chinchilla 扩展法则"></a>2.2.2 Chinchilla 扩展法则</h4><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623144034419.png"
+                      alt="image-20240623144034419"
+                ></p>
+<p>其中 <em>𝐸</em> &#x3D; 1*.<em>69</em>, 𝐴* &#x3D; 406*.<em>4</em>, 𝐵* &#x3D; 410*.<em>7，</em>𝛼* &#x3D; 0*.<em>34 和 <em>𝛽</em> &#x3D; 0</em>.<em>28。进一步，利用约束条件</em>𝐶* ≈ 6<em>𝑁𝐷</em> 对于损失函数 <em>𝐿</em>(<em>𝑁, 𝐷</em>) 进行推导，能够获得算力资源固定情况下模型规模与数据规模的最优分配方案（如下所示）：</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623144130396.png"
+                      alt="image-20240623144130396"
+                ></p>
+<p>进一步，研究人员 [22] 发现 KM 扩展法则和 Chinchilla 扩展法则都可以近似表示成上述算力为核心的公式（公式 2.4）：</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623144235852.png"
+                      alt="image-20240623144235852"
+                ></p>
+<p>即当算力 <em>𝐶</em> 给定的情况下，最优的模型参数规模和数据规模由指数系数 <em>𝑎</em> 和 <em>𝑏</em> 分别确定。可以看到，<em>𝑎</em> 和 <em>𝑏</em> 决定了参数规模和数据规模的资源分配优先级：当 <em>𝑎 &gt; 𝑏</em>时，应该用更多的算力去提高参数规模；当 <em>𝑏 &gt; 𝑎</em> 时，应该用更多的算力去提高数据规模。</p>
+<p>差异：随着算力预算的增加，KM 扩展法则（<em>𝑎</em> ≈ 0*.<em>73, <em>𝑏</em> ≈ 0</em>.<em>27 [22] ）倾向于将更大的预算分配给模型规模的增加，而不是分配给数据规模的增加；而 Chinchilla 扩展法则主张两种规模参数应该以等比例关系增加（</em>𝑎* ≈ 0*.<em>46, <em>𝑏</em> ≈ 0</em>.*54 [22]）。</p>
+<p>但是目前这一分配系数已经基本没有参考意义了。越来越多的工作表明，现有的预训练语言模型对于数据的需求量远高于这些扩展法则中所给出的估计规模。例如LLaMA-2 (7B) 的模型就使用了 2T 的词元进行训练，很多更小的模型也能够通过使用超大规模的预训练数据获得较大的模型性能提升。这种现象的一个重要原因是由于 Transformer 架构具有较好的数据扩展性，到目前为止，还没有实验能够有效验证特定参数规模语言模型的饱和数据规模（即随着数据规模的扩展，模型性能不再提升）。</p>
+<h4 id="2-2-3-关于扩展法则的讨论"><a href="#2-2-3-关于扩展法则的讨论" class="headerlink" title="2.2.3 关于扩展法则的讨论"></a>2.2.3 关于扩展法则的讨论</h4><h5 id="可预测的扩展"><a href="#可预测的扩展" class="headerlink" title="可预测的扩展"></a><strong>可预测的扩展</strong></h5><p>在实践中，扩展法则可以用于指导大语言模型的训练，通过<strong>较小算力资源可靠地估计较大算力资源投入后的模型性能</strong>，这被称为可预测的扩展 [35]。</p>
+<p><strong>可预测性体现</strong>：使用小模型的性能去预估大模型的性能，或者使用大模型的早期训练性能去估计训练完成后的性能。</p>
+<p><strong>指导作用</strong>：首先，对于大语言模型来说，详细进行各种训练技巧或变体的测试需要耗费巨大的算力资源。因此，一个较为理想的经验性方法是，<strong>基于小模型获得训练经验然后应用于大模型的训练，从而减少实验成本。</strong>例如，可以训练小型代理模型来确定适合大型模型的预训练数据混合的最佳比例 [36]。其次，大语言模型的训练过程较长，经常面临着训练损失波动情况，扩展法则可以用于监控大语言模型的训练状态，如在<strong>早期识别异常性能</strong>。</p>
+<h5 id="任务层面的可预测性"><a href="#任务层面的可预测性" class="headerlink" title="任务层面的可预测性"></a>任务层面的可预测性</h5><p>为了建立扩展法则与模型任务性能的关联，一个基础问题就是语言建模损失的减少是否真正意味着（或对应着）真实任务上模型性能的提高 [21]。</p>
+<p>整体上来说，语言建模损失较小的模型往往在下游任务中表现更好，因为语言建模的能力可以被认为是一种模型整体能力的综合度量。然而，语言建模损失的减少并不总是意味着模型在下游任务上的性能改善。对于某些特殊任务，甚至会出现“逆向扩展”（Inverse Scaling）现象，即随着语言建模损失的降低，任务性能出人意料地变差 [37]。</p>
+<p>扩展准则可以精准预测任务能力（编码能力-建模算力数据密切相关），在任务层面（任务指标&#x2F;任务难度相关）的预测存在一定的困难。</p>
+<h3 id="2-3-涌现能力"><a href="#2-3-涌现能力" class="headerlink" title="2.3 涌现能力"></a>2.3 涌现能力</h3><p>大语言模型的涌现能力被非形式化定义为“在小型模型中不存在但在大模型中出现的能力”，具体是指当模型扩展到一定规模时，模型的特定任务性能突然出现显著跃升的趋势，远超过随机水平。</p>
+<h4 id="2-3-1-代表性的涌现能力"><a href="#2-3-1-代表性的涌现能力" class="headerlink" title="2.3.1 代表性的涌现能力"></a>2.3.1 代表性的涌现能力</h4><h5 id="上下文学习（In-context-Learning-ICL）"><a href="#上下文学习（In-context-Learning-ICL）" class="headerlink" title="上下文学习（In-context Learning, ICL）"></a>上下文学习（In-context Learning, ICL）</h5><p>在提示中为语言模型提供自然语言指令和多个任务示例（Demonstration），无需显式的训练或梯度更新，仅输入文本的单词序列就能为测试样本生成预期的输出。</p>
+<p>“无需显式”是指模型在执行任务时，不需要在输入中提供明确的任务示例或训练数据。这意味着模型能够仅通过理解自然语言的指令来完成任务，而不需要用户在指令中包含具体的输入-输出示例。这种能力主要依赖于模型在预训练和微调过程中已经学到的知识和技能。</p>
+<h5 id="指令遵循（Instruction-Following）"><a href="#指令遵循（Instruction-Following）" class="headerlink" title="指令遵循（Instruction Following）"></a>指令遵循（Instruction Following）</h5><p>指令遵循能力是指大语言模型能够按照自然语言指令来执行对应的任务 [28, 39, 40]。</p>
+<p>为了获得这一能力，通常需要使用自然语言描述的多任务示例数据集进行微调，称为指令微调（Instruction Tuning）或监督微调（Supervised Fine-tuning）。</p>
+<h5 id="逐步推理（Step-by-step-Reasoning）"><a href="#逐步推理（Step-by-step-Reasoning）" class="headerlink" title="逐步推理（Step-by-step Reasoning）"></a>逐步推理（Step-by-step Reasoning）</h5><p>大语言模型可以利用思维链（Chain-of-Thought, CoT）提示策略 [25] 来加强推理性能。具体来说，大语言模型可以在提示中引入任务相关的中间推理步骤来加强复杂任务的求解，从而获得更为可靠的答案。</p>
+<h4 id="2-3-2-涌现能力与扩展法则的关系"><a href="#2-3-2-涌现能力与扩展法则的关系" class="headerlink" title="2.3.2 涌现能力与扩展法则的关系"></a>2.3.2 涌现能力与扩展法则的关系</h4><p>扩展法则和涌现能力提供了<strong>两种不同观点来理解大模型相对于小模型的优势</strong>，但是刻画了较为不同的扩展效应趋势。扩展法则使用<strong>语言建模损失</strong>来衡量语言模型的整体性能，整体上展现出了较为平滑的性能提升趋势，具有较好的可预测性，但是指数形式暗示着可能存在的<strong>边际效益递减现象</strong>；而涌现能力通常使用任务性能来衡量模型性能，整体上展现出随规模扩展的骤然跃升趋势，不具有可预测性，但是一旦出现涌现能力则意味着模型性能将会产生大幅跃升。由于这两种观点反映了不同的模型性能提升趋势（持续改进 <em>v.s.</em> 性能跃升）。</p>
+<h3 id="2-4-GPT-系列模型的技术演变"><a href="#2-4-GPT-系列模型的技术演变" class="headerlink" title="2.4 GPT 系列模型的技术演变"></a>2.4 GPT 系列模型的技术演变</h3><p>GPT 系列模型的基本原理是训练模型学习恢复预训练文本数据，将广泛的世界知识压缩到仅包含解码器（Decoder-Only）的 Transformer 模型中，从而使模型能够学习获得较为全面的能力。</p>
+<p>其中，两个关键要素是：（I）训练能够准确预测下一个词的 Transformer （只包含解码器）语言模型；（II）扩展语言模型的规模以及扩展预训练数据的规模。</p>
+<h4 id="2-4-1-早期探索"><a href="#2-4-1-早期探索" class="headerlink" title="2.4.1 早期探索"></a>2.4.1 早期探索</h4><p>（成立初期）循环神经网络（传统序列神经网络）</p>
+<p>GPT-1：模型名称 GPT 是生成式预训练（Generative Pre-Training）的缩写。GPT-1 基于生成式、仅有<strong>解码器</strong>的 Transformer架构开发，奠定了 GPT 系列模型的核心架构与基于自然语言文本的预训练方式，即预测下一个词元。</p>
+<p><em>GPT-2</em>：参数规模扩大，并使用大规模网页数据集 WebText 进行预训练。GPT-2 旨在探索通过扩大模型参数规模来提升模型性能，并且尝试去除针对特定任务所需要的微调环节。（“无监督多任务学习器”）</p>
+<h4 id="2-4-2-规模扩展"><a href="#2-4-2-规模扩展" class="headerlink" title="2.4.2 规模扩展"></a>2.4.2 规模扩展</h4><p>GPT-3：在 GPT-3 的论文中，它正式提出了“上下文学习”这一概念，使得大语言模型可以通过少样本学习的方式来解决各种任务。上下文学习可以指导大语言模型学会“理解”自然语言文本形式描述的新任务，从而消除了针对新任务进行微调的需要。</p>
+<h4 id="2-4-3-能力增强"><a href="#2-4-3-能力增强" class="headerlink" title="2.4.3 能力增强"></a>2.4.3 能力增强</h4><p>OpenAI 探索了两种主要途径来改进GPT-3 模型，即代码数据训练和人类偏好对齐。</p>
+<h5 id="代码数据训练"><a href="#代码数据训练" class="headerlink" title="代码数据训练"></a>代码数据训练</h5><p>Codex</p>
+<h5 id="人类偏好对齐"><a href="#人类偏好对齐" class="headerlink" title="人类偏好对齐"></a>人类偏好对齐</h5><p>强化学习算法PPO 算法（Proximal Policy Optimization, PPO）</p>
+<p> 将人类对齐算法应用于提升自然语言处理任务上的能力，训练了一个根据人类偏好进行优化的摘要模型</p>
+<p>InstructGPT：旨在改进 GPT-3 模型与人类对齐的能力，正式建立了基于人类反馈的强化学习算法，即 RLHF 算法。</p>
+<p>在 OpenAI 的论文和相关文档中，很少使用“指令微调”（Instruction Tuning）一词，主要是使用“监督微调”一词（即基于人类反馈的强化学习算法的第一步 [28]）。除了提高指令遵循能力，基于人类反馈的强化学习算法有助于缓解有害内容的生成，这对于大语言模型在实际应用中的安全部署非常重要。</p>
+<h4 id="2-4-4-性能跃升"><a href="#2-4-4-性能跃升" class="headerlink" title="2.4.4 性能跃升"></a>2.4.4 性能跃升</h4><p><em>ChatGPT</em></p>
+<p><em>GPT-4</em>：它首次将GPT 系列模型的输入由单一文本模态扩展到了图文双模态。</p>
+<p><em>GPT-4V</em>、<em>GPT-4 Turbo</em>以及多模态支持模型</p>
+<h2 id="第三章-大语言模型资源"><a href="#第三章-大语言模型资源" class="headerlink" title="第三章 大语言模型资源"></a><strong>第三章 大语言模型资源</strong></h2><h3 id="3-1-公开可用的模型检查点或-API"><a href="#3-1-公开可用的模型检查点或-API" class="headerlink" title="3.1 公开可用的模型检查点或 API"></a>3.1 公开可用的模型检查点或 API</h3><p>公开模型检查点：指在机器学习和深度学习模型训练过程中<strong>保存的特定状态的模型参数文件</strong>，这些文件对外部用户和研究人员开放访问。<strong>模型检查点通常包括模型的架构、权重、偏置等参数信息</strong>，使得模型在训练到某个特定阶段时的状态可以被保存、共享和重用。</p>
+<ol>
+<li><strong>模型检查点</strong>：<ul>
+<li>在模型训练过程中，模型的参数（如权重和偏置）会不断更新。为了记录模型在训练过程中不同阶段的状态，可以定期保存这些参数，这就是模型检查点。</li>
+<li>检查点可以用于在训练中途暂停和恢复训练，避免从头开始重复训练，节省时间和计算资源。</li>
+</ul>
+</li>
+<li><strong>公开访问</strong>：<ul>
+<li>公开模型检查点意味着这些保存的模型状态对外部用户和研究人员开放访问。他们可以下载这些检查点，用于各种目的，如模型验证、改进、比较、应用到不同的任务上等。</li>
+</ul>
+</li>
+</ol>
+<h4 id="3-1-1-公开可用的通用大语言模型检查点"><a href="#3-1-1-公开可用的通用大语言模型检查点" class="headerlink" title="3.1.1 公开可用的通用大语言模型检查点"></a><strong>3.1.1</strong> <strong>公开可用的通用大语言模型检查点</strong></h4><p>近年来大语言模型的统计数据，包括预训练数据规模（以词元数量或存储大小表示）和硬件条件等。本表仅列举有公开论文介绍技术细节的模型，其中“发布时间”表示相应论文或技术报告正式发布的日期。“可公开获取”表示模型检查点可以公开获取，而“闭源”则相反。“适配”指模型是否经过了后续微调：IT 表示指令微调，RLHF 表示基于人类反馈的强化学习。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623161333099.png"
+                      alt="image-20240623161333099"
+                ></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623161356024.png"
+                      alt="image-20240623161356024"
+                ></p>
+<h4 id="3-1-2-LLaMA-变体系列"><a href="#3-1-2-LLaMA-变体系列" class="headerlink" title="3.1.2 LLaMA 变体系列"></a>3.1.2 LLaMA 变体系列</h4><h5 id="基础指令"><a href="#基础指令" class="headerlink" title="基础指令"></a>基础指令</h5><p>Stanford Alpaca [42] ：通过使用 Self-Instruct 方法 [74] 借助大语言模型进行自动化的指令生成，Stanford Alpaca 生成了 52K 条指令遵循样例数据（Alpaca-52K）用于训练，其指令数据和训练代码在随后的工作中被广泛采用。</p>
+<p>Vicuna [75]：是使用 ShareGPT 收集的用户日常对话数据进行训练。</p>
+<h5 id="中文指令"><a href="#中文指令" class="headerlink" title="中文指令"></a>中文指令</h5><p>扩展原始词汇表，在中文数据上进行继续预训练，并用中文指令数据对其进行微调。Chinese LLaMA、Panda、Open-Chinese-LLaMA、Chinese Alpaca、YuLan-Chat。</p>
+<h5 id="垂域指令"><a href="#垂域指令" class="headerlink" title="垂域指令"></a>垂域指令</h5><p>LLaMA 虽然展现出了强大的通用基座模型能力，但是在特定的垂直领域（例如医学、教育、法律、数学等）的表现仍然较为局限。</p>
+<p>基于搜集到的垂域相关的指令数据，或者采用垂域知识库以及相关专业文献等借助强大的闭源模型 API（例如 GPT-3.5、GPT-4 等）构建多轮对话数据，并使用这些指令数据对 LLaMA 进行指令微调。</p>
+<h5 id="多模态指令"><a href="#多模态指令" class="headerlink" title="多模态指令"></a>多模态指令</h5><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240624144852007.png"
+                      alt="image-20240624144852007"
+                ></p>
+<p>（巨大的LLaMA PLUS）</p>
+<h4 id="3-1-3-大语言模型的公共-AP"><a href="#3-1-3-大语言模型的公共-AP" class="headerlink" title="3.1.3 大语言模型的公共 AP"></a>3.1.3 大语言模型的公共 AP</h4><h5 id="语言模型-API"><a href="#语言模型-API" class="headerlink" title="语言模型 API"></a>语言模型 <em>API</em></h5><p>GPT-3.5 Turbo 对应的 API 接口为 gpt-3.5-turbo，支持16K 词元的上下文长度。</p>
+<p>GPT-4 对应的 API 接口有 gpt-4（基础版本，没有视觉功能）、gpt-4-32k（将上下文长度扩展到 32K）、gpt-4-vision-preview（带有视觉功能的 GPT-4 多模态版本）。</p>
+<p>GPT-4 Turbo 有更快的生成速度、更长的上下文窗口（最多 128K）以及更低的价格，其最新对应的 API 为 gpt-4-turbo-preview。</p>
+<h5 id="文本表征-API"><a href="#文本表征-API" class="headerlink" title="文本表征 API"></a>文本表征 <em>API</em></h5><p>text-embedding-ada-002：可以提供1,536 维的向量表征，在英文文本表征基准测试 MTEB 获得了 61% 的平均得分；</p>
+<p>text-embedding-3-small :是一个更高效的文本表征模型，同样提供 1,536 维的向量表征。</p>
+<p>text-embedding-3-large： 能够支持高达 3,072 维的向量表征，是三者中目前性能最好的模型，在 MTEB 的平均得分达到了 64.6%。</p>
+<h3 id="3-2-常用的预训练数据集"><a href="#3-2-常用的预训练数据集" class="headerlink" title="3.2 常用的预训练数据集"></a>3.2 常用的预训练数据集</h3><p>根据其内容类型进行分类，这些语料库可以划分为：网页、书籍、维基百科、代码以及混合型数据集。</p>
+<h4 id="3-2-1-网页"><a href="#3-2-1-网页" class="headerlink" title="3.2.1 网页"></a>3.2.1 网页</h4><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240624145415463.png"
+                      alt="image-20240624145415463"
+                ></p>
+<h5 id="Common-Crawl"><a href="#Common-Crawl" class="headerlink" title="Common Crawl."></a><em>Common Crawl.</em></h5><p>该数据集是一个规模庞大的、非结构化的、多语言的网页数据集。在使用前必须进行有效的数据清洗，以确保数据质量和准确性，常用的自动清洗工具有 CCNet 等。（<a class="link"   target="_blank" rel="noopener" href="https://commoncrawl.org/%EF%BC%89" >https://commoncrawl.org/） <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h5 id="C4（Colossal-Clean-Crawled-Corpus）"><a href="#C4（Colossal-Clean-Crawled-Corpus）" class="headerlink" title="C4（Colossal Clean Crawled Corpus）"></a><em>C4</em>（Colossal Clean Crawled Corpus）</h5><p>该数据集是一个大型网页数据集，源自超过 365M 个互联网域，包含超过 156B 词元，数据量约 800GB。子版本：en（英文数据，806G），en.noclean（未清洗的原始数据，6T），realnewslike（仅包含 RealNews 涉及的领域的内容，36G），webtextlike（仅包含来自 OpenWebText 中URLs 的内容，17G）和 multilingual （多语言数据，38T）。（<a class="link"   target="_blank" rel="noopener" href="https://paperswithcode.com/dataset/c4%EF%BC%89" >https://paperswithcode.com/dataset/c4） <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h5 id="CC-Stories"><a href="#CC-Stories" class="headerlink" title="CC-Stories"></a><em>CC-Stories</em></h5><p>该数据集是一个专为常识推理和语言建模构建的故事风格数据集。</p>
+<h5 id="CC-News"><a href="#CC-News" class="headerlink" title="CC-News"></a><em>CC-News</em></h5><h5 id="REALNEWs"><a href="#REALNEWs" class="headerlink" title="REALNEWs"></a><em>REALNEWs</em></h5><h5 id="RedPajama-Data"><a href="#RedPajama-Data" class="headerlink" title="RedPajama-Data"></a><em>RedPajama-Data</em></h5><p>一个多语言数据集，包含 5 种语言：英语、法语、西班牙语、德语和意大利语。此外，还提供了 40 余种预先标注好的数据注释，使下游模型开发者能够根据自己的标准对数据集进行筛选或重新加权。</p>
+<h5 id="RefinedWeb"><a href="#RefinedWeb" class="headerlink" title="RefinedWeb"></a><em>RefinedWeb</em></h5><p>是一个在 Common Crawl 数据的基础上通过严格筛选和去重得到的网络数据集。</p>
+<h5 id="WanJuan-CC"><a href="#WanJuan-CC" class="headerlink" title="WanJuan-CC"></a><em>WanJuan-CC</em></h5><p>高质量英文数据集。通过启发式规则过滤、多层级数据去重、内容安全过滤、数据质量过滤等四个步骤，最终从约 130B 份原始数据文档中萃取出约 1.38% 的高质量内容。</p>
+<h5 id="WebText-未开源"><a href="#WebText-未开源" class="headerlink" title="WebText(未开源)"></a><em>WebText</em>(未开源)</h5><p>由 OpenAI 构建的一个专注于文档质量的网络文本语料库，它通过抓取 Reddit 上获得至少 3 个赞的外链得到。</p>
+<h5 id="OpenWebText"><a href="#OpenWebText" class="headerlink" title="OpenWebText"></a><em>OpenWebText</em></h5><p>WebText 的一个复现开源版本</p>
+<h5 id="ChineseWebText"><a href="#ChineseWebText" class="headerlink" title="ChineseWebText"></a><em>ChineseWebText</em></h5><p>配套推出了一款名为 EvalWeb 的数据清洗工具，方便研究人员根据需求清洗数据。</p>
+<h5 id="WanJuan-1-0-Text"><a href="#WanJuan-1-0-Text" class="headerlink" title="WanJuan 1.0 Text"></a><em>WanJuan 1.0 Text</em></h5><h5 id="WuDaoCorpora-Text"><a href="#WuDaoCorpora-Text" class="headerlink" title="WuDaoCorpora Text"></a><em>WuDaoCorpora Text</em></h5><h5 id="SkyPile-150B"><a href="#SkyPile-150B" class="headerlink" title="SkyPile-150B"></a><em>SkyPile-150B</em></h5><h4 id="3-2-2-书籍"><a href="#3-2-2-书籍" class="headerlink" title="3.2.2 书籍"></a>3.2.2 书籍</h4><h5 id="BookCorpus"><a href="#BookCorpus" class="headerlink" title="BookCorpus"></a><em>BookCorpus</em></h5><p>该数据集原始数据集不再公开，但多伦多大学创建了一个镜像版本 BookCorpusOpen，可在 Hugging Face 上进行下载，该版本包含了共计 17,868 本书籍，本地存储大概需要 9GB 左右。</p>
+<h5 id="Project-Gutenberg"><a href="#Project-Gutenberg" class="headerlink" title="Project Gutenberg"></a><em>Project Gutenberg</em></h5><p>拥有 70K 部免费电子书的在线图书馆。</p>
+<h5 id="arXiv-Dataset"><a href="#arXiv-Dataset" class="headerlink" title="arXiv Dataset"></a><em>arXiv Dataset</em></h5><p>收录了众多领域预印本论文的网站。广泛涵盖了物理、数学和计算机科学等领域的论文文献，共包含约1.7M 篇预印本文章，每篇预印本都包含文本、图表、作者、引文、分类以及其他元数据等信息，总数据量约为 1.1TB，并在 Kaggle 上提供了公开下载。</p>
+<h5 id="S2ORC"><a href="#S2ORC" class="headerlink" title="S2ORC"></a><em>S2ORC</em></h5><p>该数据集源于学术搜索引擎 Semantic Scholar 上的学术论文，这些论文经过了清洗、过滤并被处理成适合预训练的格式。。衍生数据集 peS2o。</p>
+<h4 id="3-2-3-维基百科"><a href="#3-2-3-维基百科" class="headerlink" title="3.2.3 维基百科"></a>3.2.3 维基百科</h4><p>除了通过维基百科的官方提供的下载方式4，Hugging Face 上也有相应的维基百科数据集。（<a class="link"   target="_blank" rel="noopener" href="https://huggingface.co/datasets/wikipedia%EF%BC%89" >https://huggingface.co/datasets/wikipedia） <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h4 id="3-2-4-代码"><a href="#3-2-4-代码" class="headerlink" title="3.2.4 代码"></a>3.2.4 代码</h4><p>为了收集代码数据，现有的工作主要从互联网上爬取具有开源许可的代码。两个主要来源是公共代码仓库（例如 GitHub）和代码相关的问答平台（例如 StackOverflow）。</p>
+<h5 id="BigQuery"><a href="#BigQuery" class="headerlink" title="BigQuery"></a><em>BigQuery</em></h5><p>BigQuery 是一个谷歌发布的企业数据仓库，包含了众多领域的公共数据集，如社交、经济、医疗、代码等。其中的代码类数据覆盖各种编程语言，可以作为高质量的代码预训练语料。</p>
+<h5 id="The-Stack"><a href="#The-Stack" class="headerlink" title="The Stack"></a><em>The Stack</em></h5><p>该数据集由 Hugging Face 收集并发布，是一个涵盖了 30 种编程语言的代码数据集，其数据来源于 GHArchive 项目中 2015 年 1 月 1 日至 2022年 3 月 31 日期间的 GitHub 活跃仓库。</p>
+<h5 id="StarCoder"><a href="#StarCoder" class="headerlink" title="StarCoder"></a><em>StarCoder</em></h5><p>该数据集是 BigCode 围绕 The Stack v1.2 进一步处理得到的代码数据集，是同名模型 StarCoder 的预训练数据。</p>
+<h4 id="3-2-5-混合型数据集"><a href="#3-2-5-混合型数据集" class="headerlink" title="3.2.5 混合型数据集"></a>3.2.5 混合型数据集</h4><h5 id="The-Pile"><a href="#The-Pile" class="headerlink" title="The Pile"></a><em>The Pile</em></h5><p>该数据集是一个大规模、多样化且可公开下载的文本数据集，由超过 800GB 的数据组成，数据来源非常广泛，包括书籍、网站、代码、科学论文和社交媒体数据等。</p>
+<h5 id="ROOTS"><a href="#ROOTS" class="headerlink" title="ROOTS"></a><em>ROOTS</em></h5><p>该数据集是一个涵盖了 59 种不同语言的多源多语数据集。该数据集主要由两部分组成：约 62% 的数据来源于整理好的自然语言处理数据集及相关文档、利用 Common Crawl 收集的网页数据以及 GitHub 代码数据，约 38% 的数据来源于一个网页爬虫项目 OSCAR，并对其进行了内容过滤、去重和个人信息移除。</p>
+<h5 id="Dolma"><a href="#Dolma" class="headerlink" title="Dolma"></a><em>Dolma</em></h5><p>该数据集也包含了多种数据源，包括来自 Common Crawl 的网络文本、Semantic Scholar 学术论文、GitHub 代码、书籍、Reddit 的社交媒体帖子以及维基百科数据，由来自大约 200TB 原始文本的 3T 个词元组成。</p>
+<p>在 Dolma 的处理过程中，发布团队同时创建了一个高性能工具包，实现了四种常用的数据清洗和过滤方法：语言过滤、质量过滤、内容过滤以及去重。</p>
+<h3 id="3-3-常用微调数据集"><a href="#3-3-常用微调数据集" class="headerlink" title="3.3 常用微调数据集"></a>3.3 常用微调数据集</h3><h4 id="3-3-1-指令微调数据集"><a href="#3-3-1-指令微调数据集" class="headerlink" title="3.3.1 指令微调数据集"></a>3.3.1 指令微调数据集</h4><p>根据格式化指令实例的构建方法将它们分为三种主要类型，即自然语s言处理任务数据集、日常对话数据集和合成数据集。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240624152329540.png"
+                      alt="image-20240624152329540"
+                ></p>
+<h5 id="自然语言处理任务数据集"><a href="#自然语言处理任务数据集" class="headerlink" title="自然语言处理任务数据集"></a>自然语言处理任务数据集</h5><p><strong>P3</strong>：面向英文数据的指令微调数据集</p>
+<p><strong>FLAN</strong>：现在俗称的 FLAN 实际上是指 FLAN-v2，主要由四个子集 Muffin、NIV2、T0-SF 和 CoT 构成。</p>
+<h5 id="日常对话数据集"><a href="#日常对话数据集" class="headerlink" title="日常对话数据集"></a>日常对话数据集</h5><p><strong>ShareGPT [38]、OpenAssistant [104] 和 Dolly [105]</strong></p>
+<h5 id="合成数据集"><a href="#合成数据集" class="headerlink" title="合成数据集"></a>合成数据集</h5><p><strong>Self-Instruct-52K [74] 和 Alpaca-52K [42]</strong> </p>
+<h4 id="3-3-2-人类对齐数据集"><a href="#3-3-2-人类对齐数据集" class="headerlink" title="3.3.2 人类对齐数据集"></a>3.3.2 人类对齐数据集</h4><p>除了指令微调之外，将大语言模型与人类价值观和偏好对齐也非常重要。现有的对齐目标一般聚焦于三个方面：<strong>有用性、诚实性和无害性</strong>。</p>
+<p>**HH-RLHF [106]、SHP [107]、PKU-SafeRLHF [108]、Stack Exchange Preferences [109]、Sandbox Alignment Data [110] 和 CValues [110]**。</p>
+<h3 id="3-4-代码库资源"><a href="#3-4-代码库资源" class="headerlink" title="3.4 代码库资源"></a>3.4 代码库资源</h3><h4 id="3-4-1-Hugging-Face-开源社区"><a href="#3-4-1-Hugging-Face-开源社区" class="headerlink" title="3.4.1 Hugging Face 开源社区"></a>3.4.1 Hugging Face 开源社区</h4><p>Hugging Face 是一个致力于推动自然语言处理技术进步的开源社区，专注于为研究人员和工程师提供高效、易用且可重复的自然语言处理技术解决方案。这些解决方案既包括基础的技术流程，如预训练和微调，也涉及具体的应用任务，包括对话系统、翻译等。Hugging Face 平台上的代码大部分基于目前主流的深度学习框架实现完成的，如 PyTorch 和 TensorFlow。为了满足广泛的研究与应用需求，Hugging Face 发布了一系列代码库，包括 Transformers 、Datasets 和 Accelerate 等。</p>
+<h5 id="Transformers"><a href="#Transformers" class="headerlink" title="Transformers"></a><em>Transformers</em></h5><h5 id="DATAsets"><a href="#DATAsets" class="headerlink" title="DATAsets"></a><em>DATAsets</em></h5><p>该代码库用于高效访问和共享自然语言处理任务相关的数据集，可以快速从远程 Hugging Face Hub 中加载数据集到本地。</p>
+<h5 id="Accelerate"><a href="#Accelerate" class="headerlink" title="Accelerate"></a><em>Accelerate</em></h5><p>该代码库是一个旨在简化模型分布式训练和混合精度训练的Python 库，专门针对 PyTorch 开发。Accelerate 库全面支持分布式训练，实现了混合精度训练，并完善了并行训练时多设备的自动管理。</p>
+<h4 id="3-4-2-DeepSpeed"><a href="#3-4-2-DeepSpeed" class="headerlink" title="3.4.2 DeepSpeed"></a>3.4.2 DeepSpeed</h4><p>是微软开发的一个加速深度学习模型训练的高性能库（与 PyTorch兼容），被广泛用于大语言模型的分布式训练，例如 MT-NLG [90] 和 BLOOM [100]等。</p>
+<p>DeepSpeed 针对模型生成和强化学习分别开发了特制的优化框架：DeepSpeed-MII 和 DeepSpeed-Chat。</p>
+<h5 id="DeepSpeed-MII"><a href="#DeepSpeed-MII" class="headerlink" title="DeepSpeed-MII"></a>DeepSpeed-MII</h5><h5 id="DeepSpeed-Chat"><a href="#DeepSpeed-Chat" class="headerlink" title="DeepSpeed-Chat"></a>DeepSpeed-Chat</h5><h4 id="3-4-3-Megatron-LM"><a href="#3-4-3-Megatron-LM" class="headerlink" title="3.4.3 Megatron-LM"></a>3.4.3 Megatron-LM</h4><p>是由 NVIDIA 开发的一款专门为训练大语言模型而设计的深度学习代码库。这个代码库旨在解决大型模型训练过程中所遇到的一系列技术挑战，包括显存限制、计算效率以及不同的并行策略带来的通信问题。</p>
+<h4 id="3-4-4-本书配套资源说明"><a href="#3-4-4-本书配套资源说明" class="headerlink" title="3.4.4 本书配套资源说明"></a>3.4.4 本书配套资源说明</h4><p><em>LLMSurvey</em>：<a class="link"   target="_blank" rel="noopener" href="https://arxiv.org/abs/2303.18223" >https://arxiv.org/abs/2303.18223 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>大模型综述资源网站：<a class="link"   target="_blank" rel="noopener" href="https://github.com/RUCAIBox/LLMSurvey/" >https://github.com/RUCAIBox/LLMSurvey/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>YuLan模型</p>
+<p>LLMBOX</p>
+<h1 id="第二部分-预训练"><a href="#第二部分-预训练" class="headerlink" title="第二部分 预训练"></a><strong>第二部分 预训练</strong></h1><h2 id="第四章-数据准备"><a href="#第四章-数据准备" class="headerlink" title="第四章 数据准备"></a>第四章 数据准备</h2><p>4.1 数据来源 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 57</p>
+<p>4.1.1 通用文本数据 . . . . . . . . . . . . . . . . . . . . . . . . . . . . 57</p>
+<p>4.1.2 专用文本数据 . . . . . . . . . . . . . . . . . . . . . . . . . . . . 59</p>
+<p>4.2 数据预处理 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 60</p>
+<p>4.2.1 质量过滤 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 60</p>
+<p>4.2.2 敏感内容过滤 . . . . . . . . . . . . . . . . . . . . . . . . . . . . 63</p>
+<p>4.2.3 数据去重 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 64</p>
+<p>4.2.4 数据对预训练效果的影响 . . . . . . . . . . . . . . . . . . . . . 65</p>
+<p>4.2.5 数据预处理实践 . . . . . . . . . . . . . . . . . . . . . . . . . . . 68</p>
+<p>4.3 词元化（分词） . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 704.3.1 BPE 分词 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 71</p>
+<p>4.3.2 WordPiece 分词 . . . . . . . . . . . . . . . . . . . . . . . . . . . 74</p>
+<p>4.3.3 Unigram 分词 . . . . . . . . . . . . . . . . . . . . . . . . . . . . 74</p>
+<p>4.3.4 分词器的选用 . . . . . . . . . . . . . . . . . . . . . . . . . . . . 75</p>
+<p>4.4 数据调度 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 75</p>
+<p>4.4.1 数据混合 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 76</p>
+<p>4.4.2 数据课程 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 77</p>
+<p>4.4.3 预训练数据准备概述——以 YuLan 模型为例 . . . . . . . . . . . 79</p>
+<p><strong>第五章 模型架构</strong> </p>
+<p><strong>81</strong></p>
+<p>5.1 Transformer 模型 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 82</p>
+<p>5.1.1 输入编码 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 82</p>
+<p>5.1.2 多头自注意力机制 . . . . . . . . . . . . . . . . . . . . . . . . . 83</p>
+<p>5.1.3 前馈网络层 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 84</p>
+<p>5.1.4 编码器 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 85</p>
+<p>5.1.5 解码器 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 85</p>
+<p>5.2 详细配置 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 86</p>
+<p>5.2.1 归一化方法 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 86</p>
+<p>5.2.2 归一化模块位置 . . . . . . . . . . . . . . . . . . . . . . . . . . . 88</p>
+<p>5.2.3 激活函数 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 89</p>
+<p>5.2.4 位置编码 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 90</p>
+<p>5.2.5 注意力机制 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 94</p>
+<p>5.2.6 混合专家模型 . . . . . . . . . . . . . . . . . . . . . . . . . . . . 96</p>
+<p>5.2.7 LLaMA 的详细配置 . . . . . . . . . . . . . . . . . . . . . . . . . 97</p>
+<p>5.3 主流架构 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 100</p>
+<p>5.3.1 编码器-解码器架构 . . . . . . . . . . . . . . . . . . . . . . . . . 100</p>
+<p>5.3.2 因果解码器架构 . . . . . . . . . . . . . . . . . . . . . . . . . . . 101</p>
+<p>5.3.3 前缀解码器架构 . . . . . . . . . . . . . . . . . . . . . . . . . . . 101</p>
+<p>5.4 长上下文模型 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 101</p>
+<p>5.4.1 扩展位置编码 . . . . . . . . . . . . . . . . . . . . . . . . . . . . 102</p>
+<p>5.4.2 调整上下文窗口 . . . . . . . . . . . . . . . . . . . . . . . . . . . 105</p>
+<p>5.4.3 长文本数据 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1075.5 新型模型架构 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 108</p>
+<p>5.5.1 参数化状态空间模型 . . . . . . . . . . . . . . . . . . . . . . . . 108</p>
+<p>5.5.2 状态空间模型变种 . . . . . . . . . . . . . . . . . . . . . . . . . 109</p>
+<h2 id="第六章-模型预训练"><a href="#第六章-模型预训练" class="headerlink" title="第六章 模型预训练"></a><strong>第六章 模型预训练</strong></h2><p><strong>112</strong></p>
+<p>6.1 预训练任务 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 112</p>
+<p>6.1.1 语言建模 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 112</p>
+<p>6.1.2 去噪自编码 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 115</p>
+<p>6.1.3 混合去噪器 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 116</p>
+<p>6.2 优化参数设置 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 116</p>
+<p>6.2.1 基于批次数据的训练 . . . . . . . . . . . . . . . . . . . . . . . . 116</p>
+<p>6.2.2 学习率 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 117</p>
+<p>6.2.3 优化器 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 118</p>
+<p>6.2.4 稳定优化技术 . . . . . . . . . . . . . . . . . . . . . . . . . . . . 119</p>
+<p>6.3 可扩展的训练技术 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 119</p>
+<p>6.3.1 3D 并行训练 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 119</p>
+<p>6.3.2 零冗余优化器 . . . . . . . . . . . . . . . . . . . . . . . . . . . . 121</p>
+<p>6.3.3 激活重计算 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 122</p>
+<p>6.3.4 混合精度训练 . . . . . . . . . . . . . . . . . . . . . . . . . . . . 122</p>
+<p>6.4 模型参数量计算与效率分析 . . . . . . . . . . . . . . . . . . . . . . . . 123</p>
+<p>6.4.1 参数量计算 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 123</p>
+<p>6.4.2 训练运算量估计 . . . . . . . . . . . . . . . . . . . . . . . . . . . 124</p>
+<p>6.4.3 训练时间估计 . . . . . . . . . . . . . . . . . . . . . . . . . . . . 126</p>
+<p>6.4.4 训练显存估计 . . . . . . . . . . . . . . . . . . . . . . . . . . . . 126</p>
+<p>6.5 预训练代码实践 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 130</p>
+<h1 id="第三部分-微调与对齐"><a href="#第三部分-微调与对齐" class="headerlink" title="第三部分 微调与对齐"></a><strong>第三部分 微调与对齐</strong></h1><p><strong>135</strong></p>
+<p><strong>第七章 指令微调</strong> </p>
+<p><strong>136</strong></p>
+<p>7.1 指令数据的构建 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 136</p>
+<p>7.1.1 基于现有的 NLP 任务数据集构建 . . . . . . . . . . . . . . . . . 136</p>
+<p>7.1.2 基于日常对话数据构建 . . . . . . . . . . . . . . . . . . . . . . . 1387.1.3 基于合成数据构建 . . . . . . . . . . . . . . . . . . . . . . . . . 139</p>
+<p>7.1.4 指令数据构建的提升方法 . . . . . . . . . . . . . . . . . . . . . 142</p>
+<p>7.1.5 指令微调的作用 . . . . . . . . . . . . . . . . . . . . . . . . . . . 144</p>
+<p>7.2 指令微调的训练策略 . . . . . . . . . . . . . . . . . . . . . . . . . . . . 145</p>
+<p>7.2.1 优化设置 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 146</p>
+<p>7.2.2 数据组织策略 . . . . . . . . . . . . . . . . . . . . . . . . . . . . 146</p>
+<p>7.3 参数高效的模型微调 . . . . . . . . . . . . . . . . . . . . . . . . . . . . 148</p>
+<p>7.3.1 低秩适配微调方法 . . . . . . . . . . . . . . . . . . . . . . . . . 148</p>
+<p>7.3.2 其他高效微调方法 . . . . . . . . . . . . . . . . . . . . . . . . . 150</p>
+<p>7.4 代码实践与分析 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 153</p>
+<p>7.4.1 指令微调的代码实践 . . . . . . . . . . . . . . . . . . . . . . . . 153</p>
+<p>7.4.2 指令微调的实验性分析 . . . . . . . . . . . . . . . . . . . . . . . 157</p>
+<p>7.4.3 LoRA 代码实践与分析 . . . . . . . . . . . . . . . . . . . . . . . 160</p>
+<p><strong>第八章 人类对齐</strong> </p>
+<p><strong>164</strong></p>
+<p>8.1 人类对齐的背景与标准 . . . . . . . . . . . . . . . . . . . . . . . . . . . 164</p>
+<p>8.1.1 背景 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 164</p>
+<p>8.1.2 对齐标准 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 166</p>
+<p>8.2 基于人类反馈的强化学习 . . . . . . . . . . . . . . . . . . . . . . . . . 167</p>
+<p>8.2.1 RLHF 概述 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 167</p>
+<p>8.2.2 人类反馈数据的收集 . . . . . . . . . . . . . . . . . . . . . . . . 169</p>
+<p>8.2.3 奖励模型的训练 . . . . . . . . . . . . . . . . . . . . . . . . . . . 171</p>
+<p>8.2.4 强化学习训练 . . . . . . . . . . . . . . . . . . . . . . . . . . . . 175</p>
+<p>8.2.5 代表性 RLHF 工作介绍 . . . . . . . . . . . . . . . . . . . . . . . 181</p>
+<p>8.2.6 进阶 RLHF 工作介绍 . . . . . . . . . . . . . . . . . . . . . . . . 183</p>
+<p>8.3 非强化学习的对齐方法 . . . . . . . . . . . . . . . . . . . . . . . . . . . 185</p>
+<p>8.3.1 对齐数据的收集 . . . . . . . . . . . . . . . . . . . . . . . . . . . 186</p>
+<p>8.3.2 代表性监督对齐算法 DPO . . . . . . . . . . . . . . . . . . . . . 187</p>
+<p>8.3.3 其他有监督对齐算法 . . . . . . . . . . . . . . . . . . . . . . . . 193</p>
+<p>8.4 关于 SFT 和 RLHF 的进一步讨论 . . . . . . . . . . . . . . . . . . . . . 194</p>
+<p>8.4.1 基于学习方式的总体比较 . . . . . . . . . . . . . . . . . . . . . 195</p>
+<p>8.4.2 SFT 的优缺点 . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1968.4.3 RLHF 的优缺点 . . . . . . . . . . . . . . . . . . . . . . . . . . . 196</p>
+<h1 id="第四部分-大模型使用"><a href="#第四部分-大模型使用" class="headerlink" title="第四部分 大模型使用"></a><strong>第四部分 大模型使用</strong></h1><p><strong>198</strong></p>
+<p><strong>第九章 解码与部署</strong> </p>
+<p><strong>199</strong></p>
+<p>9.1 解码策略 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 199</p>
+<p>9.1.1 背景 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 199</p>
+<p>9.1.2 贪心搜索的改进 . . . . . . . . . . . . . . . . . . . . . . . . . . . 201</p>
+<p>9.1.3 随机采样的改进策略 . . . . . . . . . . . . . . . . . . . . . . . . 202</p>
+<p>9.1.4 实际使用设置 . . . . . . . . . . . . . . . . . . . . . . . . . . . . 204</p>
+<p>9.2 解码加速算法 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 205</p>
+<p>9.2.1 解码效率分析 . . . . . . . . . . . . . . . . . . . . . . . . . . . . 206</p>
+<p>9.2.2 系统级优化 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 210</p>
+<p>9.2.3 解码策略优化 . . . . . . . . . . . . . . . . . . . . . . . . . . . . 211</p>
+<p>9.2.4 解码代码实践 . . . . . . . . . . . . . . . . . . . . . . . . . . . . 213</p>
+<p>9.3 低资源部署策略 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 215</p>
+<p>9.3.1 量化基础知识 . . . . . . . . . . . . . . . . . . . . . . . . . . . . 216</p>
+<p>9.3.2 大模型训练后量化方法 . . . . . . . . . . . . . . . . . . . . . . . 219</p>
+<p>9.3.3 经验性分析与相关结论 . . . . . . . . . . . . . . . . . . . . . . . 224</p>
+<p>9.4 其他模型压缩方法 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 226</p>
+<p>9.4.1 模型蒸馏 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 227</p>
+<p>9.4.2 模型剪枝 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 229</p>
+<p><strong>第十章 提示学习</strong> </p>
+<p><strong>233</strong></p>
+<p>10.1 基础提示 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 233</p>
+<p>10.1.1 人工提示设计 . . . . . . . . . . . . . . . . . . . . . . . . . . . 233</p>
+<p>10.1.2 自动提示优化 . . . . . . . . . . . . . . . . . . . . . . . . . . . 240</p>
+<p>10.2 上下文学习 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 243</p>
+<p>10.2.1 上下文学习的形式化定义 . . . . . . . . . . . . . . . . . . . . . 243</p>
+<p>10.2.2 示例设计 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 244</p>
+<p>10.2.3 底层机制 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 248</p>
+<p>10.3 思维链提示 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25110.3.1 思维链提示的基本形式 . . . . . . . . . . . . . . . . . . . . . . 251</p>
+<p>10.3.2 思维链提示的优化策略 . . . . . . . . . . . . . . . . . . . . . . 252</p>
+<p>10.3.3 关于思维链的进一步讨论 . . . . . . . . . . . . . . . . . . . . . 255</p>
+<p><strong>第十一章 规划与智能体</strong> </p>
+<p><strong>258</strong></p>
+<p>11.1 基于大语言模型的规划 . . . . . . . . . . . . . . . . . . . . . . . . . . 258</p>
+<p>11.1.1 整体框架 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 258</p>
+<p>11.1.2 方案生成 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 259</p>
+<p>11.1.3 反馈获取 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 263</p>
+<p>11.2 基于大语言模型的智能体 . . . . . . . . . . . . . . . . . . . . . . . . . 264</p>
+<p>11.2.1 智能体概述 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 264</p>
+<p>11.2.2 大语言模型智能体的构建 . . . . . . . . . . . . . . . . . . . . . 265</p>
+<p>11.2.3 多智能体系统的构建 . . . . . . . . . . . . . . . . . . . . . . . 268</p>
+<p>11.2.4 大语言模型智能体的典型应用 . . . . . . . . . . . . . . . . . . 270</p>
+<p>11.2.5 待解决的关键技术问题 . . . . . . . . . . . . . . . . . . . . . . 271</p>
+<h1 id="第五部分-评测与应用"><a href="#第五部分-评测与应用" class="headerlink" title="第五部分 评测与应用"></a><strong>第五部分 评测与应用</strong></h1><p><strong>274</strong></p>
+<p><strong>第十二章 评测</strong> </p>
+<p><strong>275</strong></p>
+<p>12.1 评测指标与评测方法 . . . . . . . . . . . . . . . . . . . . . . . . . . . 275</p>
+<p>12.1.1 常见评测指标 . . . . . . . . . . . . . . . . . . . . . . . . . . . 275</p>
+<p>12.1.2 评测范式与方法 . . . . . . . . . . . . . . . . . . . . . . . . . . 281</p>
+<p>12.2 基础能力评测 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 285</p>
+<p>12.2.1 语言生成 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 285</p>
+<p>12.2.2 知识利用 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 291</p>
+<p>12.2.3 复杂推理 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 297</p>
+<p>12.3 高级能力评测 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 304</p>
+<p>12.3.1 人类对齐 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 304</p>
+<p>12.3.2 环境交互 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 307</p>
+<p>12.3.3 工具使用 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 308</p>
+<p>12.4 公开综合评测体系 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 311</p>
+<p>12.4.1 MMLU . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31112.4.2 BIG-Bench . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 312</p>
+<p>12.4.3 HELM . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 313</p>
+<p>12.4.4 C-Eval . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 314</p>
+<p>12.4.5 其他评测数据集与资源 . . . . . . . . . . . . . . . . . . . . . . 315</p>
+<p>12.4.6 公开评测资源选择参考 . . . . . . . . . . . . . . . . . . . . . . 317</p>
+<p>12.4.7 评测代码实践 . . . . . . . . . . . . . . . . . . . . . . . . . . . 318</p>
+<p><strong>第十三章 应用</strong> </p>
+<p><strong>320</strong></p>
+<p>13.1 大语言模型在研究领域的应用 . . . . . . . . . . . . . . . . . . . . . . 320</p>
+<p>13.1.1 传统自然语言处理任务中的大语言模型 . . . . . . . . . . . . . 320</p>
+<p>13.1.2 信息检索中的大语言模型 . . . . . . . . . . . . . . . . . . . . . 322</p>
+<p>13.1.3 推荐系统中的大语言模型 . . . . . . . . . . . . . . . . . . . . . 326</p>
+<p>13.1.4 多模态大语言模型 . . . . . . . . . . . . . . . . . . . . . . . . . 329</p>
+<p>13.1.5 知识图谱增强的大语言模型 . . . . . . . . . . . . . . . . . . . 333</p>
+<p>13.2 大语言模型在专业领域的应用 . . . . . . . . . . . . . . . . . . . . . . 336</p>
+<p>13.2.1 医疗场景下的大语言模型 . . . . . . . . . . . . . . . . . . . . . 336</p>
+<p>13.2.2 教育场景下的大语言模型 . . . . . . . . . . . . . . . . . . . . . 339</p>
+<p>13.2.3 法律场景下的大语言模型 . . . . . . . . . . . . . . . . . . . . . 340</p>
+<p>13.2.4 金融场景下的大语言模型 . . . . . . . . . . . . . . . . . . . . . 341</p>
+<p>13.2.5 科学研究场景下的大语言模型 </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/06/24/THE%20CHINESE%20BOOK%20FOR%20LARGE%20LANGUAGE/" data-id="clxygvmpi0001p4uahq0eh95v" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/06/23/hello-world/" class="article-date">
+  <time class="dt-published" datetime="2024-06-23T08:54:20.679Z" itemprop="datePublished">2024-06-23</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/06/23/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html" >Writing <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/server.html" >Server <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html" >Generating <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><div class="highlight-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></div>
+
+<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html" >Deployment <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/06/23/hello-world/" data-id="clxygvmpk0003p4uafumu0pqe" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CRYPTO/" rel="tag">CRYPTO</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/CRYPTO/" style="font-size: 10px;">CRYPTO</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/06/">June 2024</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2024/06/24/%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86FHE/">同态加密FHE</a>
+          </li>
+        
+          <li>
+            <a href="/2024/06/24/THE%20CHINESE%20BOOK%20FOR%20LARGE%20LANGUAGE/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2024/06/23/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2024 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
