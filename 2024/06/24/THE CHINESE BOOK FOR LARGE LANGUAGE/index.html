@@ -1,16 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="第一部分 背景与基础知识第一章 引言1.1 语言模型的发展历程统计语言模型：基于统计学习方法（马尔科夫假设） 神经语言模型 预训练语言模型（PLM） 大语言模型（LLM） （语言建模到任务求解） 1.2 大语言模型的能力特点具有较为丰富的世界知识 具有较强的通用任务解决能力：基于大规模无标注文本的下一个词元预测任务（多任务学习过程） 具有较强的人类指令遵循能力（预训练和微调） 具有较好的人类对齐能">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    
+    <meta name="author" content="YIWEI WU">
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="https://sonder730.github.io/2024/06/24/the chinese book for large language/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    
+        <meta name="description" content="第一部分 背景与基础知识第一章 引言1.1 语言模型的发展历程统计语言模型：基于统计学习方法（马尔科夫假设） 神经语言模型 预训练语言模型（PLM） 大语言模型（LLM） （语言建模到任务求解） 1.2 大语言模型的能力特点具有较为丰富的世界知识 具有较强的通用任务解决能力：基于大规模无标注文本的下一个词元预测任务（多任务学习过程） 具有较强的人类指令遵循能力（预训练和微调） 具有较好的人类对齐能">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/2024/06/24/THE%20CHINESE%20BOOK%20FOR%20LARGE%20LANGUAGE/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:title" content="RUN FOR WHERE">
+<meta property="og:url" content="https://sonder730.github.io/2024/06/24/THE%20CHINESE%20BOOK%20FOR%20LARGE%20LANGUAGE/index.html">
+<meta property="og:site_name" content="RUN FOR WHERE">
 <meta property="og:description" content="第一部分 背景与基础知识第一章 引言1.1 语言模型的发展历程统计语言模型：基于统计学习方法（马尔科夫假设） 神经语言模型 预训练语言模型（PLM） 大语言模型（LLM） （语言建模到任务求解） 1.2 大语言模型的能力特点具有较为丰富的世界知识 具有较强的通用任务解决能力：基于大规模无标注文本的下一个词元预测任务（多任务学习过程） 具有较强的人类指令遵循能力（预训练和微调） 具有较好的人类对齐能">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="c:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623133834730.png">
@@ -26,188 +38,537 @@
 <meta property="og:image" content="c:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240624152329540.png">
 <meta property="article:published_time" content="2024-06-23T17:53:52.401Z">
 <meta property="article:modified_time" content="2024-06-24T07:53:59.300Z">
-<meta property="article:author" content="John Doe">
+<meta property="article:author" content="YIWEI WU">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="c:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623133834730.png">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-  
+    
+    
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/images/favicon.png" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.png">
+    <meta name="theme-color" content="#A31F34">
+    <link rel="shortcut icon" href="/images/favicon.png">
+    <!--- Page Info-->
+    
+    <title>
+        
+        RUN FOR WHERE
+    </title>
+
+    
+<link rel="stylesheet" href="/fonts/Chillax/chillax.css">
+
+
+    <!--- Inject Part-->
+    
+
+    
 <link rel="stylesheet" href="/css/style.css">
 
-  
+
     
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+        
+<link rel="stylesheet" href="/assets/build/styles.css">
 
-  
-  
-<meta name="generator" content="Hexo 7.2.0"><style>mjx-container[jax="SVG"] {
-  direction: ltr;
-}
+    
 
-mjx-container[jax="SVG"] > svg {
-  overflow: visible;
-}
+    
+<link rel="stylesheet" href="/fonts/GeistMono/geist-mono.css">
 
-mjx-container[jax="SVG"][display="true"] {
-  display: block;
-  text-align: center;
-  margin: 1em 0;
-}
+    
+<link rel="stylesheet" href="/fonts/Geist/geist.css">
 
-mjx-container[jax="SVG"][justify="left"] {
-  text-align: left;
-}
+    <!--- Font Part-->
+    
+    
+    
+    
 
-mjx-container[jax="SVG"][justify="right"] {
-  text-align: right;
-}
+    
+        
+<script src="/js/libs/anime.min.js"></script>
 
-g[data-mml-node="merror"] > g {
-  fill: red;
-  stroke: red;
-}
+    
 
-g[data-mml-node="merror"] > rect[data-background] {
-  fill: yellow;
-  stroke: none;
-}
+    <script id="hexo-configurations">
+    window.config = {"hostname":"sonder730.github.io","root":"/","language":"en"};
+    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"title_alignment":"left","headings_top_spacing":{"h1":"3.2rem","h2":"2.4rem","h3":"1.9rem","h4":"1.6rem","h5":"1.4rem","h6":"1.3rem"}},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":true,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc_sa"},"lazyload":true,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null,"default_mode":"light"},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":true,"open_graph":true,"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"RUN FOR WHERE","subtitle":{"text":["Gloria!Euphoria!"],"hitokoto":{"enable":true,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":true,"style":"default","links":{"github":"https://github.com/SONDER730","instagram":null,"zhihu":null,"twitter":null,"email":null},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null,"lrc":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.6.4","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"width":{"home":"1200px","pages":"1000px"},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"Archives":{"path":"/archives","icon":"fa-regular fa-archive"},"About":{"icon":"fa-regular fa-user","submenus":{"Github":"https://github.com/SONDER730"}}},"search":{"enable":false,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur","categories_style":"list"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":null,"show_on_mobile":true,"links":{"Archives":{"path":"/archives","icon":"fa-regular fa-archive"},"Tags":{"path":"/tags","icon":"fa-regular fa-tags"},"Categories":{"path":"/categories","icon":"fa-regular fa-folder"}}},"article_date_format":"auto","categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2024/6/23 18:06:14"};
+    window.lang_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+    window.data = {"masonry":false};
+  </script>
+    
+    <!--- Fontawesome Part-->
+    
+<link rel="stylesheet" href="/fontawesome/fontawesome.min.css">
 
-g[data-mml-node="mtable"] > line[data-line] {
-  stroke-width: 70px;
-  fill: none;
-}
+    
+<link rel="stylesheet" href="/fontawesome/brands.min.css">
 
-g[data-mml-node="mtable"] > rect[data-frame] {
-  stroke-width: 70px;
-  fill: none;
-}
+    
+<link rel="stylesheet" href="/fontawesome/solid.min.css">
 
-g[data-mml-node="mtable"] > .mjx-dashed {
-  stroke-dasharray: 140;
-}
+    
+<link rel="stylesheet" href="/fontawesome/regular.min.css">
 
-g[data-mml-node="mtable"] > .mjx-dotted {
-  stroke-linecap: round;
-  stroke-dasharray: 0,140;
-}
+    
+    
+    
+    
+<meta name="generator" content="Hexo 7.2.0"></head>
 
-g[data-mml-node="mtable"] > svg {
-  overflow: visible;
-}
-
-[jax="SVG"] mjx-tool {
-  display: inline-block;
-  position: relative;
-  width: 0;
-  height: 0;
-}
-
-[jax="SVG"] mjx-tool > mjx-tip {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-mjx-tool > mjx-tip {
-  display: inline-block;
-  padding: .2em;
-  border: 1px solid #888;
-  font-size: 70%;
-  background-color: #F8F8F8;
-  color: black;
-  box-shadow: 2px 2px 5px #AAAAAA;
-}
-
-g[data-mml-node="maction"][data-toggle] {
-  cursor: pointer;
-}
-
-mjx-status {
-  display: block;
-  position: fixed;
-  left: 1em;
-  bottom: 1em;
-  min-width: 25%;
-  padding: .2em .4em;
-  border: 1px solid #888;
-  font-size: 90%;
-  background-color: #F8F8F8;
-  color: black;
-}
-
-foreignObject[data-mjx-xml] {
-  font-family: initial;
-  line-height: normal;
-  overflow: visible;
-}
-
-.MathJax path {
-  stroke-width: 3;
-}
-
-mjx-container[display="true"] {
-  overflow: auto hidden;
-}
-
-mjx-container[display="true"] + br {
-  display: none;
-}
-</style></head>
 
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
+<div class="progress-bar-container">
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+<!--        <span class="swup-progress-icon">-->
+<!--            <i class="fa-solid fa-circle-notch fa-spin"></i>-->
+<!--        </span>-->
+    
+</div>
+
+
+
+    <style>
+    :root {
+        --preloader-background-color: #fff;
+        --preloader-text-color: #000;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --preloader-background-color: #202124;
+            --preloader-text-color: #fff;
+        }
+    }
+
+    @media (prefers-color-scheme: light) {
+        :root {
+            --preloader-background-color: #fff;
+            --preloader-text-color: #000;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .ml13 {
+            font-size: 2.6rem !important; /* Adjust this value as needed */
+        }
+    }
+
+    .preloader {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem; /* Tailwind 'gap-4' is 1rem */
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        padding: 12px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh; /* 'h-screen' is 100% of the viewport height */
+        background-color: var(--preloader-background-color);
+        z-index: 1100; /* 'z-[1100]' sets the z-index */
+        transition: opacity 0.2s ease-in-out;
+    }
+
+    .ml13 {
+        font-size: 3.2rem;
+        /* text-transform: uppercase; */
+        color: var(--preloader-text-color);
+        letter-spacing: -1px;
+        font-weight: 500;
+        font-family: 'Chillax-Variable', sans-serif;
+        text-align: center;
+    }
+
+    .ml13 .word {
+        display: inline-flex;
+        flex-wrap: wrap;
+        white-space: nowrap;
+    }
+
+    .ml13 .letter {
+        display: inline-block;
+        line-height: 1em;
+    }
+</style>
+
+<div class="preloader">
+    <h2 class="ml13">
+        RUN FOR WHERE
+    </h2>
+    <script>
+        var textWrapper = document.querySelector('.ml13');
+        // Split text into words
+        var words = textWrapper.textContent.trim().split(' ');
+
+        // Clear the existing content
+        textWrapper.innerHTML = '';
+
+        // Wrap each word and its letters in spans
+        words.forEach(function(word) {
+            var wordSpan = document.createElement('span');
+            wordSpan.classList.add('word');
+            wordSpan.innerHTML = word.replace(/\S/g, "<span class='letter'>$&</span>");
+            textWrapper.appendChild(wordSpan);
+            textWrapper.appendChild(document.createTextNode(' ')); // Add space between words
+        });
+
+        var animation = anime.timeline({loop: true})
+            .add({
+                targets: '.ml13 .letter',
+                translateY: [40,0],
+                translateZ: 0,
+                opacity: [0,1],
+                filter: ['blur(5px)', 'blur(0px)'], // Starting from blurred to unblurred
+                easing: "easeOutExpo",
+                duration: 1400,
+                delay: (el, i) => 300 + 30 * i,
+            }).add({
+                targets: '.ml13 .letter',
+                translateY: [0,-40],
+                opacity: [1,0],
+                filter: ['blur(0px)', 'blur(5px)'], // Ending from unblurred to blurred
+                easing: "easeInExpo",
+                duration: 1200,
+                delay: (el, i) => 100 + 30 * i,
+                complete: function() {
+                    hidePreloader(); // Call hidePreloader after the animation completes
+                }
+            });
+
+        let themeStatus = JSON.parse(localStorage.getItem('REDEFINE-THEME-STATUS'))?.isDark;
+
+        // If the theme status is not found in local storage, check the preferred color scheme
+        if (themeStatus === undefined || themeStatus === null) {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                themeStatus = 'dark';
+            } else {
+                themeStatus = 'light';
+            }
+        }
+
+        // Now you can use the themeStatus variable in your code
+        if (themeStatus) {
+            document.documentElement.style.setProperty('--preloader-background-color', '#202124');
+            document.documentElement.style.setProperty('--preloader-text-color', '#fff');
+        } else {
+            document.documentElement.style.setProperty('--preloader-background-color', '#fff');
+            document.documentElement.style.setProperty('--preloader-text-color', '#000');
+        }
+
+        window.addEventListener('load', function () {
+            setTimeout(hidePreloader, 5000); // Call hidePreloader after 5000 milliseconds if not already called by animation
+        });
+
+        function hidePreloader() {
+            var preloader = document.querySelector('.preloader');
+            preloader.style.opacity = '0';
+            setTimeout(function () {
+                preloader.style.display = 'none';
+            }, 200);
+        }
+    </script>
+</div>
+
+<main class="page-container" id="swup">
+
+    
+
+    <div class="main-content-container">
+
+
+        <div class="main-content-header">
+            <header class="navbar-container px-6 md:px-12">
+
+    <div class="navbar-content ">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                
+                RUN FOR WHERE
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="desktop">
+                <ul class="navbar-list">
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/"
+                                        >
+                                    <i class="fa-regular fa-house fa-fw"></i>
+                                    HOME
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/archives"
+                                        >
+                                    <i class="fa-regular fa-archive fa-fw"></i>
+                                    ARCHIVES
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="has-dropdown"
+                                   href="#"
+                                        onClick=&#34;return false;&#34;>
+                                    <i class="fa-regular fa-user fa-fw"></i>
+                                    ABOUT
+                                    <i class="fa-solid fa-chevron-down fa-fw"></i>
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                                    <ul class="sub-menu">
+                                        
+                                            <li>
+                                                <a target="_blank" rel="noopener" href="https://github.com/SONDER730">
+                                                    GITHUB
+                                                </a>
+                                            </li>
+                                        
+                                    </ul>
+                                
+                            </li>
+                    
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                <div class="icon-item navbar-bar">
+                    <div class="navbar-bar-middle"></div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-        
-          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
+
+    <!-- Mobile sheet -->
+    <div class="navbar-drawer h-screen w-full absolute top-0 left-0 bg-background-color flex flex-col justify-between">
+        <ul class="drawer-navbar-list flex flex-col px-4 justify-center items-start">
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/"
+                        >
+                            <span>
+                                HOME
+                            </span>
+                            
+                                <i class="fa-regular fa-house fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/archives"
+                        >
+                            <span>
+                                ARCHIVES
+                            </span>
+                            
+                                <i class="fa-regular fa-archive fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item-sub text-base my-1.5 flex flex-col w-full">
+                        
+                        <div class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary cursor-pointer text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                             navbar-data-toggle="submenu-About"
+                        >
+                            <span>
+                                ABOUT
+                            </span>
+                            
+                                <i class="fa-solid fa-chevron-right fa-sm fa-fw transition-all"></i>
+                            
+                        </div>
+                        
+
+                        
+                            <div class="flex-col items-start px-2 py-2 hidden" data-target="submenu-About">
+                                
+                                    <div class="drawer-navbar-item text-base flex flex-col justify-center items-start hover:underline active:underline hover:underline-offset-1 rounded-3xl">
+                                        <a class=" text-third-text-color text-xl"
+                                           target="_blank" rel="noopener" href="https://github.com/SONDER730">GITHUB</a>
+                                    </div>
+                                
+                            </div>
+                        
+                    </li>
+            
+
+            
+            
+                
+                    
+                    
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full active"
+                           href="/tags"
+                        >
+                            <span>Tags</span>
+                            <i class="fa-regular fa-tags fa-sm fa-fw"></i>
+                        </a>
+                    </li>
+                
+                    
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full active"
+                           href="/categories"
+                        >
+                            <span>Categories</span>
+                            <i class="fa-regular fa-folder fa-sm fa-fw"></i>
+                        </a>
+                    </li>
+                
+            
+        </ul>
+
+        <div class="statistics flex justify-around my-2.5">
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">1</div>
+        <div class="label text-third-text-color text-sm">Tags</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">0</div>
+        <div class="label text-third-text-color text-sm">Categories</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">3</div>
+        <div class="label text-third-text-color text-sm">Posts</div>
+    </a>
+</div>
     </div>
-  </div>
+
+    <div class="window-mask"></div>
+
 </header>
 
-      <div class="outer">
-        <section id="main"><article id="post-THE CHINESE BOOK FOR LARGE LANGUAGE" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2024/06/24/THE%20CHINESE%20BOOK%20FOR%20LARGE%20LANGUAGE/" class="article-date">
-  <time class="dt-published" datetime="2024-06-23T17:53:52.401Z" itemprop="datePublished">2024-06-24</time>
-</a>
+
+        </div>
+
+        <div class="main-content-body">
+
+            
+
+            <div class="main-content">
+
+                
+                    <div class="post-page-container flex relative justify-between box-border w-full h-full">
+    <div class="article-content-container">
+
+        <div class="article-title relative w-full">
+            
+                <div class="w-full flex items-center pt-6 justify-start">
+                    <h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3"></h1>
+                </div>
+            
+            </div>
+
+        
+            <div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+                    <img src="/images/favicon.png">
+                </div>
+                <div class="info flex flex-col justify-between">
+                    <div class="author flex items-center">
+                        <span class="name text-default-text-color text-lg font-semibold">YIWEI WU</span>
+                        
+                            <span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">Lv1</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2024-06-24 01:53:52</span>
+        <span class="mobile">2024-06-24 01:53:52</span>
+        <span class="hover-info">Created</span>
+    </span>
     
-  </div>
-  <div class="article-inner">
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2024-06-24 15:53:59</span>
+            <span class="mobile">2024-06-24 15:53:59</span>
+            <span class="hover-info">Updated</span>
+        </span>
+    
+
     
     
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="第一部分-背景与基础知识"><a href="#第一部分-背景与基础知识" class="headerlink" title="第一部分 背景与基础知识"></a><strong>第一部分 背景与基础知识</strong></h1><h2 id="第一章-引言"><a href="#第一章-引言" class="headerlink" title="第一章 引言"></a><strong>第一章 引言</strong></h2><h3 id="1-1-语言模型的发展历程"><a href="#1-1-语言模型的发展历程" class="headerlink" title="1.1 语言模型的发展历程"></a>1.1 语言模型的发展历程</h3><p>统计语言模型：基于统计学习方法（马尔科夫假设）</p>
+
+    
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        
+
+
+        <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+            <h1 id="第一部分-背景与基础知识"><a href="#第一部分-背景与基础知识" class="headerlink" title="第一部分 背景与基础知识"></a><strong>第一部分 背景与基础知识</strong></h1><h2 id="第一章-引言"><a href="#第一章-引言" class="headerlink" title="第一章 引言"></a><strong>第一章 引言</strong></h2><h3 id="1-1-语言模型的发展历程"><a href="#1-1-语言模型的发展历程" class="headerlink" title="1.1 语言模型的发展历程"></a>1.1 语言模型的发展历程</h3><p>统计语言模型：基于统计学习方法（马尔科夫假设）</p>
 <p>神经语言模型</p>
 <p>预训练语言模型（PLM）</p>
 <p>大语言模型（LLM）</p>
@@ -240,7 +601,7 @@ mjx-container[display="true"] + br {
 <p>在 BERT 等传统预训练模型中，所采用的模型架构以及训练任务还比较多样。由于 GPT 系列模型的爆火，“<strong>解码器架构 + 预测下一个词</strong>”的有效性得到了充分验证，已经成为现有大语言模型主要采纳的技术路径。</p>
 <p>为了预训练大语言模型，需要准备大规模的文本数据，并且进行严格的清洗，去除掉可能包含有毒有害的内容，最后将清洗后的数据进行词元化（Tokenization）流，并且切分成批次（Batch），用于大语言模型的预训练。</p>
 <p>预训练技术框架在实施过程中涉及到大量需要深入探索的经验性技术，如数据如何进行配比、如何进行学习率的调整、如何早期发现模型的异常行为等。</p>
-<h4 id="2-1-2-指令微调（SFT）与人类对齐"><a href="#2-1-2-指令微调（SFT）与人类对齐" class="headerlink" title="2.1.2 指令微调（SFT）与人类对齐"></a>2.1.2 指令微调（SFT）与人类对齐</h4><p>监督微调/指令微调：通过使用任务输入与输出的配对数据进行模型训练，可以使得语言模型较好地掌握通过问答形式进行任务求解的能力。</p>
+<h4 id="2-1-2-指令微调（SFT）与人类对齐"><a href="#2-1-2-指令微调（SFT）与人类对齐" class="headerlink" title="2.1.2 指令微调（SFT）与人类对齐"></a>2.1.2 指令微调（SFT）与人类对齐</h4><p>监督微调&#x2F;指令微调：通过使用任务输入与输出的配对数据进行模型训练，可以使得语言模型较好地掌握通过问答形式进行任务求解的能力。</p>
 <p>要将大语言模型与人类的期望、需求以及价值观对齐（Alignment）：主要引入了基于人类反馈的强化学习对齐方法 RLHF（Reinforcement Learning from Human Feedback），在指令微调后使用强化学习加强模型的对齐能力。</p>
 <h3 id="2-2-扩展法则"><a href="#2-2-扩展法则" class="headerlink" title="2.2 扩展法则"></a>2.2 扩展法则</h3><p>在实现上，大语言模型采用了与小型预训练语言模型相似的神经网络结构（基于注意力机制的 Transformer 架构）和预训练方法（如语言建模）。</p>
 <p>但是通过扩展<strong>参数规模、数据规模和计算算力</strong>，大语言模型的能力显著超越了小型语言模型的能力。</p>
@@ -259,18 +620,48 @@ mjx-container[display="true"] + br {
 <li>计算算力指的是可用于训练和运行模型的计算资源。计算算力可以用<strong>处理器（CPU、GPU、TPU）的数量、内存容量、计算速度（如FLOPS，浮点运算次数</strong>）等指标来衡量。更高的计算算力可以加快模型的训练速度和处理能力，支持更大规模和更复杂的模型。</li>
 </ul>
 <p>在给定算力预算 <em>𝑐</em> 的条件下，可以近似得到以下三个基本指数公式来描述扩展法则：</p>
-<p><img src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623133834730.png" alt="image-20240623133834730"></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623133834730.png"
+                      alt="image-20240623133834730"
+                ></p>
 <p>这里，<em>𝐿</em>(·) 表示用以 nat为单位的交叉熵损失。其中，<em>𝑁𝑐</em>、<em>𝐷𝑐</em> 和 <em>𝐶𝑐</em> 是实验性的常数数值，分别对应于非嵌入参数数量、训练数据数量和实际的算力开销。这三个公式是通过模型在不同数据规模（22M 到 23B 词元）、模型规模（768M到 1.5B 非嵌入参数）和算力规模下的性能表现拟合推导得到的。</p>
 <p>为了推导这些公式，需要约定一些基本假设：一个因素的分析不会受到其他两个因素的限制，如当变动模型参数规模的时候，需要保证数据资源是充足的。</p>
 <p>讲损失函数进一步分解为两部分 [21]，包括不可约损失（真实数据分布的熵）和可约损失（真实分布和模型分布之间 KL 散度的估计）</p>
-<p><img src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623142750969.png" alt="image-20240623142750969"></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623142750969.png"
+                      alt="image-20240623142750969"
+                ></p>
 <p>这里 <em>𝑥</em> 是一个占位符号，可以指代公式 2.1 中的<em>𝑁</em>、<em>𝐷</em> 和 <em>𝐶</em>。其中，不可约损失由数据自身特征确定，无法通过扩展法则或者优化算法进行约减；模型性能的优化只能减小可约损失部分。</p>
-<p><img src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623143311167.png" alt="image-20240623143311167"></p>
-<h4 id="2-2-2-Chinchilla-扩展法则"><a href="#2-2-2-Chinchilla-扩展法则" class="headerlink" title="2.2.2 Chinchilla 扩展法则"></a>2.2.2 Chinchilla 扩展法则</h4><p><img src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623144034419.png" alt="image-20240623144034419"></p>
-<p>其中 <em>𝐸</em> = 1*.<em>69</em>, 𝐴* = 406*.<em>4</em>, 𝐵* = 410*.<em>7，</em>𝛼* = 0*.<em>34 和 <em>𝛽</em> = 0</em>.<em>28。进一步，利用约束条件</em>𝐶* ≈ 6<em>𝑁𝐷</em> 对于损失函数 <em>𝐿</em>(<em>𝑁, 𝐷</em>) 进行推导，能够获得算力资源固定情况下模型规模与数据规模的最优分配方案（如下所示）：</p>
-<p><img src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623144130396.png" alt="image-20240623144130396"></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623143311167.png"
+                      alt="image-20240623143311167"
+                ></p>
+<h4 id="2-2-2-Chinchilla-扩展法则"><a href="#2-2-2-Chinchilla-扩展法则" class="headerlink" title="2.2.2 Chinchilla 扩展法则"></a>2.2.2 Chinchilla 扩展法则</h4><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623144034419.png"
+                      alt="image-20240623144034419"
+                ></p>
+<p>其中 <em>𝐸</em> &#x3D; 1*.<em>69</em>, 𝐴* &#x3D; 406*.<em>4</em>, 𝐵* &#x3D; 410*.<em>7，</em>𝛼* &#x3D; 0*.<em>34 和 <em>𝛽</em> &#x3D; 0</em>.<em>28。进一步，利用约束条件</em>𝐶* ≈ 6<em>𝑁𝐷</em> 对于损失函数 <em>𝐿</em>(<em>𝑁, 𝐷</em>) 进行推导，能够获得算力资源固定情况下模型规模与数据规模的最优分配方案（如下所示）：</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623144130396.png"
+                      alt="image-20240623144130396"
+                ></p>
 <p>进一步，研究人员 [22] 发现 KM 扩展法则和 Chinchilla 扩展法则都可以近似表示成上述算力为核心的公式（公式 2.4）：</p>
-<p><img src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623144235852.png" alt="image-20240623144235852"></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623144235852.png"
+                      alt="image-20240623144235852"
+                ></p>
 <p>即当算力 <em>𝐶</em> 给定的情况下，最优的模型参数规模和数据规模由指数系数 <em>𝑎</em> 和 <em>𝑏</em> 分别确定。可以看到，<em>𝑎</em> 和 <em>𝑏</em> 决定了参数规模和数据规模的资源分配优先级：当 <em>𝑎 &gt; 𝑏</em>时，应该用更多的算力去提高参数规模；当 <em>𝑏 &gt; 𝑎</em> 时，应该用更多的算力去提高数据规模。</p>
 <p>差异：随着算力预算的增加，KM 扩展法则（<em>𝑎</em> ≈ 0*.<em>73, <em>𝑏</em> ≈ 0</em>.<em>27 [22] ）倾向于将更大的预算分配给模型规模的增加，而不是分配给数据规模的增加；而 Chinchilla 扩展法则主张两种规模参数应该以等比例关系增加（</em>𝑎* ≈ 0*.<em>46, <em>𝑏</em> ≈ 0</em>.*54 [22]）。</p>
 <p>但是目前这一分配系数已经基本没有参考意义了。越来越多的工作表明，现有的预训练语言模型对于数据的需求量远高于这些扩展法则中所给出的估计规模。例如LLaMA-2 (7B) 的模型就使用了 2T 的词元进行训练，很多更小的模型也能够通过使用超大规模的预训练数据获得较大的模型性能提升。这种现象的一个重要原因是由于 Transformer 架构具有较好的数据扩展性，到目前为止，还没有实验能够有效验证特定参数规模语言模型的饱和数据规模（即随着数据规模的扩展，模型性能不再提升）。</p>
@@ -279,7 +670,7 @@ mjx-container[display="true"] + br {
 <p><strong>指导作用</strong>：首先，对于大语言模型来说，详细进行各种训练技巧或变体的测试需要耗费巨大的算力资源。因此，一个较为理想的经验性方法是，<strong>基于小模型获得训练经验然后应用于大模型的训练，从而减少实验成本。</strong>例如，可以训练小型代理模型来确定适合大型模型的预训练数据混合的最佳比例 [36]。其次，大语言模型的训练过程较长，经常面临着训练损失波动情况，扩展法则可以用于监控大语言模型的训练状态，如在<strong>早期识别异常性能</strong>。</p>
 <h5 id="任务层面的可预测性"><a href="#任务层面的可预测性" class="headerlink" title="任务层面的可预测性"></a>任务层面的可预测性</h5><p>为了建立扩展法则与模型任务性能的关联，一个基础问题就是语言建模损失的减少是否真正意味着（或对应着）真实任务上模型性能的提高 [21]。</p>
 <p>整体上来说，语言建模损失较小的模型往往在下游任务中表现更好，因为语言建模的能力可以被认为是一种模型整体能力的综合度量。然而，语言建模损失的减少并不总是意味着模型在下游任务上的性能改善。对于某些特殊任务，甚至会出现“逆向扩展”（Inverse Scaling）现象，即随着语言建模损失的降低，任务性能出人意料地变差 [37]。</p>
-<p>扩展准则可以精准预测任务能力（编码能力-建模算力数据密切相关），在任务层面（任务指标/任务难度相关）的预测存在一定的困难。</p>
+<p>扩展准则可以精准预测任务能力（编码能力-建模算力数据密切相关），在任务层面（任务指标&#x2F;任务难度相关）的预测存在一定的困难。</p>
 <h3 id="2-3-涌现能力"><a href="#2-3-涌现能力" class="headerlink" title="2.3 涌现能力"></a>2.3 涌现能力</h3><p>大语言模型的涌现能力被非形式化定义为“在小型模型中不存在但在大模型中出现的能力”，具体是指当模型扩展到一定规模时，模型的特定任务性能突然出现显著跃升的趋势，远超过随机水平。</p>
 <h4 id="2-3-1-代表性的涌现能力"><a href="#2-3-1-代表性的涌现能力" class="headerlink" title="2.3.1 代表性的涌现能力"></a>2.3.1 代表性的涌现能力</h4><h5 id="上下文学习（In-context-Learning-ICL）"><a href="#上下文学习（In-context-Learning-ICL）" class="headerlink" title="上下文学习（In-context Learning, ICL）"></a>上下文学习（In-context Learning, ICL）</h5><p>在提示中为语言模型提供自然语言指令和多个任务示例（Demonstration），无需显式的训练或梯度更新，仅输入文本的单词序列就能为测试样本生成预期的输出。</p>
 <p>“无需显式”是指模型在执行任务时，不需要在输入中提供明确的任务示例或训练数据。这意味着模型能够仅通过理解自然语言的指令来完成任务，而不需要用户在指令中包含具体的输入-输出示例。这种能力主要依赖于模型在预训练和微调过程中已经学到的知识和技能。</p>
@@ -315,14 +706,29 @@ mjx-container[display="true"] + br {
 </li>
 </ol>
 <h4 id="3-1-1-公开可用的通用大语言模型检查点"><a href="#3-1-1-公开可用的通用大语言模型检查点" class="headerlink" title="3.1.1 公开可用的通用大语言模型检查点"></a><strong>3.1.1</strong> <strong>公开可用的通用大语言模型检查点</strong></h4><p>近年来大语言模型的统计数据，包括预训练数据规模（以词元数量或存储大小表示）和硬件条件等。本表仅列举有公开论文介绍技术细节的模型，其中“发布时间”表示相应论文或技术报告正式发布的日期。“可公开获取”表示模型检查点可以公开获取，而“闭源”则相反。“适配”指模型是否经过了后续微调：IT 表示指令微调，RLHF 表示基于人类反馈的强化学习。</p>
-<p><img src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623161333099.png" alt="image-20240623161333099"></p>
-<p><img src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623161356024.png" alt="image-20240623161356024"></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623161333099.png"
+                      alt="image-20240623161333099"
+                ></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623161356024.png"
+                      alt="image-20240623161356024"
+                ></p>
 <h4 id="3-1-2-LLaMA-变体系列"><a href="#3-1-2-LLaMA-变体系列" class="headerlink" title="3.1.2 LLaMA 变体系列"></a>3.1.2 LLaMA 变体系列</h4><h5 id="基础指令"><a href="#基础指令" class="headerlink" title="基础指令"></a>基础指令</h5><p>Stanford Alpaca [42] ：通过使用 Self-Instruct 方法 [74] 借助大语言模型进行自动化的指令生成，Stanford Alpaca 生成了 52K 条指令遵循样例数据（Alpaca-52K）用于训练，其指令数据和训练代码在随后的工作中被广泛采用。</p>
 <p>Vicuna [75]：是使用 ShareGPT 收集的用户日常对话数据进行训练。</p>
 <h5 id="中文指令"><a href="#中文指令" class="headerlink" title="中文指令"></a>中文指令</h5><p>扩展原始词汇表，在中文数据上进行继续预训练，并用中文指令数据对其进行微调。Chinese LLaMA、Panda、Open-Chinese-LLaMA、Chinese Alpaca、YuLan-Chat。</p>
 <h5 id="垂域指令"><a href="#垂域指令" class="headerlink" title="垂域指令"></a>垂域指令</h5><p>LLaMA 虽然展现出了强大的通用基座模型能力，但是在特定的垂直领域（例如医学、教育、法律、数学等）的表现仍然较为局限。</p>
 <p>基于搜集到的垂域相关的指令数据，或者采用垂域知识库以及相关专业文献等借助强大的闭源模型 API（例如 GPT-3.5、GPT-4 等）构建多轮对话数据，并使用这些指令数据对 LLaMA 进行指令微调。</p>
-<h5 id="多模态指令"><a href="#多模态指令" class="headerlink" title="多模态指令"></a>多模态指令</h5><p><img src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240624144852007.png" alt="image-20240624144852007"></p>
+<h5 id="多模态指令"><a href="#多模态指令" class="headerlink" title="多模态指令"></a>多模态指令</h5><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240624144852007.png"
+                      alt="image-20240624144852007"
+                ></p>
 <p>（巨大的LLaMA PLUS）</p>
 <h4 id="3-1-3-大语言模型的公共-AP"><a href="#3-1-3-大语言模型的公共-AP" class="headerlink" title="3.1.3 大语言模型的公共 AP"></a>3.1.3 大语言模型的公共 AP</h4><h5 id="语言模型-API"><a href="#语言模型-API" class="headerlink" title="语言模型 API"></a>语言模型 <em>API</em></h5><p>GPT-3.5 Turbo 对应的 API 接口为 gpt-3.5-turbo，支持16K 词元的上下文长度。</p>
 <p>GPT-4 对应的 API 接口有 gpt-4（基础版本，没有视觉功能）、gpt-4-32k（将上下文长度扩展到 32K）、gpt-4-vision-preview（带有视觉功能的 GPT-4 多模态版本）。</p>
@@ -331,9 +737,14 @@ mjx-container[display="true"] + br {
 <p>text-embedding-3-small :是一个更高效的文本表征模型，同样提供 1,536 维的向量表征。</p>
 <p>text-embedding-3-large： 能够支持高达 3,072 维的向量表征，是三者中目前性能最好的模型，在 MTEB 的平均得分达到了 64.6%。</p>
 <h3 id="3-2-常用的预训练数据集"><a href="#3-2-常用的预训练数据集" class="headerlink" title="3.2 常用的预训练数据集"></a>3.2 常用的预训练数据集</h3><p>根据其内容类型进行分类，这些语料库可以划分为：网页、书籍、维基百科、代码以及混合型数据集。</p>
-<h4 id="3-2-1-网页"><a href="#3-2-1-网页" class="headerlink" title="3.2.1 网页"></a>3.2.1 网页</h4><p><img src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240624145415463.png" alt="image-20240624145415463"></p>
-<h5 id="Common-Crawl"><a href="#Common-Crawl" class="headerlink" title="Common Crawl."></a><em>Common Crawl.</em></h5><p>该数据集是一个规模庞大的、非结构化的、多语言的网页数据集。在使用前必须进行有效的数据清洗，以确保数据质量和准确性，常用的自动清洗工具有 CCNet 等。（<a target="_blank" rel="noopener" href="https://commoncrawl.org/%EF%BC%89">https://commoncrawl.org/）</a></p>
-<h5 id="C4（Colossal-Clean-Crawled-Corpus）"><a href="#C4（Colossal-Clean-Crawled-Corpus）" class="headerlink" title="C4（Colossal Clean Crawled Corpus）"></a><em>C4</em>（Colossal Clean Crawled Corpus）</h5><p>该数据集是一个大型网页数据集，源自超过 365M 个互联网域，包含超过 156B 词元，数据量约 800GB。子版本：en（英文数据，806G），en.noclean（未清洗的原始数据，6T），realnewslike（仅包含 RealNews 涉及的领域的内容，36G），webtextlike（仅包含来自 OpenWebText 中URLs 的内容，17G）和 multilingual （多语言数据，38T）。（<a target="_blank" rel="noopener" href="https://paperswithcode.com/dataset/c4%EF%BC%89">https://paperswithcode.com/dataset/c4）</a></p>
+<h4 id="3-2-1-网页"><a href="#3-2-1-网页" class="headerlink" title="3.2.1 网页"></a>3.2.1 网页</h4><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240624145415463.png"
+                      alt="image-20240624145415463"
+                ></p>
+<h5 id="Common-Crawl"><a href="#Common-Crawl" class="headerlink" title="Common Crawl."></a><em>Common Crawl.</em></h5><p>该数据集是一个规模庞大的、非结构化的、多语言的网页数据集。在使用前必须进行有效的数据清洗，以确保数据质量和准确性，常用的自动清洗工具有 CCNet 等。（<a class="link"   target="_blank" rel="noopener" href="https://commoncrawl.org/%EF%BC%89" >https://commoncrawl.org/） <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h5 id="C4（Colossal-Clean-Crawled-Corpus）"><a href="#C4（Colossal-Clean-Crawled-Corpus）" class="headerlink" title="C4（Colossal Clean Crawled Corpus）"></a><em>C4</em>（Colossal Clean Crawled Corpus）</h5><p>该数据集是一个大型网页数据集，源自超过 365M 个互联网域，包含超过 156B 词元，数据量约 800GB。子版本：en（英文数据，806G），en.noclean（未清洗的原始数据，6T），realnewslike（仅包含 RealNews 涉及的领域的内容，36G），webtextlike（仅包含来自 OpenWebText 中URLs 的内容，17G）和 multilingual （多语言数据，38T）。（<a class="link"   target="_blank" rel="noopener" href="https://paperswithcode.com/dataset/c4%EF%BC%89" >https://paperswithcode.com/dataset/c4） <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 <h5 id="CC-Stories"><a href="#CC-Stories" class="headerlink" title="CC-Stories"></a><em>CC-Stories</em></h5><p>该数据集是一个专为常识推理和语言建模构建的故事风格数据集。</p>
 <h5 id="CC-News"><a href="#CC-News" class="headerlink" title="CC-News"></a><em>CC-News</em></h5><h5 id="REALNEWs"><a href="#REALNEWs" class="headerlink" title="REALNEWs"></a><em>REALNEWs</em></h5><h5 id="RedPajama-Data"><a href="#RedPajama-Data" class="headerlink" title="RedPajama-Data"></a><em>RedPajama-Data</em></h5><p>一个多语言数据集，包含 5 种语言：英语、法语、西班牙语、德语和意大利语。此外，还提供了 40 余种预先标注好的数据注释，使下游模型开发者能够根据自己的标准对数据集进行筛选或重新加权。</p>
 <h5 id="RefinedWeb"><a href="#RefinedWeb" class="headerlink" title="RefinedWeb"></a><em>RefinedWeb</em></h5><p>是一个在 Common Crawl 数据的基础上通过严格筛选和去重得到的网络数据集。</p>
@@ -345,7 +756,7 @@ mjx-container[display="true"] + br {
 <h5 id="Project-Gutenberg"><a href="#Project-Gutenberg" class="headerlink" title="Project Gutenberg"></a><em>Project Gutenberg</em></h5><p>拥有 70K 部免费电子书的在线图书馆。</p>
 <h5 id="arXiv-Dataset"><a href="#arXiv-Dataset" class="headerlink" title="arXiv Dataset"></a><em>arXiv Dataset</em></h5><p>收录了众多领域预印本论文的网站。广泛涵盖了物理、数学和计算机科学等领域的论文文献，共包含约1.7M 篇预印本文章，每篇预印本都包含文本、图表、作者、引文、分类以及其他元数据等信息，总数据量约为 1.1TB，并在 Kaggle 上提供了公开下载。</p>
 <h5 id="S2ORC"><a href="#S2ORC" class="headerlink" title="S2ORC"></a><em>S2ORC</em></h5><p>该数据集源于学术搜索引擎 Semantic Scholar 上的学术论文，这些论文经过了清洗、过滤并被处理成适合预训练的格式。。衍生数据集 peS2o。</p>
-<h4 id="3-2-3-维基百科"><a href="#3-2-3-维基百科" class="headerlink" title="3.2.3 维基百科"></a>3.2.3 维基百科</h4><p>除了通过维基百科的官方提供的下载方式4，Hugging Face 上也有相应的维基百科数据集。（<a target="_blank" rel="noopener" href="https://huggingface.co/datasets/wikipedia%EF%BC%89">https://huggingface.co/datasets/wikipedia）</a></p>
+<h4 id="3-2-3-维基百科"><a href="#3-2-3-维基百科" class="headerlink" title="3.2.3 维基百科"></a>3.2.3 维基百科</h4><p>除了通过维基百科的官方提供的下载方式4，Hugging Face 上也有相应的维基百科数据集。（<a class="link"   target="_blank" rel="noopener" href="https://huggingface.co/datasets/wikipedia%EF%BC%89" >https://huggingface.co/datasets/wikipedia） <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 <h4 id="3-2-4-代码"><a href="#3-2-4-代码" class="headerlink" title="3.2.4 代码"></a>3.2.4 代码</h4><p>为了收集代码数据，现有的工作主要从互联网上爬取具有开源许可的代码。两个主要来源是公共代码仓库（例如 GitHub）和代码相关的问答平台（例如 StackOverflow）。</p>
 <h5 id="BigQuery"><a href="#BigQuery" class="headerlink" title="BigQuery"></a><em>BigQuery</em></h5><p>BigQuery 是一个谷歌发布的企业数据仓库，包含了众多领域的公共数据集，如社交、经济、医疗、代码等。其中的代码类数据覆盖各种编程语言，可以作为高质量的代码预训练语料。</p>
 <h5 id="The-Stack"><a href="#The-Stack" class="headerlink" title="The Stack"></a><em>The Stack</em></h5><p>该数据集由 Hugging Face 收集并发布，是一个涵盖了 30 种编程语言的代码数据集，其数据来源于 GHArchive 项目中 2015 年 1 月 1 日至 2022年 3 月 31 日期间的 GitHub 活跃仓库。</p>
@@ -355,7 +766,12 @@ mjx-container[display="true"] + br {
 <h5 id="Dolma"><a href="#Dolma" class="headerlink" title="Dolma"></a><em>Dolma</em></h5><p>该数据集也包含了多种数据源，包括来自 Common Crawl 的网络文本、Semantic Scholar 学术论文、GitHub 代码、书籍、Reddit 的社交媒体帖子以及维基百科数据，由来自大约 200TB 原始文本的 3T 个词元组成。</p>
 <p>在 Dolma 的处理过程中，发布团队同时创建了一个高性能工具包，实现了四种常用的数据清洗和过滤方法：语言过滤、质量过滤、内容过滤以及去重。</p>
 <h3 id="3-3-常用微调数据集"><a href="#3-3-常用微调数据集" class="headerlink" title="3.3 常用微调数据集"></a>3.3 常用微调数据集</h3><h4 id="3-3-1-指令微调数据集"><a href="#3-3-1-指令微调数据集" class="headerlink" title="3.3.1 指令微调数据集"></a>3.3.1 指令微调数据集</h4><p>根据格式化指令实例的构建方法将它们分为三种主要类型，即自然语s言处理任务数据集、日常对话数据集和合成数据集。</p>
-<p><img src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240624152329540.png" alt="image-20240624152329540"></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240624152329540.png"
+                      alt="image-20240624152329540"
+                ></p>
 <h5 id="自然语言处理任务数据集"><a href="#自然语言处理任务数据集" class="headerlink" title="自然语言处理任务数据集"></a>自然语言处理任务数据集</h5><p><strong>P3</strong>：面向英文数据的指令微调数据集</p>
 <p><strong>FLAN</strong>：现在俗称的 FLAN 实际上是指 FLAN-v2，主要由四个子集 Muffin、NIV2、T0-SF 和 CoT 构成。</p>
 <h5 id="日常对话数据集"><a href="#日常对话数据集" class="headerlink" title="日常对话数据集"></a>日常对话数据集</h5><p><strong>ShareGPT [38]、OpenAssistant [104] 和 Dolly [105]</strong></p>
@@ -368,8 +784,8 @@ mjx-container[display="true"] + br {
 <h4 id="3-4-2-DeepSpeed"><a href="#3-4-2-DeepSpeed" class="headerlink" title="3.4.2 DeepSpeed"></a>3.4.2 DeepSpeed</h4><p>是微软开发的一个加速深度学习模型训练的高性能库（与 PyTorch兼容），被广泛用于大语言模型的分布式训练，例如 MT-NLG [90] 和 BLOOM [100]等。</p>
 <p>DeepSpeed 针对模型生成和强化学习分别开发了特制的优化框架：DeepSpeed-MII 和 DeepSpeed-Chat。</p>
 <h5 id="DeepSpeed-MII"><a href="#DeepSpeed-MII" class="headerlink" title="DeepSpeed-MII"></a>DeepSpeed-MII</h5><h5 id="DeepSpeed-Chat"><a href="#DeepSpeed-Chat" class="headerlink" title="DeepSpeed-Chat"></a>DeepSpeed-Chat</h5><h4 id="3-4-3-Megatron-LM"><a href="#3-4-3-Megatron-LM" class="headerlink" title="3.4.3 Megatron-LM"></a>3.4.3 Megatron-LM</h4><p>是由 NVIDIA 开发的一款专门为训练大语言模型而设计的深度学习代码库。这个代码库旨在解决大型模型训练过程中所遇到的一系列技术挑战，包括显存限制、计算效率以及不同的并行策略带来的通信问题。</p>
-<h4 id="3-4-4-本书配套资源说明"><a href="#3-4-4-本书配套资源说明" class="headerlink" title="3.4.4 本书配套资源说明"></a>3.4.4 本书配套资源说明</h4><p><em>LLMSurvey</em>：<a target="_blank" rel="noopener" href="https://arxiv.org/abs/2303.18223">https://arxiv.org/abs/2303.18223</a></p>
-<p>大模型综述资源网站：<a target="_blank" rel="noopener" href="https://github.com/RUCAIBox/LLMSurvey/">https://github.com/RUCAIBox/LLMSurvey/</a></p>
+<h4 id="3-4-4-本书配套资源说明"><a href="#3-4-4-本书配套资源说明" class="headerlink" title="3.4.4 本书配套资源说明"></a>3.4.4 本书配套资源说明</h4><p><em>LLMSurvey</em>：<a class="link"   target="_blank" rel="noopener" href="https://arxiv.org/abs/2303.18223" >https://arxiv.org/abs/2303.18223 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>大模型综述资源网站：<a class="link"   target="_blank" rel="noopener" href="https://github.com/RUCAIBox/LLMSurvey/" >https://github.com/RUCAIBox/LLMSurvey/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 <p>YuLan模型</p>
 <p>LLMBOX</p>
 <h1 id="第二部分-预训练"><a href="#第二部分-预训练" class="headerlink" title="第二部分 预训练"></a><strong>第二部分 预训练</strong></h1><h2 id="第四章-数据准备"><a href="#第四章-数据准备" class="headerlink" title="第四章 数据准备"></a>第四章 数据准备</h2><p>4.1 数据来源 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 57</p>
@@ -553,140 +969,405 @@ mjx-container[display="true"] + br {
 <p>13.2.4 金融场景下的大语言模型 . . . . . . . . . . . . . . . . . . . . . 341</p>
 <p>13.2.5 科学研究场景下的大语言模型 </p>
 
-      
+        </div>
+
+        
+            <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li><strong>Title:</strong> </li>
+        <li><strong>Author:</strong> YIWEI WU</li>
+        <li><strong>Created at
+                :</strong> 2024-06-24 01:53:52</li>
+        
+            <li>
+                <strong>Updated at
+                    :</strong> 2024-06-24 15:53:59
+            </li>
+        
+        <li>
+            <strong>Link:</strong> https://sonder730.github.io/2024/06/24/THE CHINESE BOOK FOR LARGE LANGUAGE/
+        </li>
+        <li>
+            <strong>
+                License:
+            </strong>
+            
+
+            
+                This work is licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a>.
+            
+        </li>
+    </ul>
+</div>
+
+            </div>
+        
+
+        
+
+        
+
+        
+            <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+                
+                    <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="prev"
+                        rel="prev"
+                        href="/2024/06/24/%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86FHE/"
+                        >
+                            <span class="left arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">同态加密FHE</span>
+                                <span class="post-nav-item">Prev posts</span>
+                            </span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="next"
+                        rel="next"
+                        href="/2024/06/23/hello-world/"
+                        >
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">Hello World</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                            <span class="right arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+
+        
+            <div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
+                <div class="comments-container mt-10 w-full ">
+    <div id="comment-anchor" class="w-full h-2.5"></div>
+    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
+        Comments
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2024/06/24/THE%20CHINESE%20BOOK%20FOR%20LARGE%20LANGUAGE/" data-id="clxyhtcyg0003v4ua7k35g2kl" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2024/06/24/%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86FHE/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          同态加密FHE
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2024/06/23/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Hello World</div>
-    </a>
-  
-</nav>
-
-  
-</article>
-
-
-</section>
-        
-          <aside id="sidebar">
-  
     
 
-  
+        
+            
+    <div id="waline"></div>
+    <script type="module" data-swup-reload-script>
+      import { init } from '/js/libs/waline.mjs';
+
+      function loadWaline() {
+        init({
+          el: '#waline',
+          serverURL: 'https://example.example.com',
+          lang: 'zh-CN',
+          dark: 'body[class~="dark-mode"]',
+          reaction: false,
+          requiredMeta: ['nick', 'mail'],
+          emoji: [],
+          recaptchaV3Key: "wasd",
+          
+        });
+      }
+
+      if (typeof swup !== 'undefined') {
+        loadWaline();
+      } else {
+        window.addEventListener('DOMContentLoaded', loadWaline);
+      }
+    </script>
+
+
+
+        
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CRYPTO/" rel="tag">CRYPTO</a></li></ul>
+</div>
+
+            </div>
+        
     </div>
-  </div>
 
-
-  
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/CRYPTO/" style="font-size: 10px;">CRYPTO</a>
-    </div>
-  </div>
+        <div class="toc-content-container">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">On this page</div>
+        <div class="page-title"></div>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86-%E8%83%8C%E6%99%AF%E4%B8%8E%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"><span class="nav-number">1.</span> <span class="nav-text">第一部分 背景与基础知识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E5%BC%95%E8%A8%80"><span class="nav-number">1.1.</span> <span class="nav-text">第一章 引言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%8F%91%E5%B1%95%E5%8E%86%E7%A8%8B"><span class="nav-number">1.1.1.</span> <span class="nav-text">1.1 语言模型的发展历程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E7%9A%84%E8%83%BD%E5%8A%9B%E7%89%B9%E7%82%B9"><span class="nav-number">1.1.2.</span> <span class="nav-text">1.2 大语言模型的能力特点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E5%85%B3%E9%94%AE%E6%8A%80%E6%9C%AF%E6%A6%82%E8%A7%88"><span class="nav-number">1.1.3.</span> <span class="nav-text">1.3 大语言模型关键技术概览</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-4-%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E5%AF%B9%E7%A7%91%E6%8A%80%E5%8F%91%E5%B1%95%E7%9A%84%E5%BD%B1%E5%93%8D"><span class="nav-number">1.1.4.</span> <span class="nav-text">1.4 大语言模型对科技发展的影响</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-5-%E6%9C%AC%E4%B9%A6%E7%9A%84%E5%86%85%E5%AE%B9%E7%BB%84%E7%BB%87"><span class="nav-number">1.1.5.</span> <span class="nav-text">1.5 本书的内容组织</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E5%9F%BA%E7%A1%80%E4%BB%8B%E7%BB%8D"><span class="nav-number">1.2.</span> <span class="nav-text">第二章 基础介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E7%9A%84%E6%9E%84%E5%BB%BA%E8%BF%87%E7%A8%8B"><span class="nav-number">1.2.1.</span> <span class="nav-text">2.1 大语言模型的构建过程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-%E6%89%A9%E5%B1%95%E6%B3%95%E5%88%99"><span class="nav-number">1.2.2.</span> <span class="nav-text">2.2 扩展法则</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-%E6%B6%8C%E7%8E%B0%E8%83%BD%E5%8A%9B"><span class="nav-number">1.2.3.</span> <span class="nav-text">2.3 涌现能力</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-GPT-%E7%B3%BB%E5%88%97%E6%A8%A1%E5%9E%8B%E7%9A%84%E6%8A%80%E6%9C%AF%E6%BC%94%E5%8F%98"><span class="nav-number">1.2.4.</span> <span class="nav-text">2.4 GPT 系列模型的技术演变</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0-%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E8%B5%84%E6%BA%90"><span class="nav-number">1.3.</span> <span class="nav-text">第三章 大语言模型资源</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-%E5%85%AC%E5%BC%80%E5%8F%AF%E7%94%A8%E7%9A%84%E6%A8%A1%E5%9E%8B%E6%A3%80%E6%9F%A5%E7%82%B9%E6%88%96-API"><span class="nav-number">1.3.1.</span> <span class="nav-text">3.1 公开可用的模型检查点或 API</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-%E5%B8%B8%E7%94%A8%E7%9A%84%E9%A2%84%E8%AE%AD%E7%BB%83%E6%95%B0%E6%8D%AE%E9%9B%86"><span class="nav-number">1.3.2.</span> <span class="nav-text">3.2 常用的预训练数据集</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-%E5%B8%B8%E7%94%A8%E5%BE%AE%E8%B0%83%E6%95%B0%E6%8D%AE%E9%9B%86"><span class="nav-number">1.3.3.</span> <span class="nav-text">3.3 常用微调数据集</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-4-%E4%BB%A3%E7%A0%81%E5%BA%93%E8%B5%84%E6%BA%90"><span class="nav-number">1.3.4.</span> <span class="nav-text">3.4 代码库资源</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86-%E9%A2%84%E8%AE%AD%E7%BB%83"><span class="nav-number">2.</span> <span class="nav-text">第二部分 预训练</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E6%95%B0%E6%8D%AE%E5%87%86%E5%A4%87"><span class="nav-number">2.1.</span> <span class="nav-text">第四章 数据准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC%E5%85%AD%E7%AB%A0-%E6%A8%A1%E5%9E%8B%E9%A2%84%E8%AE%AD%E7%BB%83"><span class="nav-number">2.2.</span> <span class="nav-text">第六章 模型预训练</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86-%E5%BE%AE%E8%B0%83%E4%B8%8E%E5%AF%B9%E9%BD%90"><span class="nav-number">3.</span> <span class="nav-text">第三部分 微调与对齐</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E5%9B%9B%E9%83%A8%E5%88%86-%E5%A4%A7%E6%A8%A1%E5%9E%8B%E4%BD%BF%E7%94%A8"><span class="nav-number">4.</span> <span class="nav-text">第四部分 大模型使用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%BA%94%E9%83%A8%E5%88%86-%E8%AF%84%E6%B5%8B%E4%B8%8E%E5%BA%94%E7%94%A8"><span class="nav-number">5.</span> <span class="nav-text">第五部分 评测与应用</span></a></li></ol>
 
-  
+    </div>
+</div>
+        </div>
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/06/">June 2024</a></li></ul>
-    </div>
-  </div>
+</div>
 
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2024/06/24/%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86FHE/">同态加密FHE</a>
-          </li>
-        
-          <li>
-            <a href="/2024/06/24/THE%20CHINESE%20BOOK%20FOR%20LARGE%20LANGUAGE/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2024/06/23/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
 
-  
-</aside>
+                
+
+            </div>
+
+            
+
+        </div>
+
+        <div class="main-content-footer">
+            <footer class="footer mt-5 py-5 h-auto text-base text-third-text-color relative border-t-2 border-t-border-color">
+    <div class="info-container py-3 text-center">
         
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2024 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
+        <div class="text-center">
+            &copy;
+            
+              <span>2024</span>
+              -
+            
+            2024&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">YIWEI WU</a>
+            
+                
+                <p class="post-count space-x-0.5">
+                    <span>
+                        3 posts in total
+                    </span>
+                    
+                </p>
+            
+        </div>
+        
+            <script data-swup-reload-script src="https://cn.vercount.one/js"></script>
+            <div class="relative text-center lg:absolute lg:right-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-right">
+                
+                    <span id="busuanzi_container_site_uv" class="lg:!block">
+                        <span class="text-sm">VISITOR COUNT</span>
+                        <span id="busuanzi_value_site_uv"></span>
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv" class="lg:!block">
+                        <span class="text-sm">TOTAL PAGE VIEWS</span>
+                        <span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="relative text-center lg:absolute lg:left-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-left">
+            <span class="lg:block text-sm">POWERED BY <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="relative top-[2px] inline-block align-baseline" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" class="text-base" href="https://hexo.io">Hexo</a></span>
+            <span class="text-sm lg:block">THEME&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.6.4</a></span>
+        </div>
+        
+        
+            <div>
+                Blog up for <span class="odometer" id="runtime_days" ></span> days <span class="odometer" id="runtime_hours"></span> hrs <span class="odometer" id="runtime_minutes"></span> Min <span class="odometer" id="runtime_seconds"></span> Sec
+            </div>
+        
+        
+            <script data-swup-reload-script>
+                try {
+                    function odometer_init() {
+                    const elements = document.querySelectorAll('.odometer');
+                    elements.forEach(el => {
+                        new Odometer({
+                            el,
+                            format: '( ddd).dd',
+                            duration: 200
+                        });
+                    });
+                    }
+                    odometer_init();
+                } catch (error) {}
+            </script>
+        
+        
+        
+    </div>  
 </footer>
-
+        </div>
     </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="article-tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fa-regular fa-comments"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
     
 
+    <div class="right-side-tools-container">
+        <div class="side-tools-container">
+    <ul class="hidden-tools-list">
+        <li class="right-bottom-tools tool-font-adjust-plus flex justify-center items-center">
+            <i class="fa-regular fa-magnifying-glass-plus"></i>
+        </li>
 
-<script src="/js/jquery-3.6.4.min.js"></script>
+        <li class="right-bottom-tools tool-font-adjust-minus flex justify-center items-center">
+            <i class="fa-regular fa-magnifying-glass-minus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-dark-light-toggle flex justify-center items-center">
+            <i class="fa-regular fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="right-bottom-tools tool-scroll-to-bottom flex justify-center items-center">
+            <i class="fa-regular fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="visible-tools-list">
+        <li class="right-bottom-tools toggle-tools-list flex justify-center items-center">
+            <i class="fa-regular fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="right-bottom-tools tool-scroll-to-top flex justify-center items-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+
+</main>
+
+
+    
+<script src="/js/libs/Swup.min.js"></script>
+
+<script src="/js/libs/SwupSlideTheme.min.js"></script>
+
+<script src="/js/libs/SwupScriptsPlugin.min.js"></script>
+
+<script src="/js/libs/SwupProgressPlugin.min.js"></script>
+
+<script src="/js/libs/SwupScrollPlugin.min.js"></script>
+
+<script src="/js/libs/SwupPreloadPlugin.min.js"></script>
+
+<script>
+    const swup = new Swup({
+        plugins: [
+            new SwupScriptsPlugin({
+                optin: true,
+            }),
+            new SwupProgressPlugin(),
+            new SwupScrollPlugin({
+                offset: 80,
+            }),
+            new SwupSlideTheme({
+                mainElement: ".main-content-body",
+            }),
+            new SwupPreloadPlugin(),
+        ],
+        containers: ["#swup"],
+    });
+</script>
+
+
+
+
+
+
+
+<script src="/js/tools/imageViewer.js" type="module"></script>
+
+<script src="/js/utils.js" type="module"></script>
+
+<script src="/js/main.js" type="module"></script>
+
+<script src="/js/layouts/navbarShrink.js" type="module"></script>
+
+<script src="/js/tools/scrollTopBottom.js" type="module"></script>
+
+<script src="/js/tools/lightDarkSwitch.js" type="module"></script>
+
+<script src="/js/layouts/categoryList.js" type="module"></script>
+
+
+
+
+
+    
+<script src="/js/tools/codeBlock.js" type="module"></script>
+
+
+
+
+    
+<script src="/js/layouts/lazyload.js" type="module"></script>
+
+
+
+
+    
+<script src="/js/tools/runtime.js"></script>
+
+    
+<script src="/js/libs/odometer.min.js"></script>
+
+    
+<link rel="stylesheet" href="/assets/odometer-theme-minimal.css">
+
 
 
 
   
-<script src="/fancybox/jquery.fancybox.min.js"></script>
+<script src="/js/libs/Typed.min.js"></script>
+
+  
+<script src="/js/plugins/typed.js" type="module"></script>
 
 
 
 
-<script src="/js/script.js"></script>
 
 
 
 
 
-  </div>
+<div class="post-scripts" data-swup-reload-script>
+    
+        
+<script src="/js/tools/tocToggle.js" type="module"></script>
+
+<script src="/js/layouts/toc.js" type="module"></script>
+
+<script src="/js/plugins/tabs.js" type="module"></script>
+
+    
+</div>
+
+
 </body>
 </html>
