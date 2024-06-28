@@ -240,7 +240,7 @@ mjx-container[display="true"] + br {
 <p>在 BERT 等传统预训练模型中，所采用的模型架构以及训练任务还比较多样。由于 GPT 系列模型的爆火，“<strong>解码器架构 + 预测下一个词</strong>”的有效性得到了充分验证，已经成为现有大语言模型主要采纳的技术路径。</p>
 <p>为了预训练大语言模型，需要准备大规模的文本数据，并且进行严格的清洗，去除掉可能包含有毒有害的内容，最后将清洗后的数据进行词元化（Tokenization）流，并且切分成批次（Batch），用于大语言模型的预训练。</p>
 <p>预训练技术框架在实施过程中涉及到大量需要深入探索的经验性技术，如数据如何进行配比、如何进行学习率的调整、如何早期发现模型的异常行为等。</p>
-<h4 id="2-1-2-指令微调（SFT）与人类对齐"><a href="#2-1-2-指令微调（SFT）与人类对齐" class="headerlink" title="2.1.2 指令微调（SFT）与人类对齐"></a>2.1.2 指令微调（SFT）与人类对齐</h4><p>监督微调&#x2F;指令微调：通过使用任务输入与输出的配对数据进行模型训练，可以使得语言模型较好地掌握通过问答形式进行任务求解的能力。</p>
+<h4 id="2-1-2-指令微调（SFT）与人类对齐"><a href="#2-1-2-指令微调（SFT）与人类对齐" class="headerlink" title="2.1.2 指令微调（SFT）与人类对齐"></a>2.1.2 指令微调（SFT）与人类对齐</h4><p>监督微调/指令微调：通过使用任务输入与输出的配对数据进行模型训练，可以使得语言模型较好地掌握通过问答形式进行任务求解的能力。</p>
 <p>要将大语言模型与人类的期望、需求以及价值观对齐（Alignment）：主要引入了基于人类反馈的强化学习对齐方法 RLHF（Reinforcement Learning from Human Feedback），在指令微调后使用强化学习加强模型的对齐能力。</p>
 <h3 id="2-2-扩展法则"><a href="#2-2-扩展法则" class="headerlink" title="2.2 扩展法则"></a>2.2 扩展法则</h3><p>在实现上，大语言模型采用了与小型预训练语言模型相似的神经网络结构（基于注意力机制的 Transformer 架构）和预训练方法（如语言建模）。</p>
 <p>但是通过扩展<strong>参数规模、数据规模和计算算力</strong>，大语言模型的能力显著超越了小型语言模型的能力。</p>
@@ -259,48 +259,18 @@ mjx-container[display="true"] + br {
 <li>计算算力指的是可用于训练和运行模型的计算资源。计算算力可以用<strong>处理器（CPU、GPU、TPU）的数量、内存容量、计算速度（如FLOPS，浮点运算次数</strong>）等指标来衡量。更高的计算算力可以加快模型的训练速度和处理能力，支持更大规模和更复杂的模型。</li>
 </ul>
 <p>在给定算力预算 <em>𝑐</em> 的条件下，可以近似得到以下三个基本指数公式来描述扩展法则：</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623133834730.png"
-                      alt="image-20240623133834730"
-                ></p>
+<p><img src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623133834730.png" alt="image-20240623133834730"></p>
 <p>这里，<em>𝐿</em>(·) 表示用以 nat为单位的交叉熵损失。其中，<em>𝑁𝑐</em>、<em>𝐷𝑐</em> 和 <em>𝐶𝑐</em> 是实验性的常数数值，分别对应于非嵌入参数数量、训练数据数量和实际的算力开销。这三个公式是通过模型在不同数据规模（22M 到 23B 词元）、模型规模（768M到 1.5B 非嵌入参数）和算力规模下的性能表现拟合推导得到的。</p>
 <p>为了推导这些公式，需要约定一些基本假设：一个因素的分析不会受到其他两个因素的限制，如当变动模型参数规模的时候，需要保证数据资源是充足的。</p>
 <p>讲损失函数进一步分解为两部分 [21]，包括不可约损失（真实数据分布的熵）和可约损失（真实分布和模型分布之间 KL 散度的估计）</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623142750969.png"
-                      alt="image-20240623142750969"
-                ></p>
+<p><img src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623142750969.png" alt="image-20240623142750969"></p>
 <p>这里 <em>𝑥</em> 是一个占位符号，可以指代公式 2.1 中的<em>𝑁</em>、<em>𝐷</em> 和 <em>𝐶</em>。其中，不可约损失由数据自身特征确定，无法通过扩展法则或者优化算法进行约减；模型性能的优化只能减小可约损失部分。</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623143311167.png"
-                      alt="image-20240623143311167"
-                ></p>
-<h4 id="2-2-2-Chinchilla-扩展法则"><a href="#2-2-2-Chinchilla-扩展法则" class="headerlink" title="2.2.2 Chinchilla 扩展法则"></a>2.2.2 Chinchilla 扩展法则</h4><p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623144034419.png"
-                      alt="image-20240623144034419"
-                ></p>
-<p>其中 <em>𝐸</em> &#x3D; 1*.<em>69</em>, 𝐴* &#x3D; 406*.<em>4</em>, 𝐵* &#x3D; 410*.<em>7，</em>𝛼* &#x3D; 0*.<em>34 和 <em>𝛽</em> &#x3D; 0</em>.<em>28。进一步，利用约束条件</em>𝐶* ≈ 6<em>𝑁𝐷</em> 对于损失函数 <em>𝐿</em>(<em>𝑁, 𝐷</em>) 进行推导，能够获得算力资源固定情况下模型规模与数据规模的最优分配方案（如下所示）：</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623144130396.png"
-                      alt="image-20240623144130396"
-                ></p>
+<p><img src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623143311167.png" alt="image-20240623143311167"></p>
+<h4 id="2-2-2-Chinchilla-扩展法则"><a href="#2-2-2-Chinchilla-扩展法则" class="headerlink" title="2.2.2 Chinchilla 扩展法则"></a>2.2.2 Chinchilla 扩展法则</h4><p><img src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623144034419.png" alt="image-20240623144034419"></p>
+<p>其中 <em>𝐸</em> = 1*.<em>69</em>, 𝐴* = 406*.<em>4</em>, 𝐵* = 410*.<em>7，</em>𝛼* = 0*.<em>34 和 <em>𝛽</em> = 0</em>.<em>28。进一步，利用约束条件</em>𝐶* ≈ 6<em>𝑁𝐷</em> 对于损失函数 <em>𝐿</em>(<em>𝑁, 𝐷</em>) 进行推导，能够获得算力资源固定情况下模型规模与数据规模的最优分配方案（如下所示）：</p>
+<p><img src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623144130396.png" alt="image-20240623144130396"></p>
 <p>进一步，研究人员 [22] 发现 KM 扩展法则和 Chinchilla 扩展法则都可以近似表示成上述算力为核心的公式（公式 2.4）：</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623144235852.png"
-                      alt="image-20240623144235852"
-                ></p>
+<p><img src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623144235852.png" alt="image-20240623144235852"></p>
 <p>即当算力 <em>𝐶</em> 给定的情况下，最优的模型参数规模和数据规模由指数系数 <em>𝑎</em> 和 <em>𝑏</em> 分别确定。可以看到，<em>𝑎</em> 和 <em>𝑏</em> 决定了参数规模和数据规模的资源分配优先级：当 <em>𝑎 &gt; 𝑏</em>时，应该用更多的算力去提高参数规模；当 <em>𝑏 &gt; 𝑎</em> 时，应该用更多的算力去提高数据规模。</p>
 <p>差异：随着算力预算的增加，KM 扩展法则（<em>𝑎</em> ≈ 0*.<em>73, <em>𝑏</em> ≈ 0</em>.<em>27 [22] ）倾向于将更大的预算分配给模型规模的增加，而不是分配给数据规模的增加；而 Chinchilla 扩展法则主张两种规模参数应该以等比例关系增加（</em>𝑎* ≈ 0*.<em>46, <em>𝑏</em> ≈ 0</em>.*54 [22]）。</p>
 <p>但是目前这一分配系数已经基本没有参考意义了。越来越多的工作表明，现有的预训练语言模型对于数据的需求量远高于这些扩展法则中所给出的估计规模。例如LLaMA-2 (7B) 的模型就使用了 2T 的词元进行训练，很多更小的模型也能够通过使用超大规模的预训练数据获得较大的模型性能提升。这种现象的一个重要原因是由于 Transformer 架构具有较好的数据扩展性，到目前为止，还没有实验能够有效验证特定参数规模语言模型的饱和数据规模（即随着数据规模的扩展，模型性能不再提升）。</p>
@@ -309,7 +279,7 @@ mjx-container[display="true"] + br {
 <p><strong>指导作用</strong>：首先，对于大语言模型来说，详细进行各种训练技巧或变体的测试需要耗费巨大的算力资源。因此，一个较为理想的经验性方法是，<strong>基于小模型获得训练经验然后应用于大模型的训练，从而减少实验成本。</strong>例如，可以训练小型代理模型来确定适合大型模型的预训练数据混合的最佳比例 [36]。其次，大语言模型的训练过程较长，经常面临着训练损失波动情况，扩展法则可以用于监控大语言模型的训练状态，如在<strong>早期识别异常性能</strong>。</p>
 <h5 id="任务层面的可预测性"><a href="#任务层面的可预测性" class="headerlink" title="任务层面的可预测性"></a>任务层面的可预测性</h5><p>为了建立扩展法则与模型任务性能的关联，一个基础问题就是语言建模损失的减少是否真正意味着（或对应着）真实任务上模型性能的提高 [21]。</p>
 <p>整体上来说，语言建模损失较小的模型往往在下游任务中表现更好，因为语言建模的能力可以被认为是一种模型整体能力的综合度量。然而，语言建模损失的减少并不总是意味着模型在下游任务上的性能改善。对于某些特殊任务，甚至会出现“逆向扩展”（Inverse Scaling）现象，即随着语言建模损失的降低，任务性能出人意料地变差 [37]。</p>
-<p>扩展准则可以精准预测任务能力（编码能力-建模算力数据密切相关），在任务层面（任务指标&#x2F;任务难度相关）的预测存在一定的困难。</p>
+<p>扩展准则可以精准预测任务能力（编码能力-建模算力数据密切相关），在任务层面（任务指标/任务难度相关）的预测存在一定的困难。</p>
 <h3 id="2-3-涌现能力"><a href="#2-3-涌现能力" class="headerlink" title="2.3 涌现能力"></a>2.3 涌现能力</h3><p>大语言模型的涌现能力被非形式化定义为“在小型模型中不存在但在大模型中出现的能力”，具体是指当模型扩展到一定规模时，模型的特定任务性能突然出现显著跃升的趋势，远超过随机水平。</p>
 <h4 id="2-3-1-代表性的涌现能力"><a href="#2-3-1-代表性的涌现能力" class="headerlink" title="2.3.1 代表性的涌现能力"></a>2.3.1 代表性的涌现能力</h4><h5 id="上下文学习（In-context-Learning-ICL）"><a href="#上下文学习（In-context-Learning-ICL）" class="headerlink" title="上下文学习（In-context Learning, ICL）"></a>上下文学习（In-context Learning, ICL）</h5><p>在提示中为语言模型提供自然语言指令和多个任务示例（Demonstration），无需显式的训练或梯度更新，仅输入文本的单词序列就能为测试样本生成预期的输出。</p>
 <p>“无需显式”是指模型在执行任务时，不需要在输入中提供明确的任务示例或训练数据。这意味着模型能够仅通过理解自然语言的指令来完成任务，而不需要用户在指令中包含具体的输入-输出示例。这种能力主要依赖于模型在预训练和微调过程中已经学到的知识和技能。</p>
@@ -345,29 +315,14 @@ mjx-container[display="true"] + br {
 </li>
 </ol>
 <h4 id="3-1-1-公开可用的通用大语言模型检查点"><a href="#3-1-1-公开可用的通用大语言模型检查点" class="headerlink" title="3.1.1 公开可用的通用大语言模型检查点"></a><strong>3.1.1</strong> <strong>公开可用的通用大语言模型检查点</strong></h4><p>近年来大语言模型的统计数据，包括预训练数据规模（以词元数量或存储大小表示）和硬件条件等。本表仅列举有公开论文介绍技术细节的模型，其中“发布时间”表示相应论文或技术报告正式发布的日期。“可公开获取”表示模型检查点可以公开获取，而“闭源”则相反。“适配”指模型是否经过了后续微调：IT 表示指令微调，RLHF 表示基于人类反馈的强化学习。</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623161333099.png"
-                      alt="image-20240623161333099"
-                ></p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623161356024.png"
-                      alt="image-20240623161356024"
-                ></p>
+<p><img src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623161333099.png" alt="image-20240623161333099"></p>
+<p><img src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240623161356024.png" alt="image-20240623161356024"></p>
 <h4 id="3-1-2-LLaMA-变体系列"><a href="#3-1-2-LLaMA-变体系列" class="headerlink" title="3.1.2 LLaMA 变体系列"></a>3.1.2 LLaMA 变体系列</h4><h5 id="基础指令"><a href="#基础指令" class="headerlink" title="基础指令"></a>基础指令</h5><p>Stanford Alpaca [42] ：通过使用 Self-Instruct 方法 [74] 借助大语言模型进行自动化的指令生成，Stanford Alpaca 生成了 52K 条指令遵循样例数据（Alpaca-52K）用于训练，其指令数据和训练代码在随后的工作中被广泛采用。</p>
 <p>Vicuna [75]：是使用 ShareGPT 收集的用户日常对话数据进行训练。</p>
 <h5 id="中文指令"><a href="#中文指令" class="headerlink" title="中文指令"></a>中文指令</h5><p>扩展原始词汇表，在中文数据上进行继续预训练，并用中文指令数据对其进行微调。Chinese LLaMA、Panda、Open-Chinese-LLaMA、Chinese Alpaca、YuLan-Chat。</p>
 <h5 id="垂域指令"><a href="#垂域指令" class="headerlink" title="垂域指令"></a>垂域指令</h5><p>LLaMA 虽然展现出了强大的通用基座模型能力，但是在特定的垂直领域（例如医学、教育、法律、数学等）的表现仍然较为局限。</p>
 <p>基于搜集到的垂域相关的指令数据，或者采用垂域知识库以及相关专业文献等借助强大的闭源模型 API（例如 GPT-3.5、GPT-4 等）构建多轮对话数据，并使用这些指令数据对 LLaMA 进行指令微调。</p>
-<h5 id="多模态指令"><a href="#多模态指令" class="headerlink" title="多模态指令"></a>多模态指令</h5><p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240624144852007.png"
-                      alt="image-20240624144852007"
-                ></p>
+<h5 id="多模态指令"><a href="#多模态指令" class="headerlink" title="多模态指令"></a>多模态指令</h5><p><img src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240624144852007.png" alt="image-20240624144852007"></p>
 <p>（巨大的LLaMA PLUS）</p>
 <h4 id="3-1-3-大语言模型的公共-AP"><a href="#3-1-3-大语言模型的公共-AP" class="headerlink" title="3.1.3 大语言模型的公共 AP"></a>3.1.3 大语言模型的公共 AP</h4><h5 id="语言模型-API"><a href="#语言模型-API" class="headerlink" title="语言模型 API"></a>语言模型 <em>API</em></h5><p>GPT-3.5 Turbo 对应的 API 接口为 gpt-3.5-turbo，支持16K 词元的上下文长度。</p>
 <p>GPT-4 对应的 API 接口有 gpt-4（基础版本，没有视觉功能）、gpt-4-32k（将上下文长度扩展到 32K）、gpt-4-vision-preview（带有视觉功能的 GPT-4 多模态版本）。</p>
@@ -376,14 +331,9 @@ mjx-container[display="true"] + br {
 <p>text-embedding-3-small :是一个更高效的文本表征模型，同样提供 1,536 维的向量表征。</p>
 <p>text-embedding-3-large： 能够支持高达 3,072 维的向量表征，是三者中目前性能最好的模型，在 MTEB 的平均得分达到了 64.6%。</p>
 <h3 id="3-2-常用的预训练数据集"><a href="#3-2-常用的预训练数据集" class="headerlink" title="3.2 常用的预训练数据集"></a>3.2 常用的预训练数据集</h3><p>根据其内容类型进行分类，这些语料库可以划分为：网页、书籍、维基百科、代码以及混合型数据集。</p>
-<h4 id="3-2-1-网页"><a href="#3-2-1-网页" class="headerlink" title="3.2.1 网页"></a>3.2.1 网页</h4><p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240624145415463.png"
-                      alt="image-20240624145415463"
-                ></p>
-<h5 id="Common-Crawl"><a href="#Common-Crawl" class="headerlink" title="Common Crawl."></a><em>Common Crawl.</em></h5><p>该数据集是一个规模庞大的、非结构化的、多语言的网页数据集。在使用前必须进行有效的数据清洗，以确保数据质量和准确性，常用的自动清洗工具有 CCNet 等。（<a class="link"   target="_blank" rel="noopener" href="https://commoncrawl.org/%EF%BC%89" >https://commoncrawl.org/） <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<h5 id="C4（Colossal-Clean-Crawled-Corpus）"><a href="#C4（Colossal-Clean-Crawled-Corpus）" class="headerlink" title="C4（Colossal Clean Crawled Corpus）"></a><em>C4</em>（Colossal Clean Crawled Corpus）</h5><p>该数据集是一个大型网页数据集，源自超过 365M 个互联网域，包含超过 156B 词元，数据量约 800GB。子版本：en（英文数据，806G），en.noclean（未清洗的原始数据，6T），realnewslike（仅包含 RealNews 涉及的领域的内容，36G），webtextlike（仅包含来自 OpenWebText 中URLs 的内容，17G）和 multilingual （多语言数据，38T）。（<a class="link"   target="_blank" rel="noopener" href="https://paperswithcode.com/dataset/c4%EF%BC%89" >https://paperswithcode.com/dataset/c4） <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h4 id="3-2-1-网页"><a href="#3-2-1-网页" class="headerlink" title="3.2.1 网页"></a>3.2.1 网页</h4><p><img src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240624145415463.png" alt="image-20240624145415463"></p>
+<h5 id="Common-Crawl"><a href="#Common-Crawl" class="headerlink" title="Common Crawl."></a><em>Common Crawl.</em></h5><p>该数据集是一个规模庞大的、非结构化的、多语言的网页数据集。在使用前必须进行有效的数据清洗，以确保数据质量和准确性，常用的自动清洗工具有 CCNet 等。（<a target="_blank" rel="noopener" href="https://commoncrawl.org/%EF%BC%89">https://commoncrawl.org/）</a></p>
+<h5 id="C4（Colossal-Clean-Crawled-Corpus）"><a href="#C4（Colossal-Clean-Crawled-Corpus）" class="headerlink" title="C4（Colossal Clean Crawled Corpus）"></a><em>C4</em>（Colossal Clean Crawled Corpus）</h5><p>该数据集是一个大型网页数据集，源自超过 365M 个互联网域，包含超过 156B 词元，数据量约 800GB。子版本：en（英文数据，806G），en.noclean（未清洗的原始数据，6T），realnewslike（仅包含 RealNews 涉及的领域的内容，36G），webtextlike（仅包含来自 OpenWebText 中URLs 的内容，17G）和 multilingual （多语言数据，38T）。（<a target="_blank" rel="noopener" href="https://paperswithcode.com/dataset/c4%EF%BC%89">https://paperswithcode.com/dataset/c4）</a></p>
 <h5 id="CC-Stories"><a href="#CC-Stories" class="headerlink" title="CC-Stories"></a><em>CC-Stories</em></h5><p>该数据集是一个专为常识推理和语言建模构建的故事风格数据集。</p>
 <h5 id="CC-News"><a href="#CC-News" class="headerlink" title="CC-News"></a><em>CC-News</em></h5><h5 id="REALNEWs"><a href="#REALNEWs" class="headerlink" title="REALNEWs"></a><em>REALNEWs</em></h5><h5 id="RedPajama-Data"><a href="#RedPajama-Data" class="headerlink" title="RedPajama-Data"></a><em>RedPajama-Data</em></h5><p>一个多语言数据集，包含 5 种语言：英语、法语、西班牙语、德语和意大利语。此外，还提供了 40 余种预先标注好的数据注释，使下游模型开发者能够根据自己的标准对数据集进行筛选或重新加权。</p>
 <h5 id="RefinedWeb"><a href="#RefinedWeb" class="headerlink" title="RefinedWeb"></a><em>RefinedWeb</em></h5><p>是一个在 Common Crawl 数据的基础上通过严格筛选和去重得到的网络数据集。</p>
@@ -395,7 +345,7 @@ mjx-container[display="true"] + br {
 <h5 id="Project-Gutenberg"><a href="#Project-Gutenberg" class="headerlink" title="Project Gutenberg"></a><em>Project Gutenberg</em></h5><p>拥有 70K 部免费电子书的在线图书馆。</p>
 <h5 id="arXiv-Dataset"><a href="#arXiv-Dataset" class="headerlink" title="arXiv Dataset"></a><em>arXiv Dataset</em></h5><p>收录了众多领域预印本论文的网站。广泛涵盖了物理、数学和计算机科学等领域的论文文献，共包含约1.7M 篇预印本文章，每篇预印本都包含文本、图表、作者、引文、分类以及其他元数据等信息，总数据量约为 1.1TB，并在 Kaggle 上提供了公开下载。</p>
 <h5 id="S2ORC"><a href="#S2ORC" class="headerlink" title="S2ORC"></a><em>S2ORC</em></h5><p>该数据集源于学术搜索引擎 Semantic Scholar 上的学术论文，这些论文经过了清洗、过滤并被处理成适合预训练的格式。。衍生数据集 peS2o。</p>
-<h4 id="3-2-3-维基百科"><a href="#3-2-3-维基百科" class="headerlink" title="3.2.3 维基百科"></a>3.2.3 维基百科</h4><p>除了通过维基百科的官方提供的下载方式4，Hugging Face 上也有相应的维基百科数据集。（<a class="link"   target="_blank" rel="noopener" href="https://huggingface.co/datasets/wikipedia%EF%BC%89" >https://huggingface.co/datasets/wikipedia） <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h4 id="3-2-3-维基百科"><a href="#3-2-3-维基百科" class="headerlink" title="3.2.3 维基百科"></a>3.2.3 维基百科</h4><p>除了通过维基百科的官方提供的下载方式4，Hugging Face 上也有相应的维基百科数据集。（<a target="_blank" rel="noopener" href="https://huggingface.co/datasets/wikipedia%EF%BC%89">https://huggingface.co/datasets/wikipedia）</a></p>
 <h4 id="3-2-4-代码"><a href="#3-2-4-代码" class="headerlink" title="3.2.4 代码"></a>3.2.4 代码</h4><p>为了收集代码数据，现有的工作主要从互联网上爬取具有开源许可的代码。两个主要来源是公共代码仓库（例如 GitHub）和代码相关的问答平台（例如 StackOverflow）。</p>
 <h5 id="BigQuery"><a href="#BigQuery" class="headerlink" title="BigQuery"></a><em>BigQuery</em></h5><p>BigQuery 是一个谷歌发布的企业数据仓库，包含了众多领域的公共数据集，如社交、经济、医疗、代码等。其中的代码类数据覆盖各种编程语言，可以作为高质量的代码预训练语料。</p>
 <h5 id="The-Stack"><a href="#The-Stack" class="headerlink" title="The Stack"></a><em>The Stack</em></h5><p>该数据集由 Hugging Face 收集并发布，是一个涵盖了 30 种编程语言的代码数据集，其数据来源于 GHArchive 项目中 2015 年 1 月 1 日至 2022年 3 月 31 日期间的 GitHub 活跃仓库。</p>
@@ -405,12 +355,7 @@ mjx-container[display="true"] + br {
 <h5 id="Dolma"><a href="#Dolma" class="headerlink" title="Dolma"></a><em>Dolma</em></h5><p>该数据集也包含了多种数据源，包括来自 Common Crawl 的网络文本、Semantic Scholar 学术论文、GitHub 代码、书籍、Reddit 的社交媒体帖子以及维基百科数据，由来自大约 200TB 原始文本的 3T 个词元组成。</p>
 <p>在 Dolma 的处理过程中，发布团队同时创建了一个高性能工具包，实现了四种常用的数据清洗和过滤方法：语言过滤、质量过滤、内容过滤以及去重。</p>
 <h3 id="3-3-常用微调数据集"><a href="#3-3-常用微调数据集" class="headerlink" title="3.3 常用微调数据集"></a>3.3 常用微调数据集</h3><h4 id="3-3-1-指令微调数据集"><a href="#3-3-1-指令微调数据集" class="headerlink" title="3.3.1 指令微调数据集"></a>3.3.1 指令微调数据集</h4><p>根据格式化指令实例的构建方法将它们分为三种主要类型，即自然语s言处理任务数据集、日常对话数据集和合成数据集。</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240624152329540.png"
-                      alt="image-20240624152329540"
-                ></p>
+<p><img src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240624152329540.png" alt="image-20240624152329540"></p>
 <h5 id="自然语言处理任务数据集"><a href="#自然语言处理任务数据集" class="headerlink" title="自然语言处理任务数据集"></a>自然语言处理任务数据集</h5><p><strong>P3</strong>：面向英文数据的指令微调数据集</p>
 <p><strong>FLAN</strong>：现在俗称的 FLAN 实际上是指 FLAN-v2，主要由四个子集 Muffin、NIV2、T0-SF 和 CoT 构成。</p>
 <h5 id="日常对话数据集"><a href="#日常对话数据集" class="headerlink" title="日常对话数据集"></a>日常对话数据集</h5><p><strong>ShareGPT [38]、OpenAssistant [104] 和 Dolly [105]</strong></p>
@@ -423,8 +368,8 @@ mjx-container[display="true"] + br {
 <h4 id="3-4-2-DeepSpeed"><a href="#3-4-2-DeepSpeed" class="headerlink" title="3.4.2 DeepSpeed"></a>3.4.2 DeepSpeed</h4><p>是微软开发的一个加速深度学习模型训练的高性能库（与 PyTorch兼容），被广泛用于大语言模型的分布式训练，例如 MT-NLG [90] 和 BLOOM [100]等。</p>
 <p>DeepSpeed 针对模型生成和强化学习分别开发了特制的优化框架：DeepSpeed-MII 和 DeepSpeed-Chat。</p>
 <h5 id="DeepSpeed-MII"><a href="#DeepSpeed-MII" class="headerlink" title="DeepSpeed-MII"></a>DeepSpeed-MII</h5><h5 id="DeepSpeed-Chat"><a href="#DeepSpeed-Chat" class="headerlink" title="DeepSpeed-Chat"></a>DeepSpeed-Chat</h5><h4 id="3-4-3-Megatron-LM"><a href="#3-4-3-Megatron-LM" class="headerlink" title="3.4.3 Megatron-LM"></a>3.4.3 Megatron-LM</h4><p>是由 NVIDIA 开发的一款专门为训练大语言模型而设计的深度学习代码库。这个代码库旨在解决大型模型训练过程中所遇到的一系列技术挑战，包括显存限制、计算效率以及不同的并行策略带来的通信问题。</p>
-<h4 id="3-4-4-本书配套资源说明"><a href="#3-4-4-本书配套资源说明" class="headerlink" title="3.4.4 本书配套资源说明"></a>3.4.4 本书配套资源说明</h4><p><em>LLMSurvey</em>：<a class="link"   target="_blank" rel="noopener" href="https://arxiv.org/abs/2303.18223" >https://arxiv.org/abs/2303.18223 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<p>大模型综述资源网站：<a class="link"   target="_blank" rel="noopener" href="https://github.com/RUCAIBox/LLMSurvey/" >https://github.com/RUCAIBox/LLMSurvey/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h4 id="3-4-4-本书配套资源说明"><a href="#3-4-4-本书配套资源说明" class="headerlink" title="3.4.4 本书配套资源说明"></a>3.4.4 本书配套资源说明</h4><p><em>LLMSurvey</em>：<a target="_blank" rel="noopener" href="https://arxiv.org/abs/2303.18223">https://arxiv.org/abs/2303.18223</a></p>
+<p>大模型综述资源网站：<a target="_blank" rel="noopener" href="https://github.com/RUCAIBox/LLMSurvey/">https://github.com/RUCAIBox/LLMSurvey/</a></p>
 <p>YuLan模型</p>
 <p>LLMBOX</p>
 <h1 id="第二部分-预训练"><a href="#第二部分-预训练" class="headerlink" title="第二部分 预训练"></a><strong>第二部分 预训练</strong></h1><h2 id="第四章-数据准备"><a href="#第四章-数据准备" class="headerlink" title="第四章 数据准备"></a>第四章 数据准备</h2><p>4.1 数据来源 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 57</p>
@@ -611,7 +556,7 @@ mjx-container[display="true"] + br {
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/06/24/THE%20CHINESE%20BOOK%20FOR%20LARGE%20LANGUAGE/" data-id="clxygvmpi0001p4uahq0eh95v" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/06/24/THE%20CHINESE%20BOOK%20FOR%20LARGE%20LANGUAGE/" data-id="clxyhtcyg0003v4ua7k35g2kl" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       

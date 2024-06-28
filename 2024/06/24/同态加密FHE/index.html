@@ -211,17 +211,7 @@ mjx-container[display="true"] + br {
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="《An-Introduction-to-Fully-Homomorphic-Encryption》-by-Nigel-P-Smart"><a href="#《An-Introduction-to-Fully-Homomorphic-Encryption》-by-Nigel-P-Smart" class="headerlink" title="《An Introduction to Fully Homomorphic Encryption》 by Nigel P. Smart"></a>《An Introduction to Fully Homomorphic Encryption》 by Nigel P. Smart</h1><h2 id="1-Introduction"><a href="#1-Introduction" class="headerlink" title="1.Introduction"></a>1.Introduction</h2><h3 id="1-1-What-is-FHE"><a href="#1-1-What-is-FHE" class="headerlink" title="1.1 What is FHE?"></a>1.1 What is FHE?</h3><p>原则上，FHE允许对加密数据进行任意计算。对加密数据进行计算意味着，如果用户有一个函数f并想要得到 <img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240624170020423.png"
-                      alt="image-20240624170020423"
-                >的结果，可以通过对这些输入的加密形式 c1,c2,…,cn进行计算，得到一个解密后的结果就是<img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240624170040058.png"
-                      alt="image-20240624170040058"
-                ></p>
+        <h1 id="《An-Introduction-to-Fully-Homomorphic-Encryption》-by-Nigel-P-Smart"><a href="#《An-Introduction-to-Fully-Homomorphic-Encryption》-by-Nigel-P-Smart" class="headerlink" title="《An Introduction to Fully Homomorphic Encryption》 by Nigel P. Smart"></a>《An Introduction to Fully Homomorphic Encryption》 by Nigel P. Smart</h1><h2 id="1-Introduction"><a href="#1-Introduction" class="headerlink" title="1.Introduction"></a>1.Introduction</h2><h3 id="1-1-What-is-FHE"><a href="#1-1-What-is-FHE" class="headerlink" title="1.1 What is FHE?"></a>1.1 What is FHE?</h3><p>原则上，FHE允许对加密数据进行任意计算。对加密数据进行计算意味着，如果用户有一个函数f并想要得到 <img src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240624170020423.png" alt="image-20240624170020423">的结果，可以通过对这些输入的加密形式 c1,c2,…,cn进行计算，得到一个解密后的结果就是<img src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240624170040058.png" alt="image-20240624170040058"></p>
 <p>在一些加密系统中，输入消息（明文）存在于某种代数结构中，通常是群或环。</p>
 <h5 id="群（Group）"><a href="#群（Group）" class="headerlink" title="群（Group）"></a>群（Group）</h5><p>群是一个基本的代数结构，由一组元素和一个二元运算（通常称为乘法或加法）构成，满足以下四个性质：</p>
 <ol>
@@ -231,18 +221,18 @@ mjx-container[display="true"] + br {
 </ul>
 </li>
 <li><strong>结合律（Associativity）</strong>：<ul>
-<li>对于群中的任意三个元素 a,b,c有 (a⋅b)⋅c&#x3D;a⋅(b⋅c)。</li>
-<li>例如，对于整数加法，有 (a+b)+c&#x3D;a+(b+c)。</li>
+<li>对于群中的任意三个元素 a,b,c有 (a⋅b)⋅c=a⋅(b⋅c)。</li>
+<li>例如，对于整数加法，有 (a+b)+c=a+(b+c)。</li>
 </ul>
 </li>
 <li><strong>单位元（Identity Element）</strong>：<ul>
-<li>存在一个单位元 e，对于群中的任意元素 aaa，有 a⋅e&#x3D;e⋅a&#x3D;a</li>
-<li>例如，对于整数加法，单位元是 0，因为 a+0&#x3D;0+a&#x3D;a。</li>
+<li>存在一个单位元 e，对于群中的任意元素 aaa，有 a⋅e=e⋅a=a</li>
+<li>例如，对于整数加法，单位元是 0，因为 a+0=0+a=a。</li>
 </ul>
 </li>
 <li><strong>逆元（Inverse Element）</strong>：<ul>
-<li>对于群中的每个元素 a，存在一个逆元 a^{-1}，使得 a⋅a^{-1} &#x3D;a^{-1}⋅a&#x3D;e。</li>
-<li>例如，对于整数加法，a的逆元是 −a,因为 a+(−a)&#x3D;a+(-a)&#x3D;0。</li>
+<li>对于群中的每个元素 a，存在一个逆元 a^{-1}，使得 a⋅a^{-1} =a^{-1}⋅a=e。</li>
+<li>例如，对于整数加法，a的逆元是 −a,因为 a+(−a)=a+(-a)=0。</li>
 <li>在群论中，单位元 e 不是随机的，而是固定的，且对于群中的所有元素都是相同的。对于不同的群，单位元 e 的具体值可能不同，但在同一个群中，它是唯一且固定的。</li>
 </ul>
 </li>
@@ -260,12 +250,12 @@ mjx-container[display="true"] + br {
 </ul>
 </li>
 <li><strong>乘法的结合律（Associativity under Multiplication）</strong>：<ul>
-<li>对于环中的任意三个元素 a,b,cm有 (a⋅b)⋅c&#x3D;a⋅(b⋅c)。</li>
+<li>对于环中的任意三个元素 a,b,cm有 (a⋅b)⋅c=a⋅(b⋅c)。</li>
 <li>例如，整数乘法满足结合律。</li>
 </ul>
 </li>
 <li><strong>乘法对加法的分配律（Distributive Laws）</strong>：<ul>
-<li>环中的乘法对加法满足左分配律和右分配律，即 a⋅(b+c)&#x3D;a⋅b+a⋅c和 (a+b)⋅c&#x3D;a⋅c+b⋅c。</li>
+<li>环中的乘法对加法满足左分配律和右分配律，即 a⋅(b+c)=a⋅b+a⋅c和 (a+b)⋅c=a⋅c+b⋅c。</li>
 <li>例如，整数乘法对加法满足分配律。</li>
 </ul>
 </li>
@@ -338,12 +328,7 @@ mjx-container[display="true"] + br {
 <p>为了帮助理解这个区别，考虑云计算的例子：FHE通常被宣传为解决方案。然而，如果我们只能评估一个任意大小的电路，那么我们不能使用中间结果进行后续计算；所有的计算必须从原始密文开始重新计算。这满足了FHE的通常定义（定义9），但并不直观，也不是一个最佳解决方案。在这种情况下，我们需要能够连续评估任意多个电路。</p>
 <p>这突显了该领域的另一个问题：在某些情况下，定义并没有表达出人们直观上假设的内容。在其他情况下，某一概念在不同论文中的定义不同。例如，紧凑性这个属性，直观上说密文大小不应该通过同态操作而增长。Gentry在他最初的工作中通过一个特性来定义它，而在随后的工作中使用了另一个特性。看出这两个定义是等价的并不像想象的那么简单，实际上需要一个额外的假设。</p>
 <p>有时，属性没有得到适当的定义，有时则在同一篇论文中未提及就被使用了。图1展示了这些定义的复杂程度。从定义和属性（图中的白色矩形）开始，我们可以给出不同类型同态方案的分类（阴影的圆角矩形）。此外，这些分类可以与跳跃正确性结合，产生另一组同态方案（更深色的椭圆形）。</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240624173840861.png"
-                      alt="image-20240624173840861"
-                ></p>
+<p><img src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240624173840861.png" alt="image-20240624173840861"></p>
 <h5 id="注释5：关于连续电路评估的区别"><a href="#注释5：关于连续电路评估的区别" class="headerlink" title="注释5：关于连续电路评估的区别"></a>注释5：关于连续电路评估的区别</h5><p>在云计算的例子中，FHE通常被视为解决方案。然而，如果我们只能评估一个任意大小的电路，那么我们不能使用中间结果进行后续计算（中间结果的不可用性）；所有的计算必须从原始密文开始重新计算。这满足了通常对FHE的定义（定义9），但不符合直觉，也不是一个最佳解决方案。在这种情况下，我们需要能够连续评估任意多个电路。</p>
 <h3 id="1-4-Our-Contribution"><a href="#1-4-Our-Contribution" class="headerlink" title="1.4 Our Contribution"></a>1.4 <strong>Our Contribution</strong></h3><h2 id="2-Applications-of-FHE"><a href="#2-Applications-of-FHE" class="headerlink" title="2 Applications of FHE"></a><strong>2 Applications of FHE</strong></h2><h3 id="2-1-Practical-Applications-of-FHE"><a href="#2-1-Practical-Applications-of-FHE" class="headerlink" title="2.1 Practical Applications of FHE"></a><strong>2.1 Practical Applications of FHE</strong></h3><h4 id="2-1-1-Consumer-Privacy-in-Advertising"><a href="#2-1-1-Consumer-Privacy-in-Advertising" class="headerlink" title="2.1.1 Consumer Privacy in Advertising"></a><strong>2.1.1 Consumer Privacy in Advertising</strong></h4><h4 id="2-1-2-Medical-Applications"><a href="#2-1-2-Medical-Applications" class="headerlink" title="2.1.2 Medical Applications"></a><strong>2.1.2 Medical Applications</strong></h4><h4 id="2-1-3-Data-Mining"><a href="#2-1-3-Data-Mining" class="headerlink" title="2.1.3 Data Mining"></a><strong>2.1.3 Data Mining</strong></h4><h4 id="2-1-4-Financial-Privacy"><a href="#2-1-4-Financial-Privacy" class="headerlink" title="2.1.4 Financial Privacy"></a><strong>2.1.4 Financial Privacy</strong></h4><h4 id="2-1-5-Forensic-Image-Recognition"><a href="#2-1-5-Forensic-Image-Recognition" class="headerlink" title="2.1.5 Forensic Image Recognition"></a><strong>2.1.5 Forensic Image Recognition</strong></h4><h3 id="2-2-Homomorphic-Encryption-Schemes-as-Building-Blocks"><a href="#2-2-Homomorphic-Encryption-Schemes-as-Building-Blocks" class="headerlink" title="2.2 Homomorphic Encryption Schemes as Building Blocks"></a><strong>2.2 Homomorphic Encryption Schemes as Building Blocks</strong></h3><h4 id="2-2-1-Zero-Knowledge-Proofs"><a href="#2-2-1-Zero-Knowledge-Proofs" class="headerlink" title="2.2.1 Zero Knowledge Proofs"></a><strong>2.2.1 Zero Knowledge Proofs</strong></h4><p>Gentry 在他的论文 [28] 中展示了同态加密可以用于构建小尺寸的非交互式零知识（NIZK）证明。用户希望证明其掌握了一组满足布尔电路 C 的位分配 π1,…,πt。NIZK 证明包括生成一个公钥，加密这些 πi 并对这些加密后的值同态地评估电路 C。一个标准的 NIZK 证明附带了以下内容：证明每个密文加密的值要么是 0 要么是 1，并且评估的输出加密的值是 1。</p>
 <h5 id="非交互式零知识（NIZK）"><a href="#非交互式零知识（NIZK）" class="headerlink" title="非交互式零知识（NIZK）"></a>非交互式零知识（NIZK）</h5><p>非交互式零知识证明（Non-Interactive Zero-Knowledge Proof, NIZK）是一种密码学协议，允许证明者向验证者证明某个陈述是真实的，而无需进行多轮的交互过程。在NIZK中，证明者只需发送一个单一的证明，验证者通过该证明即可验证陈述的真实性。</p>
@@ -427,26 +412,21 @@ mjx-container[display="true"] + br {
 <p>最后，虽然FHE可以在理论上保证数据的完全隐私，但在实际应用中，系统的安全性仍然依赖于具体的实现细节和假设。例如，某些FHE方案可能依赖于特定的数学难题，<strong>其安全性尚未得到充分验证</strong>。</p>
 <p>综上所述，尽管FHE在隐私保护和数据安全方面具有巨大潜力，但其高计算开销、密文扩展问题、实现复杂度和安全性依赖性等限制，使得在实际应用中还需要进一步的研究和优化。</p>
 <h2 id="3-Definitions"><a href="#3-Definitions" class="headerlink" title="3 Definitions"></a><strong>3 Definitions</strong></h2><p>本节概述了在FHE文献中使用的术语。我们的一些定义直接来自现有论文，而其他定义则被重新表述，因为没有令人满意的正式定义或为了将定义适应我们的正式框架；在前一种情况下，我们会给出引用。</p>
-<p>我们从一个空间 P&#x3D;{0,1}开始，称之为明文空间，以及一个从明文元组到 P 的函数族 F。我们可以将这样的函数表示为其输入上的布尔电路。如果我们用 C 表示这个电路，我们用普通的函数表示法 C(m1,m2,…,mn) 来表示在元组 (m1,m2,…,mn)上评估电路。我们的第一个定义遵循 Brakerski 和 Vaikuntanathan 的工作 [16]。</p>
+<p>我们从一个空间 P={0,1}开始，称之为明文空间，以及一个从明文元组到 P 的函数族 F。我们可以将这样的函数表示为其输入上的布尔电路。如果我们用 C 表示这个电路，我们用普通的函数表示法 C(m1,m2,…,mn) 来表示在元组 (m1,m2,…,mn)上评估电路。我们的第一个定义遵循 Brakerski 和 Vaikuntanathan 的工作 [16]。</p>
 <ul>
-<li><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240624180448856.png"
-                      alt="image-20240624180448856"
-                ></li>
+<li><img src="C:/Users/Y9000p/AppData/Roaming/Typora/typora-user-images/image-20240624180448856.png" alt="image-20240624180448856"></li>
 </ul>
 <p>这里，XXX 表示密文空间，它包含新生成的密文（见公式 (1)），YYY 表示评估输出空间，ZZZ 是 XXX 和 YYY 的并集。Z∗Z^*Z∗ 包含由 ZZZ 中元素组成的任意长度的元组。密钥空间分别由 Kp,KsKp, KsKp,Ks 和 KeKeKe 表示，对应于 pk,skpk, skpk,sk 和 evkevkevk。公钥包含明文空间和密文空间的描述。密钥生成算法 Gen 的输入以一元记号表示，即 1λ1^\lambda1λ。Gen 还可以从空间 auxsauxsauxs 中接受另一个可选输入 α\alphaα，这是辅助输入，将在备注 3 中阐明。最后，CCC 是允许的电路集，即方案可以评估的所有电路。</p>
 <p>定义这些空间后，算法的定义域和值域如下： Gen:N×A→Kp×Ks×Ke\text{Gen} : \mathbb{N} \times A \rightarrow Kp \times Ks \times KeGen:N×A→Kp×Ks×Ke Enc:Kp×P→X\text{Enc} : Kp \times P \rightarrow XEnc:Kp×P→X Dec:Ks×Z→P\text{Dec} : Ks \times Z \rightarrow PDec:Ks×Z→P Eval:Ke×C×Z∗→Y\text{Eval} : Ke \times C \times Z^* \rightarrow YEval:Ke×C×Z∗→Y</p>
-<p>其中 X∪Y&#x3D;ZX \cup Y &#x3D; ZX∪Y&#x3D;Z，AAA 是一个辅助空间。注意，一般来说，评估空间可以与密文空间不相交。</p>
-<p>在整篇论文中，我们将密文空间 XXX 视为加密的结果，而评估空间 YYY 视为评估的结果。因此 ZZZ 不能包含不是加密算法或评估算法可能输出的元素。形式上， X&#x3D;{c∣Pr⁡[Enc(pk,m)&#x3D;c]&gt;0,m∈P}X &#x3D; {c \mid \Pr[\text{Enc}(pk, m) &#x3D; c] &gt; 0, m \in P }X&#x3D;{c∣Pr[Enc(pk,m)&#x3D;c]&gt;0,m∈P} 和 Y&#x3D;{z∣Pr⁡[Eval(evk,C,c1,…,cn)&#x3D;z]&gt;0,ci∈Z,且C∈C}。Y &#x3D; {z \mid \Pr[\text{Eval}(evk, C, c_1, …, c_n) &#x3D; z] &gt; 0, c_i \in Z, 且 C \in C }。Y&#x3D;{z∣Pr[Eval(evk,C,c1,…,cn)&#x3D;z]&gt;0,ci∈Z,且C∈C}。</p>
-<p>特别是，评估密钥通常也是公钥的一部分。通过这种方式定义方案，具有单独的评估密钥，我们并没有禁止 pk&#x3D;evkpk &#x3D; evkpk&#x3D;evk，但断言这不是严格必要的。分开的 pkpkpk 和 evkevkevk 正在成为标准定义 [16, § 3.1]。</p>
-<p>备注 1（密文解密）：Brakerski 和 Vaikuntanathan [17] 提到，运行加密算法的输出上的解密算法并不是严格必要的：“… 我们不要求密文 cic_ici 本身是可解密的，只要求它们在同态评估后变得可解密。” 他们指出，可以在解密前用空电路（本质上是计算函数 f(x)&#x3D;xf(x) &#x3D; xf(x)&#x3D;x 的电路）评估加密的密文，从而简化解密算法的允许输入。从现在开始，我们允许新鲜密文的解密，因为这似乎是更自然的方法，并适用于大多数已知的 FHE 方案。解密算法可以在密文或评估输出上操作（从密文空间和评估空间中获取值）。这种选择消除了对空电路的需求。一般来说，这种区分不是必要的，尤其是…</p>
+<p>其中 X∪Y=ZX \cup Y = ZX∪Y=Z，AAA 是一个辅助空间。注意，一般来说，评估空间可以与密文空间不相交。</p>
+<p>在整篇论文中，我们将密文空间 XXX 视为加密的结果，而评估空间 YYY 视为评估的结果。因此 ZZZ 不能包含不是加密算法或评估算法可能输出的元素。形式上， X={c∣Pr⁡[Enc(pk,m)=c]&gt;0,m∈P}X = {c \mid \Pr[\text{Enc}(pk, m) = c] &gt; 0, m \in P }X={c∣Pr[Enc(pk,m)=c]&gt;0,m∈P} 和 Y={z∣Pr⁡[Eval(evk,C,c1,…,cn)=z]&gt;0,ci∈Z,且C∈C}。Y = {z \mid \Pr[\text{Eval}(evk, C, c_1, …, c_n) = z] &gt; 0, c_i \in Z, 且 C \in C }。Y={z∣Pr[Eval(evk,C,c1,…,cn)=z]&gt;0,ci∈Z,且C∈C}。</p>
+<p>特别是，评估密钥通常也是公钥的一部分。通过这种方式定义方案，具有单独的评估密钥，我们并没有禁止 pk=evkpk = evkpk=evk，但断言这不是严格必要的。分开的 pkpkpk 和 evkevkevk 正在成为标准定义 [16, § 3.1]。</p>
+<p>备注 1（密文解密）：Brakerski 和 Vaikuntanathan [17] 提到，运行加密算法的输出上的解密算法并不是严格必要的：“… 我们不要求密文 cic_ici 本身是可解密的，只要求它们在同态评估后变得可解密。” 他们指出，可以在解密前用空电路（本质上是计算函数 f(x)=xf(x) = xf(x)=x 的电路）评估加密的密文，从而简化解密算法的允许输入。从现在开始，我们允许新鲜密文的解密，因为这似乎是更自然的方法，并适用于大多数已知的 FHE 方案。解密算法可以在密文或评估输出上操作（从密文空间和评估空间中获取值）。这种选择消除了对空电路的需求。一般来说，这种区分不是必要的，尤其是…</p>
 <h3 id="3-1-Attributes"><a href="#3-1-Attributes" class="headerlink" title="3.1 Attributes"></a><strong>3.1 Attributes</strong></h3><h3 id="3-2-Classifications"><a href="#3-2-Classifications" class="headerlink" title="3.2 Classifications"></a><strong>3.2 Classifications</strong></h3><h3 id="3-3-Evaluating-in-Stages"><a href="#3-3-Evaluating-in-Stages" class="headerlink" title="3.3 Evaluating in Stages"></a><strong>3.3 Evaluating in Stages</strong></h3><h2 id="4-Implications"><a href="#4-Implications" class="headerlink" title="4 Implications"></a><strong>4 Implications</strong></h2><h3 id="4-1-Consolidating-compactness"><a href="#4-1-Consolidating-compactness" class="headerlink" title="4.1 Consolidating compactness"></a><strong>4.1 Consolidating compactness</strong></h3><h3 id="4-2-FHE-and-Hop-Results"><a href="#4-2-FHE-and-Hop-Results" class="headerlink" title="4.2 FHE and Hop Results"></a><strong>4.2 FHE and Hop Results</strong></h3><h2 id="5-Existing-schemes"><a href="#5-Existing-schemes" class="headerlink" title="5 Existing schemes"></a><strong>5 Existing schemes</strong></h2><h3 id="5-1-Bootstrapping-and-Alternatives"><a href="#5-1-Bootstrapping-and-Alternatives" class="headerlink" title="5.1 Bootstrapping and Alternatives"></a><strong>5.1 Bootstrapping and Alternatives</strong></h3><h3 id="5-2-Security-Assumptions"><a href="#5-2-Security-Assumptions" class="headerlink" title="5.2 Security Assumptions"></a><strong>5.2 Security Assumptions</strong></h3><h3 id="5-3-Implementations"><a href="#5-3-Implementations" class="headerlink" title="5.3 Implementations"></a><strong>5.3 Implementations</strong></h3><h2 id="6-Conclusion"><a href="#6-Conclusion" class="headerlink" title="6 Conclusion"></a><strong>6 Conclusion</strong></h2>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/06/24/%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86FHE/" data-id="clxygvmpl0005p4uah0vz072g" data-title="同态加密FHE" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2024/06/24/%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86FHE/" data-id="clxyhtcyh0005v4ua0zu5c3rd" data-title="同态加密FHE" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
